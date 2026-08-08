@@ -1,0 +1,223 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingWhatsApp from '../../components/FloatingWhatsApp.astro';
+import CtaSection from '../../components/CtaSection.astro';
+import Analytics from '../../components/Analytics.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const relatedPosts = (await getCollection('blog'))
+  .filter(p => p.id !== post.id && !p.data.draft)
+  .filter(p => p.data.tags.some(t => post.data.tags.includes(t)))
+  .slice(0, 3);
+
+const tagColors: Record<string, string> = {
+  'energia solar': '#FE5C17',
+  'economia': '#00C853',
+  'guia': '#2196F3',
+  'conta de luz': '#FF9800',
+  'manutenção': '#9C27B0',
+  'curvelo': '#FE5C17',
+  'dicas': '#00BCD4',
+  'sustentabilidade': '#4CAF50',
+  'instalação': '#FF5722',
+};
+
+function getTagColor(tag: string): string {
+  return tagColors[tag] || '#6b7280';
+}
+---
+
+<Layout
+  title={`${post.data.title} - Cordeiro Energia`}
+  description={post.data.description}
+  ogType="article"
+>
+  <Header />
+
+  <main>
+    <!-- Article header -->
+    <section style="padding:4rem 0 2.5rem;background:linear-gradient(180deg,#FFF5ED 0%,#ffffff 100%);">
+      <div class="container" style="max-width:760px;margin:0 auto;">
+        <!-- Back link -->
+        <a href="/blog" style="display:inline-flex;align-items:center;gap:0.5rem;color:#FE5C17;text-decoration:none;font-size:0.85rem;font-weight:600;margin-bottom:2rem;transition:color 0.2s;">
+          <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          Voltar ao Blog
+        </a>
+
+        <!-- Tags -->
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;">
+          {post.data.tags.map((tag) => (
+            <span style={`font-size:0.7rem;font-weight:600;padding:0.35rem 0.75rem;border-radius:9999px;background:${getTagColor(tag)}12;color:${getTagColor(tag)};border:1px solid ${getTagColor(tag)}25;`}>
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <h1 style="font-size:2.25rem;font-weight:800;color:#111;line-height:1.2;margin-bottom:1rem;letter-spacing:-0.02em;">
+          {post.data.title}
+        </h1>
+
+        <p style="font-size:1.05rem;color:#6b7280;line-height:1.7;margin-bottom:1.5rem;">
+          {post.data.description}
+        </p>
+
+        <!-- Author + date -->
+        <div style="display:flex;align-items:center;gap:1rem;padding-top:1.25rem;border-top:1px solid #f3f4f6;">
+          <div style="width:2.5rem;height:2.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FFC107);display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.7rem;font-weight:800;flex-shrink:0;">
+            CE
+          </div>
+          <div>
+            <div style="font-size:0.85rem;font-weight:600;color:#111;">{post.data.author}</div>
+            <time style="font-size:0.8rem;color:#9ca3af;" datetime={post.data.pubDate.toISOString()}>
+              {post.data.pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+            </time>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article content -->
+    <section style="padding:2.5rem 0 4rem;">
+      <div class="container" style="max-width:760px;margin:0 auto;">
+        {post.data.image && (
+          <div style="margin-bottom:2rem;border-radius:0.75rem;overflow:hidden;">
+            <img src={post.data.image} alt={post.data.title} style="width:100%;height:auto;display:block;" loading="lazy" />
+          </div>
+        )}
+        <article class="blog-content">
+          <Content />
+        </article>
+      </div>
+    </section>
+
+    <!-- Related posts -->
+    {relatedPosts.length > 0 && (
+      <section style="padding:3rem 0 4rem;background:#f9fafb;">
+        <div class="container">
+          <div style="text-align:center;margin-bottom:2.5rem;">
+            <h2 style="font-size:1.75rem;font-weight:800;color:#111;margin-bottom:0.5rem;">
+              Artigos <span style="color:#FE5C17;">relacionados</span>
+            </h2>
+            <p style="font-size:0.9rem;color:#6b7280;">Leia também esses artigos que podem interessar</p>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:1.5rem;max-width:900px;margin:0 auto;" class="related-grid">
+            {relatedPosts.map((related) => (
+              <a
+                href={`/blog/${related.id}`}
+                style="text-decoration:none;display:flex;gap:1rem;padding:1rem;background:#fff;border-radius:0.75rem;border:1px solid #f3f4f6;transition:all 0.3s;"
+                class="related-card"
+              >
+                <div style="width:4rem;height:4rem;min-width:4rem;border-radius:0.5rem;background:linear-gradient(135deg,#FFF5ED,#FFF0E6);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <svg style="width:1.5rem;height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="#FE5C17" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                </div>
+                <div>
+                  <h3 style="font-size:0.9rem;font-weight:700;color:#111;line-height:1.35;margin-bottom:0.25rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+                    {related.data.title}
+                  </h3>
+                  <p style="font-size:0.8rem;color:#6b7280;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+                    {related.data.description}
+                  </p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <CtaSection />
+  </main>
+
+  <FloatingWhatsApp />
+  <Footer />
+  <Analytics />
+</Layout>
+
+<style>
+  .related-grid { grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .related-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .related-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .related-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    border-color: rgba(254,92,23,0.15);
+  }
+  .related-card:hover h3 { color: #FE5C17 !important; }
+
+  /* Blog content prose */
+  .blog-content { font-size: 1rem; line-height: 1.8; color: #374151; }
+  .blog-content h2 { font-size: 1.5rem; font-weight: 800; color: #111; margin: 2.5rem 0 1rem; line-height: 1.3; }
+  .blog-content h3 { font-size: 1.25rem; font-weight: 700; color: #111; margin: 2rem 0 0.75rem; line-height: 1.35; }
+  .blog-content p { margin-bottom: 1.25rem; }
+  .blog-content strong { color: #111; font-weight: 700; }
+  .blog-content ul, .blog-content ol { margin: 1rem 0 1.25rem 1.5rem; }
+  .blog-content li { margin-bottom: 0.5rem; }
+  .blog-content a { color: #FE5C17; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
+  .blog-content a:hover { color: #E04400; }
+  .blog-content blockquote {
+    margin: 1.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background: #FFF5ED;
+    border-left: 4px solid #FE5C17;
+    border-radius: 0 0.75rem 0.75rem 0;
+    color: #374151;
+    font-style: italic;
+  }
+  .blog-content code {
+    background: #f3f4f6;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    color: #FE5C17;
+  }
+  .blog-content pre {
+    background: #111;
+    color: #e5e7eb;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+  .blog-content pre code {
+    background: none;
+    color: inherit;
+    padding: 0;
+  }
+  .blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    margin: 1.5rem 0;
+  }
+  .blog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  .blog-content th, .blog-content td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+  }
+  .blog-content th {
+    background: #f9fafb;
+    font-weight: 700;
+    color: #111;
+  }
+</style>

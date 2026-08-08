@@ -1,0 +1,61 @@
+---
+// Cookie consent is handled client-side for prerendered pages
+---
+
+<script>
+  // Check cookie consent client-side
+  function hasConsent(): boolean {
+    return document.cookie.split(';').some(c => c.trim().startsWith('cookie-consent=true'));
+  }
+
+  function trackEvent(eventName: string, params: Record<string, string | number> = {}) {
+    if (typeof (window as any).gtag === 'function') {
+      (window as any).gtag('event', eventName, params);
+    }
+  }
+
+  function initAnalytics() {
+    if (!hasConsent()) return;
+
+    // WhatsApp click
+    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+      link.addEventListener('click', () => {
+        trackEvent('whatsapp_click', { link_url: (link as HTMLAnchorElement).href });
+      });
+    });
+
+    // CTA clicks
+    document.querySelectorAll('.btn-solar, .btn-eco').forEach(btn => {
+      btn.addEventListener('click', () => {
+        trackEvent('cta_click', { button_text: btn.textContent?.trim() || '' });
+      });
+    });
+
+    // Phone clicks
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+      link.addEventListener('click', () => {
+        trackEvent('phone_click', { phone_number: (link as HTMLAnchorElement).href.replace('tel:', '') });
+      });
+    });
+
+    // Email clicks
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+      link.addEventListener('click', () => {
+        trackEvent('email_click', { email: (link as HTMLAnchorElement).href.replace('mailto:', '') });
+      });
+    });
+
+    // Scroll depth
+    let maxScroll = 0;
+    window.addEventListener('scroll', () => {
+      const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+      if (scrollPercent > maxScroll && scrollPercent % 25 === 0) {
+        maxScroll = scrollPercent;
+        trackEvent('scroll_depth', { percent: scrollPercent });
+      }
+    });
+  }
+
+  document.addEventListener('astro:page-load', initAnalytics);
+  document.addEventListener('DOMContentLoaded', initAnalytics);
+</script>

@@ -1,0 +1,181 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import CtaSection from '../components/CtaSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Energia Solar Industrial - Cordeiro Energia | Grandes Potências"
+  description="Sistema de energia solar para indústrias com alto consumo. Grandes potências até 5MW. Consultoria energética completa."
+  ogImage="/og-image.svg"
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section style="position: relative; min-height: 70vh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 6rem 1.5rem 4rem;">
+      <div style="position: absolute; inset: 0; background-image: url('/cat-empresa.jpg'); background-size: cover; background-position: center; z-index: 0;"></div>
+      <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,10,10,0.92) 0%, rgba(254,92,23,0.7) 100%); z-index: 1;"></div>
+      <div style="position: relative; z-index: 2; max-width: 48rem; margin: 0 auto; text-align: center;">
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1.25rem; border-radius: 9999px; background: rgba(254,92,23,0.15); border: 1px solid rgba(254,92,23,0.3); margin-bottom: 1.5rem;">
+          <span style="font-size: 1.25rem;">🏭</span>
+          <span style="font-size: 0.875rem; color: #FE5C17; font-weight: 600;">Solução Industrial</span>
+        </div>
+        <h1 style="font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 800; color: #fff; line-height: 1.15; margin-bottom: 1.5rem;">
+          Energia Solar <br>
+          <span style="color: #FE5C17;">Industrial</span>
+        </h1>
+        <p style="font-size: 1.125rem; color: rgba(255,255,255,0.8); margin-bottom: 2.5rem; max-width: 36rem; margin-left: auto; margin-right: auto;">
+          Grandes potências para indústrias com alto consumo energético. Sistemas de até 5MW com monitoramento avançado e manutenção preventiva.
+        </p>
+        <a
+          href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20energia%20solar%20industrial"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-block; padding: 1rem 2.5rem; background: linear-gradient(135deg, #FE5C17 0%, #FF8F00 100%); color: #fff; font-size: 1.125rem; font-weight: 700; border-radius: 9999px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 24px rgba(254,92,23,0.4);"
+        >
+          Solicitar Proposta Industrial
+        </a>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section style="background: #fff; border-bottom: 1px solid #e5e7eb;">
+      <div class="stats-bar" style="max-width: 72rem; margin: 0 auto; text-align: center; padding: 2.5rem 1rem;">
+        <div style="padding: 1rem;">
+          <div style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #FE5C17;">Até 5MW</div>
+          <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">Potência máxima</div>
+        </div>
+        <div style="padding: 1rem;">
+          <div style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #FE5C17;">25 anos</div>
+          <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">Garantia dos painéis</div>
+        </div>
+        <div style="padding: 1rem;">
+          <div style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #FE5C17;">4-6 anos</div>
+          <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">Payback médio</div>
+        </div>
+        <div style="padding: 1rem;">
+          <div style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; color: #FE5C17;">Inclusa</div>
+          <div style="font-size: 0.875rem; color: #6b7280; margin-top: 0.25rem;">Manutenção completa</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section style="padding: 5rem 1.5rem; background: #f9fafb;">
+      <div style="max-width: 72rem; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 3.5rem;" class="scroll-reveal">
+          <h2 style="font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; color: #111; margin-bottom: 0.75rem;">
+            Soluções para indústrias
+          </h2>
+          <p style="font-size: 1.05rem; color: #6b7280; max-width: 36rem; margin: 0 auto;">
+            Tecnologia e escala para transformar o custo energético da sua indústria em vantagem competitiva.
+          </p>
+        </div>
+
+        <div class="scroll-reveal benefits-grid" style="gap: 1.5rem;">
+          <!-- Card 1 -->
+          <div class="card benefit-card">
+            <div class="benefit-icon">
+              <span style="font-size: 1.75rem;">⚡</span>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Até 5MW de potência</h3>
+            <p style="font-size: 0.925rem; color: #6b7280; line-height: 1.7;">Sistemas de grande porte projetados para suprir a demanda energética industrial com eficiência máxima.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="card benefit-card">
+            <div class="benefit-icon">
+              <span style="font-size: 1.75rem;">📊</span>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Monitoramento avançado</h3>
+            <p style="font-size: 0.925rem; color: #6b7280; line-height: 1.7;">Plataforma completa com relatórios de desempenho em tempo real e alertas inteligentes.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="card benefit-card">
+            <div class="benefit-icon">
+              <span style="font-size: 1.75rem;">🔧</span>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Manutenção preventiva</h3>
+            <p style="font-size: 0.925rem; color: #6b7280; line-height: 1.7;">Contratos de manutenção com SLA garantido para máxima disponibilidade do sistema.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="card benefit-card">
+            <div class="benefit-icon">
+              <span style="font-size: 1.75rem;">💰</span>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Economia de milhões</h3>
+            <p style="font-size: 0.925rem; color: #6b7280; line-height: 1.7;">Indústrias podem economizar R$ 50.000 ou mais por mês na conta de energia.</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="card benefit-card">
+            <div class="benefit-icon">
+              <span style="font-size: 1.75rem;">📈</span>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Venda de energia excedente</h3>
+            <p style="font-size: 0.925rem; color: #6b7280; line-height: 1.7;">Gere receita adicional vendendo energia excedente em leilões do mercado livre.</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="card benefit-card">
+            <div class="benefit-icon">
+              <span style="font-size: 1.75rem;">🤝</span>
+            </div>
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: #111; margin-bottom: 0.5rem;">Consultoria energética</h3>
+            <p style="font-size: 0.925rem; color: #6b7280; line-height: 1.7;">Análise completa do consumo e otimização do sistema para máximo retorno sobre investimento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CtaSection />
+  </main>
+
+  <FloatingWhatsApp />
+  <Footer />
+</Layout>
+
+<style>
+  @media (min-width: 640px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+  @media (min-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(254, 92, 23, 0.12);
+    border-color: rgba(254, 92, 23, 0.2);
+  }
+
+  .benefit-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.875rem;
+    background: linear-gradient(135deg, rgba(254,92,23,0.12) 0%, rgba(254,92,23,0.06) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    transition: background 0.25s ease, transform 0.25s ease;
+  }
+  .benefit-card:hover .benefit-icon {
+    background: linear-gradient(135deg, #FE5C17 0%, #FF8F00 100%);
+    transform: scale(1.08);
+  }
+  .benefit-card:hover .benefit-icon span {
+    filter: brightness(0) invert(1);
+  }
+</style>

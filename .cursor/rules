@@ -1,0 +1,40 @@
+# Cordeiro Energia
+
+## Project Overview
+Modern, SEO-optimized website for a solar energy company in Brazil. Focuses on lead generation through WhatsApp and contact forms.
+
+## Tech Stack
+- **Framework:** Astro (static site generator)
+- **Styling:** Tailwind CSS (utility-first CSS framework)
+- **Language:** TypeScript
+- **Deployment:** Cloudflare Pages
+
+## Development Commands
+```bash
+npm run dev        # Start dev server
+npm run build      # Build for production
+npm run preview    # Preview production build
+```
+
+## Project Structure
+```
+/src
+  /components      # Reusable UI components
+  /layouts         # Page layouts
+  /pages           # Route pages
+  /content/blog    # Markdown blog posts
+/public            # Static assets
+```
+
+## Design System
+- Dark background: `#0a0a0a`
+- Solar accent: `#FFC107` (amber/solar yellow)
+- Green accent: `#00E676` (eco/sustainability)
+- Font: Inter (self-hosted)
+- Mobile breakpoint: 768px
+
+## Important Notes
+- Always test on mobile - 768px breakpoint is critical
+- Maintain Portuguese first - English pages are secondary
+- WhatsApp is the primary CTA
+- Cookie consent required for GA (LGPD)

@@ -1,0 +1,236 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import CtaSection from '../components/CtaSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Energia Solar Comercial - Cordeiro Energia | Para Empresas e Comércios"
+  description="Soluções de energia solar para empresas e comércios. Reduza custos operacionais com energia limpa. ROI em 3-5 anos. Orçamento gratuito."
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section style="position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden;">
+      <img src="/cat-empresa.jpg" alt="Energia solar comercial" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" />
+      <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.85) 0%,rgba(0,0,0,0.6) 40%,rgba(254,92,23,0.4) 100%);"></div>
+      <div style="position:relative;z-index:1;width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(254,92,23,0.15);border:1px solid rgba(254,92,23,0.3);border-radius:9999px;padding:0.5rem 1.25rem;color:#FE5C17;font-size:0.8rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1.5rem;">
+          <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          Solução Comercial
+        </div>
+        <h1 style="font-size:3rem;font-weight:800;color:#fff;line-height:1.1;margin-bottom:1rem;">Energia Solar<br/><span style="color:#FE5C17;">para Empresas</span></h1>
+        <p style="font-size:1.15rem;color:rgba(255,255,255,0.85);max-width:560px;line-height:1.7;margin-bottom:2.5rem;">Reduza custos operacionais e aumente a competitividade da sua empresa com energia solar limpa e renovável.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+          <a href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20comercial" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;background:#25D366;color:#fff;font-weight:700;font-size:0.95rem;padding:1rem 2rem;border-radius:12px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;">
+            <svg style="width:1.25rem;height:1.25rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            SOLICITAR PROPOSTA
+          </a>
+          <a href="#beneficios" style="display:inline-flex;align-items:center;gap:0.5rem;background:transparent;border:2px solid rgba(255,255,255,0.4);color:#fff;font-weight:700;font-size:0.95rem;padding:1rem 2rem;border-radius:12px;text-decoration:none;transition:background 0.2s,border-color 0.2s;">
+            BENEFÍCIOS
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section style="padding:3.5rem 0;background:#f9fafb;border-bottom:1px solid #e5e7eb;">
+      <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <div class="stats-bar" style="gap:2rem;text-align:center;">
+          <div>
+            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">R$ 50K+</div>
+            <div style="color:#6b7280;font-size:0.85rem;margin-top:0.5rem;">Economia mensal em média</div>
+          </div>
+          <div>
+            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">3-5 anos</div>
+            <div style="color:#6b7280;font-size:0.85rem;margin-top:0.5rem;">Payback do investimento</div>
+          </div>
+          <div>
+            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">25 anos</div>
+            <div style="color:#6b7280;font-size:0.85rem;margin-top:0.5rem;">Garantia dos equipamentos</div>
+          </div>
+          <div>
+            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">100%</div>
+            <div style="color:#6b7280;font-size:0.85rem;margin-top:0.5rem;">Incentivos fiscais</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="beneficios" style="padding:5rem 0;">
+      <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(254,92,23,0.1);color:#FE5C17;border-radius:9999px;padding:0.4rem 1rem;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem;">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            BENEFÍCIOS
+          </div>
+          <h2 style="font-size:2.25rem;font-weight:800;color:#111;">Por que investir em <span style="color:#FE5C17;">energia solar</span>?</h2>
+          <p style="color:#6b7280;font-size:1rem;margin-top:0.75rem;">Vantagens estratégicas para o seu negócio</p>
+        </div>
+        <div class="grid-3">
+          <div class="card benefit-card" style="padding:2rem;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FF8F00);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Redução de Custos Operacionais</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;">Economia de até 95% na conta de energia, melhorando diretamente o resultado financeiro da empresa.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FF8F00);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">ROI Atrativo</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;">Retorno sobre investimento em 3 a 5 anos, muito acima de investimentos financeiros tradicionais.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FF8F00);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Sustentabilidade Corporativa</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;">Reduza a pegada de carbono e fortaleça a imagem da marca com compromisso ambiental.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FF8F00);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Energia Previsível</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;">Proteja-se contra reajustes tarifários e tenha previsibilidade nos custos de energia.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FF8F00);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Valorização do Imóvel</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;">Imóveis com sistema solar instalado têm maior valor de mercado e atratividade.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FF8F00);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Incentivos Fiscais</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;">Aproveite a dedução do ICMS, isenção de importação e outros benefícios governamentais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Types of Business -->
+    <section style="padding:5rem 0;background:#f9fafb;">
+      <div style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(254,92,23,0.1);color:#FE5C17;border-radius:9999px;padding:0.4rem 1rem;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem;">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            SEGMENTOS
+          </div>
+          <h2 style="font-size:2.25rem;font-weight:800;color:#111;">Atendemos <span style="color:#FE5C17;">todos os portes</span></h2>
+          <p style="color:#6b7280;font-size:1rem;margin-top:0.75rem;">Soluções personalizadas para cada tipo de negócio</p>
+        </div>
+        <div class="grid-4">
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#FF8F00);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+            </div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Lojas e Comércios</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Padarias, supermercados, lojas de roupa, farmácias. Sistemas de 10kWp a 100kWp.</p>
+          </div>
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#FF8F00);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Escritórios e Clínicas</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Consultórios, clínicas, escritórios de advocacia. Sistemas de 5kWp a 50kWp.</p>
+          </div>
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#FF8F00);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Hotéis e Pousadas</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Redução significativa nos custos com ar-condicionado e aquecimento de água.</p>
+          </div>
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#FF8F00);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Condomínios</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Áreas comuns, elevadores, iluminação. Redução da taxa condominial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="padding:5rem 0;">
+      <div style="max-width:800px;margin:0 auto;padding:0 1.5rem;">
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(254,92,23,0.1);color:#FE5C17;border-radius:9999px;padding:0.4rem 1rem;font-size:0.75rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem;">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            DÚVIDAS
+          </div>
+          <h2 style="font-size:2.25rem;font-weight:800;color:#111;">Perguntas <span style="color:#FE5C17;">frequentes</span></h2>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div class="card faq-item" style="overflow:hidden;">
+            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">Posso deduzir o ICMS?</h4>
+              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">Sim! A energia gerada pode ser utilizada para compensar o ICMS da sua conta, resultando em economia adicional significativa para a sua empresa.</p>
+            </div>
+          </div>
+          <div class="card faq-item" style="overflow:hidden;">
+            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">E se minha empresa não consumir toda a energia?</h4>
+              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">O excedente é injetado na rede e compensado na sua conta de luz, gerando créditos energéticos que podem ser utilizados em até 60 meses.</p>
+            </div>
+          </div>
+          <div class="card faq-item" style="overflow:hidden;">
+            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">Qual o tempo de instalação?</h4>
+              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">Sistemas comerciais de médio porte são instalados em 5 a 15 dias, dependendo da complexidade do projeto e da necessidade de aprovações.</p>
+            </div>
+          </div>
+          <div class="card faq-item" style="overflow:hidden;">
+            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">É necessário autorização da prefeitura?</h4>
+              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">Sim, para sistemas maiores é necessária aprovação da prefeitura e da concessionária de energia. Cuidamos de todo o processo burocrático para você.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FloatingWhatsApp />
+  <CtaSection />
+  <Footer />
+</Layout>
+
+<style>
+  .benefit-card:hover .benefit-icon {
+    transform: rotate(10deg) scale(1.1);
+    background: #FE5C17;
+  }
+  .faq-item .faq-answer {
+    max-height: 0;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 500px !important;
+  }
+  .faq-item.open .faq-arrow {
+    transform: rotate(180deg);
+  }
+</style>

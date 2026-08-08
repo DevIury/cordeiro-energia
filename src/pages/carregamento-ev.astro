@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import CtaSection from '../components/CtaSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Carregamento Veicular com Energia Solar - Cordeiro Energia | Carregue seu Carro Elétrico"
+  description="Estação de carregamento veicular alimentada por energia solar. Carregue seu carro elétrico com energia limpa e gratuita."
+>
+  <Header />
+
+  <main>
+
+    <!-- Hero -->
+    <section style="min-height:70vh;display:flex;align-items:center;position:relative;overflow:hidden;">
+      <div style="position:absolute;inset:0;z-index:0;">
+        <img src="/cat-ev.jpg" alt="Carregamento veicular solar" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;" />
+        <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,0.85) 0%,rgba(10,10,10,0.6) 50%,rgba(254,92,23,0.35) 100%);"></div>
+      </div>
+      <div style="position:relative;z-index:1;max-width:800px;padding:8rem 1.5rem 4rem;width:100%;margin:0 auto;box-sizing:border-box;">
+        <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(254,92,23,0.15);border:1px solid rgba(254,92,23,0.3);color:#FE5C17;font-size:0.8rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;padding:0.5rem 1rem;border-radius:9999px;margin-bottom:1.5rem;">
+          <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          Mobilidade Elétrica
+        </div>
+        <h1 style="font-size:3rem;font-weight:800;color:#fff;margin:0 0 1rem;line-height:1.1;">
+          Carregue Seu Carro <span style="color:#FE5C17;">com o Sol</span>
+        </h1>
+        <p style="color:rgba(255,255,255,0.8);font-size:1.15rem;line-height:1.7;margin:0 0 2rem;max-width:580px;">
+          Estações de carregamento veicular alimentadas por energia solar. Reduza o custo de recarga do seu carro elétrico a quase zero.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;">
+          <a href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20estação%20de%20carregamento%20solar" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:0.5rem;background:#25D366;color:#fff;font-size:0.85rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:1rem 2rem;border-radius:0.75rem;text-decoration:none;transition:all 0.3s ease;box-shadow:0 4px 20px rgba(37,211,102,0.3);">
+            <svg style="width:1.25rem;height:1.25rem;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Solicitar Orçamento
+          </a>
+          <a href="#solucoes" style="display:inline-flex;align-items:center;gap:0.5rem;background:transparent;color:#fff;font-size:0.85rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:1rem 2rem;border-radius:0.75rem;border:1.5px solid rgba(255,255,255,0.3);text-decoration:none;transition:all 0.3s ease;">
+            Soluções
+            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section style="padding:6rem 0;background:#fff;">
+      <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(254,92,23,0.08);color:#FE5C17;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:9999px;margin-bottom:1rem;">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            VANTAGENS
+          </div>
+          <h2 style="font-size:2rem;font-weight:800;color:#111;margin:0;">Por que carregar com <span style="color:#FE5C17;">energia solar</span>?</h2>
+        </div>
+        <div style="display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+          <div class="card benefit-card" style="padding:2rem;border-radius:1rem;background:#fff;border:1px solid #f0f0f0;transition:all 0.3s ease;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;background:linear-gradient(135deg,rgba(254,92,23,0.12),rgba(254,92,23,0.04));border-radius:0.875rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:all 0.3s ease;">
+              <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="#FE5C17" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin:0 0 0.5rem;">Custo Próximo de Zero</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;margin:0;">Após o investimento inicial, a energia para carregar é praticamente gratuita. R$ 0,02/km contra R$ 0,35/km da gasolina.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;border-radius:1rem;background:#fff;border:1px solid #f0f0f0;transition:all 0.3s ease;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;background:linear-gradient(135deg,rgba(254,92,23,0.12),rgba(254,92,23,0.04));border-radius:0.875rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:all 0.3s ease;">
+              <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="#FE5C17" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin:0 0 0.5rem;">Energia 100% Limpa</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;margin:0;">Seu carro elétrico fica ainda mais sustentável quando carregado com energia solar fotovoltaica.</p>
+          </div>
+          <div class="card benefit-card" style="padding:2rem;border-radius:1rem;background:#fff;border:1px solid #f0f0f0;transition:all 0.3s ease;">
+            <div class="benefit-icon" style="width:3.5rem;height:3.5rem;background:linear-gradient(135deg,rgba(254,92,23,0.12),rgba(254,92,23,0.04));border-radius:0.875rem;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:all 0.3s ease;">
+              <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="#FE5C17" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin:0 0 0.5rem;">Autonomia Total</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.7;margin:0;">Não depende de estações públicas. Carregue em casa, no trabalho ou na sua empresa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solucoes" style="padding:6rem 0;background:#f9fafb;">
+      <div style="max-width:1100px;margin:0 auto;padding:0 1.5rem;">
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(254,92,23,0.08);color:#FE5C17;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:9999px;margin-bottom:1rem;">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            SOLUÇÕES
+          </div>
+          <h2 style="font-size:2rem;font-weight:800;color:#111;margin:0;">Nossas <span style="color:#FE5C17;">soluções</span></h2>
+        </div>
+        <div style="display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+          <div class="card" style="padding:2rem;border-radius:1rem;background:#fff;border:1px solid #f0f0f0;transition:all 0.3s ease;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#ff8a50);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin:0 0 0.5rem;">Residencial</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;margin:0 0 1.25rem;">Wallbox para casa. Carregue seu EV durante a noite com energia armazenada durante o dia.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span style="font-size:0.75rem;font-weight:600;padding:0.35rem 0.85rem;background:rgba(254,92,23,0.08);color:#FE5C17;border-radius:9999px;">7kW a 22kW</span>
+              <span style="font-size:0.75rem;font-weight:600;padding:0.35rem 0.85rem;background:rgba(254,92,23,0.08);color:#FE5C17;border-radius:9999px;">AC Level 2</span>
+            </div>
+          </div>
+          <div class="card" style="padding:2rem;border-radius:1rem;background:#fff;border:1px solid #f0f0f0;transition:all 0.3s ease;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#ff8a50);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin:0 0 0.5rem;">Comercial</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;margin:0 0 1.25rem;">Estações de recarga para frota de empresas, condomínios e estacionamentos.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span style="font-size:0.75rem;font-weight:600;padding:0.35rem 0.85rem;background:rgba(254,92,23,0.08);color:#FE5C17;border-radius:9999px;">22kW a 150kW</span>
+              <span style="font-size:0.75rem;font-weight:600;padding:0.35rem 0.85rem;background:rgba(254,92,23,0.08);color:#FE5C17;border-radius:9999px;">AC/DC</span>
+            </div>
+          </div>
+          <div class="card" style="padding:2rem;border-radius:1rem;background:#fff;border:1px solid #f0f0f0;transition:all 0.3s ease;">
+            <div style="width:3rem;height:3rem;background:linear-gradient(135deg,#FE5C17,#ff8a50);border-radius:0.75rem;display:flex;align-items:center;justify-content:center;color:#fff;margin-bottom:1.25rem;">
+              <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:#111;margin:0 0 0.5rem;">Fast Charging</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;margin:0 0 1.25rem;">Carregamento rápido para postos de serviço e áreas de grande movimento.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span style="font-size:0.75rem;font-weight:600;padding:0.35rem 0.85rem;background:rgba(254,92,23,0.08);color:#FE5C17;border-radius:9999px;">150kW+</span>
+              <span style="font-size:0.75rem;font-weight:600;padding:0.35rem 0.85rem;background:rgba(254,92,23,0.08);color:#FE5C17;border-radius:9999px;">DC Rápido</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="padding:6rem 0;background:#fff;">
+      <div style="max-width:800px;margin:0 auto;padding:0 1.5rem;">
+        <div style="text-align:center;margin-bottom:3.5rem;">
+          <div style="display:inline-flex;align-items:center;gap:0.4rem;background:rgba(254,92,23,0.08);color:#FE5C17;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:9999px;margin-bottom:1rem;">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            DÚVIDAS
+          </div>
+          <h2 style="font-size:2rem;font-weight:800;color:#111;margin:0;">Perguntas <span style="color:#FE5C17;">frequentes</span></h2>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+
+          <div class="card" style="border-radius:0.75rem;background:#fff;border:1px solid #f0f0f0;overflow:hidden;">
+            <button onclick="this.parentElement.querySelector('.faq-body').classList.toggle('open');this.querySelector('.faq-arrow').classList.toggle('open');" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <span style="font-size:0.95rem;font-weight:700;color:#111;">Quanto custa instalar uma estação de carregamento?</span>
+              <span class="faq-arrow" style="display:inline-flex;transition:transform 0.3s ease;flex-shrink:0;margin-left:1rem;">
+                <svg style="width:1rem;height:1rem;" fill="none" stroke="#6b7280" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="faq-body">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;margin:0;">Para residências, a partir de R$ 3.000 (wallbox + instalação). Para empresas, depende da potência e quantidade de pontos.</p>
+            </div>
+          </div>
+
+          <div class="card" style="border-radius:0.75rem;background:#fff;border:1px solid #f0f0f0;overflow:hidden;">
+            <button onclick="this.parentElement.querySelector('.faq-body').classList.toggle('open');this.querySelector('.faq-arrow').classList.toggle('open');" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <span style="font-size:0.95rem;font-weight:700;color:#111;">Preciso ter carro elétrico para instalar?</span>
+              <span class="faq-arrow" style="display:inline-flex;transition:transform 0.3s ease;flex-shrink:0;margin-left:1rem;">
+                <svg style="width:1rem;height:1rem;" fill="none" stroke="#6b7280" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="faq-body">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;margin:0;">Não! Muitos clientes instalam a infraestrutura antes do carro. Valoriza o imóvel e está pronto quando o EV chegar.</p>
+            </div>
+          </div>
+
+          <div class="card" style="border-radius:0.75rem;background:#fff;border:1px solid #f0f0f0;overflow:hidden;">
+            <button onclick="this.parentElement.querySelector('.faq-body').classList.toggle('open');this.querySelector('.faq-arrow').classList.toggle('open');" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
+              <span style="font-size:0.95rem;font-weight:700;color:#111;">Qual a diferença entre AC e DC?</span>
+              <span class="faq-arrow" style="display:inline-flex;transition:transform 0.3s ease;flex-shrink:0;margin-left:1rem;">
+                <svg style="width:1rem;height:1rem;" fill="none" stroke="#6b7280" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </button>
+            <div class="faq-body">
+              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;margin:0;">AC (Level 2) é mais lento (4-8h para carga completa), ideal para residências. DC (Fast) carrega em 20-60 minutos, ideal para postos públicos.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <FloatingWhatsApp />
+  <CtaSection />
+  <Footer />
+
+  <style>
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+      border-color: rgba(254,92,23,0.15);
+    }
+    .benefit-card:hover .benefit-icon {
+      transform: rotate(6deg) scale(1.1);
+      background: linear-gradient(135deg,rgba(254,92,23,0.2),rgba(254,92,23,0.08));
+    }
+    .faq-body {
+      max-height: 0 !important;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-body.open {
+      max-height: 500px !important;
+    }
+    .faq-arrow.open {
+      transform: rotate(180deg);
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    a[href*="wa.me"]:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .benefit-card, .card, a[href*="wa.me"] { transition: none; }
+      .benefit-card:hover, .card:hover { transform: none; }
+      .benefit-card:hover .benefit-icon { transform: none; }
+      .faq-body { transition: none; }
+    }
+  </style>
+
+</Layout>

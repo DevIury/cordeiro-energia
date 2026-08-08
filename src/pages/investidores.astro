@@ -1,0 +1,176 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import CtaSection from '../components/CtaSection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Investimentos em Energia Solar - Cordeiro Energia | Retorno Garantido"
+  description="Invista em usinas solares com retorno garantido. Gestão profissional de ativos de energia. Renda passiva com sustentabilidade."
+>
+  <Header />
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" style="min-height:70vh;">
+      <div class="hero-bg">
+        <img src="/cat-investidor.jpg" alt="Investimento em energia solar" fetchpriority="high" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <svg style="width:1rem;height:1rem;" fill="currentColor" viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+          Investimento
+        </div>
+        <h1 style="font-size:2.5rem;">Invista em <span>Energia Solar</span></h1>
+        <p>Renda passiva com um dos ativos mais rentáveis do mercado. Retorno acima da inflação com sustentabilidade.</p>
+        <div class="hero-btns">
+          <a href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20investir%20em%20energia%20solar" class="btn btn-orange btn-xl" target="_blank" rel="noopener noreferrer">QUERO INVESTIR
+            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#rentabilidade" class="btn btn-outline btn-xl">RENTABILIDADE</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Números -->
+    <section style="padding:4rem 0;background:#f9fafb;">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center;">
+          <div>
+            <div style="font-size:2.5rem;font-weight:700;color:#FE5C17;">12-18%</div>
+            <div style="color:#6b7280;font-size:0.9rem;">a.a. de retorno</div>
+          </div>
+          <div>
+            <div style="font-size:2.5rem;font-weight:700;color:#FE5C17;">25 anos</div>
+            <div style="color:#6b7280;font-size:0.9rem;">de contrato</div>
+          </div>
+          <div>
+            <div style="font-size:2.5rem;font-weight:700;color:#FE5C17;">R$ 0</div>
+            <div style="color:#6b7280;font-size:0.9rem;">investimento mínimo</div>
+          </div>
+          <div>
+            <div style="font-size:2.5rem;font-weight:700;color:#FE5C17;">100%</div>
+            <div style="color:#6b7280;font-size:0.9rem;">gestão profissional</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modalidades de Investimento -->
+    <section id="rentabilidade" style="padding:5rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            INVESTIMENTO
+          </div>
+          <h2>Modalidades de <span>investimento</span></h2>
+        </div>
+        <div style="display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));">
+          <div class="card" style="padding:2rem;border:2px solid rgba(254,92,23,0.3);">
+            <div class="tag" style="margin-bottom:1rem;">COTAS</div>
+            <h3 style="font-size:1.2rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Compra de Cotas em Usina</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.6;margin-bottom:1.5rem;">Adquira cotas em usinas solares existentes e receba mensalmente os créditos de energia proporcional.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Retorno mensal via créditos de energia
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Contrato de 25 anos
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Sem necessidade de espaço próprio
+              </li>
+            </ul>
+            <a href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20comprar%20cotas%20em%20usina%20solar" class="btn btn-orange" style="width:100%;justify-content:center;" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
+          </div>
+          <div class="card" style="padding:2rem;border:2px solid rgba(254,92,23,0.3);">
+            <div class="tag" style="margin-bottom:1rem;">CONSORCIO</div>
+            <h3 style="font-size:1.2rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Consórcio Solar</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.6;margin-bottom:1.5rem;">Construa sua própria usina solar via consórcio. Parcelas fixas sem juros e contemplação por sorteio ou lance.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Parcelas fixas sem juros
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Contemplação por sorteio ou lance
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Usina gerando renda desde o primeiro mês
+              </li>
+            </ul>
+            <a href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20cons%C3%B3rcio%20solar" class="btn btn-orange" style="width:100%;justify-content:center;" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
+          </div>
+          <div class="card" style="padding:2rem;border:2px solid rgba(254,92,23,0.3);">
+            <div class="tag" style="margin-bottom:1rem;">PROPRIEDADE</div>
+            <h3 style="font-size:1.2rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Usina Própria</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.6;margin-bottom:1.5rem;">Construa sua usina em um terreno próprio ou arrendado. Maximize o retorno com gestão profissional.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:0.5rem;margin-bottom:1.5rem;">
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Retorno de 12-18% ao ano
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Venda no mercado livre ou leilões
+              </li>
+              <li style="display:flex;align-items:center;gap:0.5rem;color:#374151;font-size:0.85rem;">
+                <svg style="width:1rem;height:1rem;color:#FE5C17;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                Gestão completa incluída
+              </li>
+            </ul>
+            <a href="https://wa.me/5531999999999?text=Ol%C3%A1%2C%20tenho%20terreno%20e%20quero%20construir%20usina%20solar" class="btn btn-orange" style="width:100%;justify-content:center;" target="_blank" rel="noopener noreferrer">SAIBA MAIS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como Investir -->
+    <section style="padding:5rem 0;background:#f9fafb;">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            PROCESSO
+          </div>
+          <h2>Como <span>investir</span></h2>
+        </div>
+        <div style="display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));">
+          <div class="card" style="padding:1.5rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:rgba(254,92,23,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#FE5C17;font-weight:700;margin:0 auto 1rem;">01</div>
+            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Consulta Inicial</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Analisamos seu perfil e apresentamos as melhores oportunidades de investimento.</p>
+          </div>
+          <div class="card" style="padding:1.5rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:rgba(254,92,23,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#FE5C17;font-weight:700;margin:0 auto 1rem;">02</div>
+            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Viabilidade</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Estudo técnico e financeiro completo com projeção de retorno.</p>
+          </div>
+          <div class="card" style="padding:1.5rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:rgba(254,92,23,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#FE5C17;font-weight:700;margin:0 auto 1rem;">03</div>
+            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Contrato</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Formalização com todas as garantias e transparência.</p>
+          </div>
+          <div class="card" style="padding:1.5rem;text-align:center;">
+            <div style="width:3rem;height:3rem;background:rgba(254,92,23,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#FE5C17;font-weight:700;margin:0 auto 1rem;">04</div>
+            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Retorno</h3>
+            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Receba mensalmente os créditos de energia ou rendimentos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <FloatingWhatsApp />
+  <CtaSection />
+  <Footer />
+</Layout>
