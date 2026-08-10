@@ -80,6 +80,8 @@ Para consumidores que adotam o modelo de *compensação de créditos* (regulamen
 
 Um sistema dimensionado para compensar **100%** do consumo reduz a dependência da rede elétrica a níveis mínimos, praticamente eliminando o impacto das bandêrias tarifárias.
 
+> Para entender como calcular a economia na sua conta de luz, leia nosso artigo sobre [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar).
+
 ## Cálculo da Economia em Cada Cenário de Bandeira
 
 Para um residencial que consome **400 kWh** por mês, em uma concessionária com tarifa média de **R$ 0,75/kWh**, os cenários de economia mensal variam significativamente:
@@ -132,4 +134,12 @@ Para maximizar a economia com energia solar em diferentes cenários de bandêria
 
 A orientação de um profissional qualificado é essencial para realizar esses cálculos e garantir que o sistema seja dimensionado para maximizar a economia ao longo de toda a sua vida útil, que pode ultrapassar **25 anos**.
 
+> Para um guia mais detalhado sobre como funciona um sistema fotovoltaico completo, confira nosso [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo).
+
 Entre em contato com a **Cordeiro Energia** para uma avaliação personalizada do seu consumo e descubra quanto você pode economizar independentemente da bandêria tarifária vigente.
+
+---
+
+**Leia também:**
+- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar)
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)

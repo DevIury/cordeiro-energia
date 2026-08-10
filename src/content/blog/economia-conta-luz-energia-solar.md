@@ -7,11 +7,11 @@ tags: ["economia", "conta de luz", "simulação", "energia solar"]
 image: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=400&fit=crop
 ---
 
-# Quanto Você Pode Economizar com Energia Solar? Simulação Completa
+Antes de calcular quanto pode economizar com energia solar, é fundamental compreender a estrutura da sua conta de luz atual. Você já parou para analisar todos os componentes que formam o valor final da sua conta de energia? Neste guia, vamos mostrar exatamente como dimensionar sua economia e calcular o payback do investimento.
+
+Se você ainda não conhece bem o básico sobre o assunto, recommend a leitura do nosso [guia completo de energia solar](/blog/energia-solar-guia-completo) antes de prosseguir.
 
 ## Entendendo Sua Conta de Luz Antes de Investir em Energia Solar
-
-Antes de calcular quanto pode economizar com energia solar, é fundamental compreender a estrutura da sua conta de luz atual. Você já parou para analisar todos os componentes que formam o valor final da sua conta de energia?
 
 A conta de energia elétrica no Brasil é composta por vários componentes que influenciam diretamente o custo total do kWh consumido. Conhecer esses elementos permite uma análise mais precisa do potencial de economia com a implantação de um *sistema fotovoltaico*.
 
@@ -104,7 +104,7 @@ Consumidores que gastam **R$1.000** mensais na conta de luz geralmente residem e
 - **Economia mensal:** **R$700 a R$900**
 - **Payback:** **3 anos e 6 meses** a **4 anos**
 
-A economia acumulada em **25 anos** pode ultrapassar **R$400.000**, representando um dos retornos mais expressivos do investimento em energia solar. Para esse perfil, a opção de *financiamento* pode ser particularmente atrativa, pois permite iniciar a economia imediatamente enquanto paga o investimento em parcelas.
+A economia acumulada em **25 anos** pode ultrapassar **R$400.000**, representando um dos retornos mais expressivos do investimento em energia solar. Para esse perfil, a opção de *financiamento* pode ser particularmente atrativa, pois permite iniciar a economia imediatamente enquanto paga o investimento em parcelas. Saiba mais sobre as opções de [financiamento de energia solar](/blog/financiamento-energia-solar) disponíveis no mercado.
 
 ### Perfil Consumo Muito Alto: R$2.000/mês
 
@@ -199,3 +199,12 @@ Independentemente do perfil de consumo, a energia solar oferece benefícios fina
 - **Valorização do imóvel**
 
 Para iniciar sua análise personalizada, é fundamental reunir suas **últimas 12 contas de luz** e entrar em contato com uma empresa especializada que poderá dimensionar o sistema ideal para o seu perfil de consumo e apresentar uma proposta detalhada com estimativa de economia e prazo de retorno do investimento.
+
+Quer entender as diferenças entre sistemas para residências e empresas? Leia nosso comparativo sobre [energia solar residencial vs comercial](/blog/energia-solar-residencial-vs-comercial).
+
+---
+
+**Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
+- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)
+- [Financiamento de Energia Solar](/blog/financiamento-energia-solar)

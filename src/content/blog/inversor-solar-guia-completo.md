@@ -29,6 +29,8 @@ Além da conversão *DC-AC*, o inversor moderno desempenha várias outras funç�
 
 A *eficiência de conversão* do inversor é um parâmetro crucial. Os modelos mais modernos já atingem eficiências superiores a **97%**, o que significa que apenas **3%** da energia captada pelos painéis é perdida nesse processo. Essa eficiência é especificada como *eficiência máxima* e *eficiência ponderada europeia*, sendo esta última uma representação mais realista do desempenho cotidiano.
 
+> Para entender mais sobre como o inversor se encaixa no sistema completo, leia nosso [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo).
+
 ## Tipos de Inversores Solares
 
 Existem três principais tecnologias de inversão disponíveis no mercado brasileiro, cada uma com características técnicas distintas que impactam diretamente o desempenho, a manutenção e o custo do sistema fotovoltaico.
@@ -40,9 +42,9 @@ O *inversor string*, também conhecido como inversor de sequência ou inversor c
 A principal característica do inversor string é que ele possui múltiplos **entradas MPPT**, permitindo que diferentes strings operem de forma independente. Por exemplo, um inversor com dois MPPTs pode receber duas strings com orientações diferentes (leste e oeste) e otimizar cada uma separadamente.
 
 **Vantagens do inversor string:**
-- **Menor custo por watt instalado**
-- **Instalação mais simples**
-- **Manutenção facilitada** (equipamento acessível no chão)
+- **Menor custo por watt instalado** — mais acessível para a maioria dos projetos residenciais.
+- **Instalação mais simples** — menos componentes para instalar e configurar.
+- **Manutenção facilitada** — equipamento acessível no chão, sem necessidade de subir no telhado.
 
 **Desvantagem:** Se um módulo da string apresentar sombreamento, sujeira ou falha, todo o desempenho da cadeia é comprometido.
 
@@ -66,6 +68,8 @@ As empresas **SolarEdge** e **Huawei** são as principais referências nessa tec
 > "O otimizador de potência oferece o melhor dos dois mundos: otimização individual dos módulos com o custo acessível de um inversor centralizado." — Cordeiro Energia
 
 A grande vantagem é o **monitoramento módulo a módulo**, semelhante ao micro-inversor, mas com um custo total do sistema mais acessível. Também permite instalações em telhados com múltiplas orientações e sombreamentos parciais.
+
+Para mais detalhes sobre instalações residenciais e comerciais, confira nosso artigo sobre [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial).
 
 ## Marcas Disponíveis no Brasil
 
@@ -116,6 +120,8 @@ Além da eficiência de conversão DC-AC, é necessário considerar as perdas ao
 
 No Brasil, as perdas totais do sistema variam tipicamente entre **15% e 25%**. Isso significa que um sistema de **10kWp** produzirá efetivamente entre **7,5kW e 8,5kW** em condições normais de operação.
 
+> Para manter seu sistema funcionando com eficiência máxima, descubra as melhores práticas de [Manutenção de Energia Solar](/blog/manutencao-energia-solar).
+
 ## Garantia e Vida Útil
 
 A garantia dos inversores solares é um fator determinante na escolha do equipamento. A maioria dos fabricantes oferece garantia padrão de **5 a 10 anos**, com possibilidade de extensão. A vida útil média de um inversor solar de qualidade é de **15 a 25 anos**, embora alguns modelos já tenham registros de operação ininterrupta por mais de **20 anos**.
@@ -144,7 +150,7 @@ O custo do inversor representa tipicamente entre **10% a 20%** do investimento t
 
 ## Quando Escolher Cada Tipo
 
-A decisão sobre qual tipo de inversor utilizar deve considerar as características específicas de cada projeto.
+A decisão sobre qual tipo de inversor utilizar deve considerar as características específicas de cada projeto:
 
 - **Telhados grandes, sem sombreamento e com orientação uniforme:** Inversor string é a opção mais econômica e eficiente.
 - **Telhados pequenos, com múltiplas orientações e sombreamento parcial:** Micro-inversores ou otimizadores de potência são mais indicados.
@@ -161,3 +167,10 @@ Escolher o inversor solar correto é uma decisão que impacta diretamente a econ
 > "Invista em um equipamento de qualidade, dimensionado corretamente por um profissional habilitado, e você terá um sistema que gerará economia por décadas." — Cordeiro Energia
 
 Entre em contato com a **Cordeiro Energia** para uma avaliação personalizada do seu projeto. Nossos engenheiros irão analisar seu telhado, seu perfil de consumo e indicar a solução ideal para maximizar sua economia com energia solar.
+
+---
+
+**Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
+- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)
+- [Manutenção de Energia Solar](/blog/manutencao-energia-solar)

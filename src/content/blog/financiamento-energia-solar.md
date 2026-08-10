@@ -13,6 +13,8 @@ O investimento em energia solar representa uma das decisões financeiras mais in
 
 Felizmente, o mercado financeiro brasileiro oferece diversas modalidades de financiamento específicas para energia solar, permitindo que o consumidor comece a economizar desde o primeiro mês de operação — com parcelas significativamente inferiores ao valor da conta de energia anterior.
 
+> Para entender como a energia solar pode economizar na sua conta de luz mesmo financiada, leia nosso artigo sobre [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar).
+
 > "Com o financiamento certo, você pode começar a economizar com energia solar desde o primeiro mês, mesmo sem dispor do capital total." — Cordeiro Energia
 
 ## Financiamento Bancário Tradicional
@@ -282,3 +284,9 @@ Além disso, algumas empresas de energia oferecem Programas de Energia Solar par
 O financiamento de energia solar no Brasil é uma realidade acessível e vantajosa para residências e empresas de todos os portes. A variedade de modalidades de crédito disponíveis permite que cada consumidor encontre a opção que melhor se adapta ao seu perfil financeiro e às suas necessidades específicas.
 
 Entre em contato com a **Cordeiro Energia** para uma assessoria personalizada sobre as opções de financiamento disponíveis. Nossa equipe irá ajudá-lo a encontrar a melhor linha de crédito para o seu projeto, garantindo que você comece a economizar com energia solar desde o primeiro mês de operação, sem comprometer sua saúde financeira.
+
+---
+
+**Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
+- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar)

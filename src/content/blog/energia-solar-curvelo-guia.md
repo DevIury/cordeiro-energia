@@ -7,15 +7,15 @@ tags: ["energia solar", "curvelo", "minas gerais", "guia municipal"]
 image: https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=800&h=400&fit=crop
 ---
 
-# Energia Solar em Curvelo/MG: Guia Completo do Município
-
-## Por Que Curvelo é Uma das Melhores Cidades para Energia Solar em Minas Gerais
-
 Curvelo, município localizado na região central de Minas Gerais, tem se consolidado como um dos pontos mais promissores para a implantação de *sistemas de energia solar* no estado. Com população estimada em **80 mil habitantes** e economia diversificada entre agropecuária, mineração e comércio, a cidade oferece condições privilegiadas para quem deseja investir em *geração de energia fotovoltaica*.
 
 > "Minas Gerais lidera o ranking nacional de capacidade instalada de energia solar distribuída." — Dados Portal Solar
 
+## Por Que Curvelo é Uma das Melhores Cidades para Energia Solar em Minas Gerais
+
 Minas Gerais lidera o ranking nacional de capacidade instalada de energia solar distribuída, e Curvelo não poderia ficar fora dessa trajetória de crescimento. A combinação de *clima favorável*, custo competitivo da energia convencional e aumento da consciência ambiental tem impulsionado a adoção de painéis solares em residências, propriedades rurais e estabelecimentos comerciais na região.
+
+Se você quer entender melhor como a energia solar funciona do zero, confira nosso [guia completo sobre energia solar](/blog/energia-solar-guia-completo).
 
 ## Condições Climáticas e Potencial Solar de Curvelo
 
@@ -59,7 +59,7 @@ Esse cálculo leva em consideração o reajuste anual médio da tarifa elétrica
 
 > "Quando o consumo mensal supera 500 kWh, a tarifa por kWh aumenta significativamente, tornando a energia solar ainda mais competitiva economicamente." — Cordeiro Energia
 
-Quando o consumo mensal supera **500 kWh**, a tarifa por kWh aumenta significativamente, tornando a energia solar ainda mais competitiva economicamente.
+Quando o consumo mensal supera **500 kWh**, a tarifa por kWh aumenta significativamente, tornando a energia solar ainda mais competitiva economicamente. Para entender como calcular sua economia potencial, veja nossa [simulação completa de economia com energia solar](/blog/economia-conta-luz-energia-solar).
 
 ## Regulamentação e Normativa para Geração Distribuída em Curvelo
 
@@ -145,3 +145,9 @@ Após a instalação, o sistema passa por uma vistoria da concessionária e come
 > "Curvelo está pronta para se tornar referência em energia solar em Minas Gerais." — Cordeiro Energia
 
 Com condições climáticas favoráveis, regulamentação amigável e uma comunidade cada vez mais consciente, Curvelo está pronta para se tornar referência em energia solar em Minas Gerais. Entre em contato conosco para solicitar seu orçamento personalizado e descubra quanto você pode economizar com a energia do sol.
+
+---
+
+**Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
+- [Quanto Você Pode Economizar com Energia Solar?](/blog/economia-conta-luz-energia-solar)

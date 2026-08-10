@@ -27,6 +27,8 @@ Por outro lado, a chuva traz um benefício significativo: a **limpeza natural do
 
 A combinação desses fatores resulta em um efeito líquido que, na maioria dos casos, é positivo para a geração anual. A redução temporária durante dias chuvosos é mais do que compensada pela melhoria na eficiência dos módulos limpos nos dias subsequentes — especialmente em regiões com períodos secos prolongados, onde a acumulação de sujeira pode reduzir a geração em até **15%** se não houver limpeza manual.
 
+> Para manter a eficiência máxima do seu sistema, descubra as melhores práticas de [Manutenção de Energia Solar](/blog/manutencao-energia-solar).
+
 ## Resistência dos Painéis a Granizo: Classificações e Testes
 
 Os módulos fotovoltaicos modernos são projetados para resistir a impactos significativos, incluindo granizo. A resistência a impactos é especificada por meio da *classificação IK*, que mede o nível de proteção contra impactos mecânicos.
@@ -166,4 +168,12 @@ As condições climáticas brasileiras, incluindo chuva, granizo e vento, não r
 
 A manutenção preventiva, o monitoramento contínuo e, quando necessário, a contratação de seguro são práticas complementares que maximizam a proteção do investimento.
 
+> Para entender todos os componentes que compõem um sistema fotovoltaico e como eles funcionam em conjunto, consulte nosso [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo).
+
 Entre em contato com a **Cordeiro Energia** para uma avaliação técnica do seu projeto. Nossos engenheiros irão analisar as condições climáticas da sua região e projetar um sistema fotovoltaico robusto, seguro e otimizado para maximizar sua economia com energia solar.
+
+---
+
+**Leia também:**
+- [Manutenção de Energia Solar](/blog/manutencao-energia-solar)
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
