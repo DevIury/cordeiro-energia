@@ -13,7 +13,7 @@ Se você ainda não manja muito do assunto, recomendo dar uma lida no nosso guia
 
 ## Como funciona a sua conta de luz
 
-Antes de qualquer coisa, preciso que você entenda como sua conta de luz é composta. Conhecer cada item te ajuda a dimensionar direitinho o quanto a energia solar pode te ajudar.
+Antes de qualquer coisa, você precisa entender como sua conta de luz é composta. Conhecer cada item te ajuda a dimensionar direitinho o quanto a energia solar pode te ajudar.
 
 A primeira coisa que você precisa checar é a bandeira tarifária vigente. A ANEEL usa um sistema de bandeiras pra ajustar o custo da energia conforme os custos de geração. Bandeira verde significa custos menores, com acréscimo de zero por kWh. Bandeira amarela representa custos intermediários. Bandeira vermelha é o período mais caro, com acréscimo de até R$0,0975 por kWh. Cada bandeira muda o valor do kWh consumido, e isso impacta direto no valor final da sua conta.
 
@@ -41,13 +41,30 @@ Mas esse cálculo não considera o reajuste anual da tarifa, que historicamente 
 
 Agora vou te mostrar simulações pra diferentes perfis de consumo. Cada um tem suas particularidades, mas todos apresentam retornos expressivos.
 
+### Consumo baixo
+
 No perfil de consumo baixo, pra quem gasta R$200 por mês, o consumo fica entre 200 a 250 kWh. O sistema necessário é de 2 kWp, com investimento entre R$8.000 e R$12.000. O payback estimado varia entre 3 anos e 6 meses a 4 anos. A economia acumulada em 25 anos pode passar de R$80.000. Geralmente são apartamentos ou casas menores, com consumo moderado.
+
+### Consumo médio
 
 No perfil de consumo médio, que é o mais comum no Brasil, casas com ar-condicionado, chuveiro elétrico e eletrodomésticos de médio porte consomem entre 500 a 650 kWh por mês. O sistema necessário é de 4 a 5 kWp, com investimento entre R$16.000 e R$25.000. A economia mensal fica entre R$350 e R$500, com payback de 3 anos e 8 meses a 4 anos e 6 meses. A economia acumulada em 25 anos pode ultrapassar R$200.000, sendo o perfil com maior potencial de retorno absoluto.
 
+### Consumo alto
+
 No perfil de consumo alto, pra casas grandes com múltiplos ar-condicionados, piscinas e automação residencial, o consumo fica entre 1.000 e 1.300 kWh. O sistema necessário é de 8 a 10 kWp, com investimento entre R$32.000 e R$50.000. A economia mensal varia entre R$700 e R$900, com payback de 3 anos e 6 meses a 4 anos. A economia em 25 anos pode passar de R$400.000. Pra esse perfil, o financiamento pode ser uma boa opção. Você começa a economizar já no primeiro mês enquanto paga o investimento em parcelas.
 
+### Consumo muito alto
+
 No perfil de consumo muito alto, pra residências de alto padrão, mansões e propriedades rurais, o consumo fica entre 2.000 e 2.600 kWh. O sistema necessário é de 16 a 20 kWp, com investimento entre R$64.000 e R$100.000. A economia mensal fica acima de R$1.500, com payback de 3 anos e 6 meses a 4 anos. A economia acumulada em 25 anos pode ser superior a R$800.000. Pra esse perfil, um estudo de viabilidade técnica detalhado é essencial, pois cada caso demanda uma análise personalizada. Dá uma olhada nas opções de financiamento de energia solar pra entender como funciona na prática.
+
+## Tabela comparativa por perfil de consumo
+
+| Perfil | Consumo mensal | Sistema | Investimento | Payback | Economia em 25 anos |
+|--------|----------------|---------|--------------|---------|---------------------|
+| Baixo | 200 a 250 kWh | 2 kWp | R$8.000 a R$12.000 | 3 anos e 6 meses a 4 anos | Acima de R$80.000 |
+| Médio | 500 a 650 kWh | 4 a 5 kWp | R$16.000 a R$25.000 | 3 anos e 8 meses a 4 anos e 6 meses | Acima de R$200.000 |
+| Alto | 1.000 a 1.300 kWh | 8 a 10 kWp | R$32.000 a R$50.000 | 3 anos e 6 meses a 4 anos | Acima de R$400.000 |
+| Muito alto | 2.000 a 2.600 kWh | 16 a 20 kWp | R$64.000 a R$100.000 | 3 anos e 6 meses a 4 anos | Acima de R$800.000 |
 
 ## Proteção contra a bandeira vermelha
 
@@ -79,8 +96,31 @@ A energia solar se mostra um investimento altamente competitivo. Com payback ent
 
 Quer entender as diferenças entre sistemas residenciais e comerciais? Confira nosso comparativo sobre energia solar residencial vs comercial. Pra começar sua análise, junte suas últimas 12 contas de luz e fale com uma empresa especializada. Ela vai dimensionar o sistema ideal pro seu perfil e apresentar uma proposta detalhada.
 
+## Perguntas frequentes
+
+### Quanto custa um sistema de energia solar?
+
+O investimento varia conforme o perfil de consumo. Para consumos de 200 a 250 kWh, o sistema de 2 kWp custa entre R$8.000 e R$12.000. Para consumos de 500 a 650 kWh, o sistema de 4 a 5 kWp custa entre R$16.000 e R$25.000. Para consumos de 1.000 a 1.300 kWh, o sistema de 8 a 10 kWp custa entre R$32.000 e R$50.000.
+
+### Em quanto tempo o investimento se paga?
+
+O payback médio fica entre 3 anos e 5 anos, dependendo do consumo e da região. Com o reajuste anual da tarifa, que historicamente fica entre 5% e 8% ao ano, o tempo de retorno tende a ser ainda menor. Em Minas Gerais, com tarifa média de R$0,65 por kWh, o payback pode chegar a 3 anos e 8 meses.
+
+### A energia funciona em dias nublados?
+
+Sim. Os painéis fotovoltaicos funcionam com luz difusa, não apenas com sol direto. Em dias nublados, a geração pode cair entre 10% e 30%, mas o sistema continua produzindo energia. Por isso, o dimensionamento considera a média anual de horas de sol, incluindo períodos de menor irradiância.
+
+### O que acontece com o excedente gerado?
+
+O excedente vai para a rede da concessionária e vira créditos de energia. Você pode utilizar esses créditos por até 60 meses, compensando o consumo em meses de menor geração solar, como no inverno. Os créditos são pessoais e intransferíveis.
+
+### É possível financiar o sistema de energia solar?
+
+Sim. Existem opções de financiamento com parcelas de 60 a 120 meses. A economia mensal gerada pelo sistema parcialmente ou totalmente cobre o valor das parcelas, permitindo que você comece a economizar já no primeiro mês de funcionamento.
+
 ---
 
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Entenda tudo sobre como funciona a energia solar, desde os painéis até a instalação
-- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial) — Compare as diferenças e vantagens entre sistemas para casas e empresas
-- [Financiamento de Energia Solar](/blog/financiamento-energia-solar) — Conheça as opções de financiamento e comece a economizar sem grandes investimentos iniciais
+**Leia também:**
+- Guia Completo de Energia Solar (/blog/energia-solar-guia-completo)
+- Energia Solar Residencial vs Comercial (/blog/energia-solar-residencial-vs-comercial)
+- Financiamento de Energia Solar (/blog/financiamento-energia-solar)
