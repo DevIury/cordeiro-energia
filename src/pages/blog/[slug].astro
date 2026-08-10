@@ -48,45 +48,43 @@ function getTagColor(tag: string): string {
   <Header />
 
   <main>
-    <!-- Dark hero header -->
-    <section style="padding:7rem 0 3rem;background:#0a0a0a;">
+    <!-- Article header -->
+    <section style="padding:6rem 0 3rem;background:#ffffff;">
       <div class="container" style="max-width:760px;margin:0 auto;">
         <!-- Breadcrumb -->
         <nav style="margin-bottom:2rem;">
           <a href="/" style="color:#9ca3af;text-decoration:none;font-size:0.8rem;">Home</a>
-          <span style="color:#6b7280;margin:0 0.5rem;font-size:0.8rem;">/</span>
+          <span style="color:#d1d5db;margin:0 0.5rem;font-size:0.8rem;">/</span>
           <a href="/blog" style="color:#9ca3af;text-decoration:none;font-size:0.8rem;">Blog</a>
-          <span style="color:#6b7280;margin:0 0.5rem;font-size:0.8rem;">/</span>
-          <span style="color:#d1d5db;font-size:0.8rem;">{post.data.title}</span>
+          <span style="color:#d1d5db;margin:0 0.5rem;font-size:0.8rem;">/</span>
+          <span style="color:#6b7280;font-size:0.8rem;">{post.data.title}</span>
         </nav>
 
-        <!-- Title block -->
-        <div style="text-align:center;margin-bottom:2.5rem;">
-          <h1 style="font-size:2.75rem;font-weight:900;color:#ffffff;line-height:1.12;margin-bottom:1rem;letter-spacing:-0.025em;">
-            {post.data.title}
-          </h1>
-          <p style="font-size:1.05rem;color:#9ca3af;line-height:1.7;max-width:600px;margin:0 auto;">
-            {post.data.description}
-          </p>
-        </div>
-
         <!-- Meta: date, reading time, author -->
-        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;padding-top:1.5rem;border-top:1px solid #1f2937;">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;">
           <time style="font-size:0.8rem;color:#9ca3af;" datetime={post.data.pubDate.toISOString()}>
             {post.data.pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
           </time>
-          <span style="color:#4b5563;">·</span>
+          <span style="color:#d1d5db;">·</span>
           <span style="font-size:0.8rem;color:#9ca3af;">{post.data.author}</span>
         </div>
 
         <!-- Tags -->
-        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem;justify-content:center;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
           {post.data.tags.map((tag) => (
-            <span style={`font-size:0.7rem;font-weight:600;padding:0.35rem 0.75rem;border-radius:9999px;background:${getTagColor(tag)}18;color:${getTagColor(tag)};border:1px solid ${getTagColor(tag)}30;`}>
+            <span style={`font-size:0.7rem;font-weight:600;padding:0.35rem 0.75rem;border-radius:9999px;background:${getTagColor(tag)}15;color:${getTagColor(tag)};border:1px solid ${getTagColor(tag)}25;`}>
               {tag}
             </span>
           ))}
         </div>
+
+        <h1 style="font-size:2.75rem;font-weight:900;color:#111;line-height:1.12;margin-bottom:1rem;letter-spacing:-0.025em;">
+          {post.data.title}
+        </h1>
+
+        <p style="font-size:1.1rem;color:#6b7280;line-height:1.7;">
+          {post.data.description}
+        </p>
       </div>
     </section>
 
@@ -170,54 +168,4 @@ function getTagColor(tag: string): string {
   .blog-content li { margin-bottom: 0.6rem; line-height: 1.7; }
   .blog-content a { color: #FE5C17; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
   .blog-content a:hover { color: #E04400; }
-  .blog-content blockquote {
-    margin: 1.5rem 0;
-    padding: 1.25rem 1.5rem;
-    background: #FFF5ED;
-    border-left: 4px solid #FE5C17;
-    border-radius: 0 0.75rem 0.75rem 0;
-    color: #374151;
-    font-style: italic;
-  }
-  .blog-content code {
-    background: #f3f4f6;
-    padding: 0.15rem 0.4rem;
-    border-radius: 0.25rem;
-    font-size: 0.875em;
-    color: #FE5C17;
-  }
-  .blog-content pre {
-    background: #111;
-    color: #e5e7eb;
-    padding: 1.25rem 1.5rem;
-    border-radius: 0.75rem;
-    overflow-x: auto;
-    margin: 1.5rem 0;
-  }
-  .blog-content pre code {
-    background: none;
-    color: inherit;
-    padding: 0;
-  }
-  .blog-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.75rem;
-    margin: 1.5rem 0;
-  }
-  .blog-content table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-  }
-  .blog-content th, .blog-content td {
-    padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
-    text-align: left;
-  }
-  .blog-content th {
-    background: #f9fafb;
-    font-weight: 700;
-    color: #111;
-  }
 </style>
