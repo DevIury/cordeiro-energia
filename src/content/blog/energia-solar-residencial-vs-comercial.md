@@ -13,7 +13,7 @@ No *setor residencial*, o foco é reduzir a conta de luz mensal com economia con
 
 Cada perfil de consumidor precisa de uma abordagem diferente no dimensionamento, tipo de equipamento e estratégia de financiamento.
 
-## Diferenças de Dimensionamento dos Sistemas
+## **Diferenças de Dimensionamento dos Sistemas**
 
 O dimensionamento de um sistema fotovoltaico depende do consumo mensal e da irradiância solar da região. Mas o jeito de analisar isso muda bastante entre residencial e comercial.
 
@@ -33,7 +33,7 @@ Um supermercado, por exemplo, consome muito mais no Natal e Ano Novo, enquanto u
 
 A energia solar pode cortar essa demanda de ponta, mas o dimensionamento precisa considerar isso. Pode ser que o sistema precisa ser maior do que o necessário só pra cobrir o consumo médio mensal.
 
-## Regulamentação: Norma 482 da ANEEL e Geração Distribuída
+## **Regulamentação: Norma 482 da ANEEL e Geração Distribuída**
 
 A regulamentação da energia solar no Brasil é definida pela **Resolução Normativa nº 482 da ANEEL**, que estabelece as regras pra conexão de sistemas de geração à rede. Essa norma contempla residencial e comercial, mas com exigências diferentes.
 
@@ -56,7 +56,7 @@ No comercial, quando a potência passa de **100 kW**, entra no enquadramento de 
 
 No residencial, os créditos gerados abatem só a conta do próprio consumidor, com validade de até **60 meses**. No comercial, além de abater a conta do estabelecimento, existem opções de compensação entre filiais pra empresas com múltiplas unidades.
 
-## Tipos de Contratos e Modelos de Negócio
+## **Tipos de Contratos e Modelos de Negócio**
 
 Os contratos de energia solar também são diferentes entre residencial e comercial.
 
@@ -79,7 +79,7 @@ Empresas grandes costumam preferir o *leasing operacional*, que permite usar o s
 
 A *geração compartilhada* também tem ganhado destaque. Uma empresa instala um sistema grande e compartilha os créditos com outros consumidores do mesmo contrato. É especialmente bom pra shopping centers e condomínios comerciais.
 
-## Análise de Viabilidade Financeira Para Cada Perfil
+## **Análise de Viabilidade Financeira Para Cada Perfil**
 
 A viabilidade financeira muda bastante entre residencial e comercial, tanto em valores absolutos quanto percentuais.
 
@@ -103,7 +103,7 @@ No comercial, fatores como demanda de ponta e horário de funcionamento influenc
 
 Em valores absolutos, o comercial retorna muito mais. Mas em percentual, o residencial pode ter retornos levemente superiores porque o custo de aquisição por kW instalado costuma ser menor em sistemas menores.
 
-## Tempo de Retorno do Investimento
+## **Tempo de Retorno do Investimento**
 
 O *payback* é um dos critérios mais importantes pra avaliar a viabilidade de um projeto de energia solar.
 
@@ -117,7 +117,7 @@ No comercial, o payback tende a ser menor — entre **3 e 5 anos** — pelo maio
 
 É bom lembrar que o cálculo do payback não considera só a economia direta na conta de luz. Também conta a valorização do imóvel, a redução de custos operacionais e a melhoria da imagem corporativa.
 
-## Tipos de Painéis e Inversores Para Cada Segmento
+## **Tipos de Painéis e Inversores Para Cada Segmento**
 
 A escolha dos equipamentos varia entre residencial e comercial em especificações técnicas e custo.
 
@@ -140,7 +140,7 @@ No residencial, os *inversores string* conectam uma única string de painéis e 
 
 No comercial, inversores string maiores são a escolha predominante. Pra sistemas de médio e grande porte, **inversores centrais** com mais de **100 kW** são frequentemente usados, com menor custo por watt instalado.
 
-## Desafios Específicos de Cada Segmento
+## **Desafios Específicos de Cada Segmento**
 
 Cada segmento tem seus desafios no planejamento e implantação.
 
@@ -160,7 +160,7 @@ No comercial, o maior desafio é a *demanda de ponta*. Empresas com pico alto de
 
 A manutenção também é mais trabalhosa. Limpeza dos painéis, inspeção dos inversores e manutenção preventiva demandam equipes especializadas e podem gerar custos significativos ao longo dos anos.
 
-## Estudo de Caso: Residencial vs Comercial
+## **Estudo de Caso: Residencial vs Comercial**
 
 Vamos comparar dois casos na mesma cidade de Minas Gerais: uma casa de **150m²** e uma loja de **200m²**.
 
@@ -192,7 +192,7 @@ Depois da instalação, a loja paga só o custo fixo e a parcela da demanda de p
 
 Ao longo dos **25 anos**, a economia acumulada é estimada em **R$540.000**.
 
-## Legislação e Incentivos Fiscais Para Cada Modalidade
+## **Legislação e Incentivos Fiscais Para Cada Modalidade**
 
 A legislação brasileira oferece incentivos diferentes pra residencial e comercial.
 
@@ -213,7 +213,7 @@ A **depreciação acelerada** permite que a empresa deduza o valor do investimen
 
 É bom ficar de olho porque a legislação tributária muda frequentemente. Uma *assessoria tributária especializada* pode ser muito valiosa pra quem quer otimizar a posição fiscal ao investir em energia solar.
 
-## Conclusão: Escolhendo a Modalidade Certa Pra Seu Perfil
+## **Conclusão: Escolhendo a Modalidade Certa Pra Seu Perfil**
 
 A escolha entre residencial e comercial depende do consumo, do orçamento, das condições do imóvel e dos objetivos financeiros. Em qualquer caso, a energia solar é um investimento inteligente com payback curto e economia significativa ao longo dos **25 anos** de vida útil.
 
@@ -235,7 +235,7 @@ Quer entender os erros mais cometidos ao comprar energia solar? Veja nosso artig
 
 ---
 
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
-- [Erros Comuns ao Investir em Energia Solar](/blog/erros-comuns-energia-solar)
-- [Guia Completo de Inversores Solares](/blog/inversor-solar-guia-completo)
+## **Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Entenda tudo sobre como funciona a energia solar, benefícios e como começar a economizar.
+- [Erros Comuns ao Investir em Energia Solar](/blog/erros-comuns-energia-solar) — Evite os erros mais cometidos na hora de escolher e instalar seu sistema fotovoltaico.
+- [Guia Completo de Inversores Solares](/blog/inversor-solar-guia-completo) — Saiba como escolher o inversor ideal para o seu sistema e maximizar a eficiência.

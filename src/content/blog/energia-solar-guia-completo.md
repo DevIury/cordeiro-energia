@@ -11,7 +11,7 @@ Vou te mostrar tudo o que você precisa saber sobre *energia solar fotovoltaica*
 
 Seja para residências, empresas ou propriedades rurais, investir em energia solar nunca fez tanto sentido quanto agora.
 
-## O Que É Energia Solar Fotovoltaica
+## **O Que É Energia Solar Fotovoltaica**
 
 A *energia solar fotovoltaica* é gerada a partir da conversão direta da luz solar em eletricidade. Os painéis solares são compostos por *células fotovoltaicas* que usam o *efeito fotovoltaico* — um fenômeno descoberto no século XIX que permite que materiais semicondutores como o **silício** gerem corrente elétrica quando expostos à luz.
 
@@ -19,7 +19,7 @@ No Brasil, o potencial solar é enorme. O país recebe entre **4 e 6 kWh/m²** d
 
 O Brasil já ultrapassou a marca de **50 GW** de potência instalada no segmento distribuído, consolidando-se como um dos maiores mercados do mundo.
 
-## Tipos de Sistemas Fotovoltaicos
+## **Tipos de Sistemas Fotovoltaicos**
 
 Existem três tipos principais de sistemas fotovoltaicos. Vou te explicar cada um para você decidir qual se encaixa melhor na sua necessidade.
 
@@ -46,7 +46,7 @@ O *sistema híbrido* combina as características dos sistemas on-grid e off-grid
 
 Esse modelo tem ganhado espaço no Brasil, especialmente após os casos de apagões em diversas regiões. A flexibilidade de operar conectado à rede e, ao mesmo tempo, possuir backup, oferece *segurança e tranquilidade* aos consumidores.
 
-## Componentes de um Sistema Fotovoltaico
+## **Componentes de um Sistema Fotovoltaico**
 
 ### Painéis Solares
 
@@ -74,7 +74,7 @@ A *estrutura de fixação* sustenta os painéis solares no telhado ou no chão. 
 
 Os *cabos fotovoltaicos* devem ser específicos para uso exterior, com resistência a UV e intempéries. Os *conectores MC4* são o padrão do mercado, proporcionando conexões seguras e à prova d'água. A qualidade desses componentes é essencial para evitar perdas de energia e riscos de curto-circuito.
 
-## Como É Feito o Dimensionamento
+## **Como É Feito o Dimensionamento**
 
 O dimensionamento de um sistema fotovoltaico leva em consideração diversos fatores:
 
@@ -88,7 +88,7 @@ Um profissional qualificado realizará todos esses cálculos e dimensionará o s
 
 Erros de dimensionamento podem comprometer toda a economia do sistema. Se quiser entender melhor, confira nosso post sobre [erros comuns na instalação de energia solar](/blog/erros-comuns-energia-solar).
 
-## Processo de Instalação Passo a Passo
+## **Processo de Instalação Passo a Passo**
 
 O processo de instalação segue etapas bem definidas:
 
@@ -104,7 +104,7 @@ O processo de instalação segue etapas bem definidas:
 
 6. **Monitoramento e operação:** após a ligação, o sistema começa a gerar energia, e o proprietário pode acompanhar a produção por meio de aplicativos.
 
-## Prazos
+## **Prazos**
 
 - **Estudo de viabilidade:** 1 a 3 dias úteis
 - **Elaboração do projeto técnico:** 3 a 5 dias úteis
@@ -114,7 +114,7 @@ O processo de instalação segue etapas bem definidas:
 
 O prazo total, do primeiro contato até a ligação do sistema, pode variar de **30 a 90 dias**, dependendo da concessionária e da complexidade do projeto.
 
-## Legislação Brasileira
+## **Legislação Brasileira**
 
 ### Norma ANEEL 482/2012 e Suas Atualizações
 
@@ -130,7 +130,7 @@ O *Marco Legal da Geração Distribuída*, sancionado em **2022**, trouxe segura
 
 Para instalação de sistemas fotovoltaicos residenciais de até **75 kW**, não é necessária licença da prefeitura. A concessionária local é responsável pela aprovação do projeto e pela ligação. Para sistemas maiores, pode ser necessária autorização da **ANEEL** e licenças ambientais.
 
-## Análise de Payback
+## **Análise de Payback**
 
 O *payback* é o tempo necessário para que o investimento se pague. No Brasil, o payback médio de um sistema residencial varia de **4 a 7 anos**, dependendo da região, do consumo e da tarifa da concessionária.
 
@@ -145,7 +145,7 @@ Quanto maior a tarifa da sua concessionária, menor será o payback do seu siste
 - **Região geográfica:** regiões com maior incidência solar geram mais energia
 - **Qualidade dos componentes:** componentes de qualidade superior garantem maior durabilidade e desempenho
 
-## Comparação de Marcas
+## **Comparação de Marcas**
 
 ### Painéis Solares
 
@@ -165,7 +165,7 @@ No mercado brasileiro, as principais marcas de painéis solares disponíveis inc
 - **Fronius:** inversores europeus de alta qualidade, com excelente eficiência e durabilidade
 - **Huawei:** inversores inteligentes com integração a sistemas de monitoramento avançados
 
-## Como Escolher a Instaladora Certa
+## **Como Escolher a Instaladora Certa**
 
 A escolha da empresa instaladora é tão importante quanto a escolha dos componentes. Aqui estão alguns critérios essenciais que eu recomendo verificar:
 
@@ -181,7 +181,7 @@ A escolha da empresa instaladora é tão importante quanto a escolha dos compone
 
 6. **Transparência:** a empresa deve fornecer orçamento detalhado, com especificações de todos os componentes, prazo de entrega e condições de pagamento.
 
-## Conclusão
+## **Conclusão**
 
 Investir em *energia solar fotovoltaica* em **2026** é uma decisão inteligente e lucrativa. Com tecnologia avançada, regulamentação favorável e queda dos custos de instalação, o retorno financeiro é rápido e a economia é duradoura.
 
@@ -189,7 +189,8 @@ Se você está considerando instalar um sistema de energia solar, entre em conta
 
 ---
 
-**Leia também:**
-- [7 Erros Comuns ao Instalar Energia Solar e Como Evitá-los](/blog/erros-comuns-energia-solar)
-- [Manutenção de Sistemas Solares: O Que Você Precisa Saber](/blog/manutencao-energia-solar)
-- [Financiamento de Energia Solar](/blog/financiamento-energia-solar)
+## **Leia também:**
+
+- [7 Erros Comuns ao Instalar Energia Solar e Como Evitá-los — Evite os erros mais frequentes que comprometem a economia do seu sistema](/blog/erros-comuns-energia-solar)
+- [Manutenção de Sistemas Solares: O Que Você Precisa Saber — Saiba como cuidar do seu sistema para garantir longevidade e desempenho](/blog/manutencao-energia-solar)
+- [Financiamento de Energia Solar — Descubra as opções de crédito para investir em energia solar sem complicação](/blog/financiamento-energia-solar)

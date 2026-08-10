@@ -11,7 +11,7 @@ Vou te explicar tudo sobre as *bandeiras tarifárias* e como a energia solar pod
 
 As *bandeiras tarifárias* são o mecanismo que as concessionárias usam no Brasil para comunicar variações no custo da geração de energia. Elas foram implementadas pela **ANEEL** em **2015** e representam um fator significativo no valor final da sua conta.
 
-## O Que São as Bandeiras Tarifárias
+## **O Que São as Bandeiras Tarifárias**
 
 É um *sistema de sinalização* que indica ao consumidor se terá um acréscimo ou desconto na tarifa, de acordo com as condições operativas do sistema de geração do País.
 
@@ -19,7 +19,7 @@ Quando os reservatórios das hidrelétricas estão em níveis bons, o custo de g
 
 A **ANEEL** avalia isso mensalmente. Você pode consultar a bandeira vigente no boleto de energia, no site da concessionária ou no portal da ANEEL.
 
-## Tipos de Bandeiras Tarifárias
+## **Tipos de Bandeiras Tarifárias**
 
 O sistema é composto por **cinco classificações**, cada uma com um acréscimo ou desconto específico por kWh consumido.
 
@@ -53,7 +53,7 @@ A **Bandeira Preta** é a mais grave. Indica uma situação extrema de restriç�
 
 O acréscimo é de **R$ 0,09493** por kWh. Para um residencial com **300 kWh**, o custo adicional chega a **R$ 28,48**. Para comerciais e industriais, os valores podem chegar a milhares de reais por mês.
 
-## Histórico de Ocorrências no Brasil
+## **Histórico de Ocorrências no Brasil**
 
 Desde **2015**, o Brasil já enfrentou todos os tipos de bandeiras:
 
@@ -64,7 +64,7 @@ Desde **2015**, o Brasil já enfrentou todos os tipos de bandeiras:
 - **2023-2024:** Situação se normalizou parcialmente com verde e amarela.
 - **2025-2026:** Restrições voltaram com bandêrias vermelhas P1 e P2.
 
-## Como a Energia Solar Protege Contra Aumentos
+## **Como a Energia Solar Protege Contra Aumentos**
 
 A geração fotovoltaica conectada à rede é uma das formas mais eficientes de se proteger. Quando o sistema solar gera energia durante o dia, você reduz a quantidade de energia que precisa comprar da rede.
 
@@ -74,7 +74,7 @@ Um sistema dimensionado para compensar **100%** do consumo reduz a dependência 
 
 Para entender melhor como funciona a economia na conta, leia também sobre [economia na conta de luz com energia solar](/blog/economia-conta-luz-energia-solar).
 
-## Cálculo da Economia em Cada Cenário
+## **Cálculo da Economia em Cada Cenário**
 
 Para um residencial que consome **400 kWh** por mês, com tarifa média de **R$ 0,75/kWh**, a economia mensal varia conforme a bandeira:
 
@@ -86,7 +86,7 @@ Para um residencial que consome **400 kWh** por mês, com tarifa média de **R$ 
 
 Quanto mais severa a bandêria, maior a economia do sistema fotovoltaico. A energia solar não é apenas limpa — é uma *proteção financeira*.
 
-## Custo do kWh em Cada Bandeira (2026)
+## **Custo do kWh em Cada Bandeira (2026)**
 
 O custo real varia conforme concessionária e região. Para referência, considerando uma concessionária de médio porte no Sudeste:
 
@@ -98,7 +98,7 @@ O custo real varia conforme concessionária e região. Para referência, conside
 
 Esses valores são aproximados e incluem custos de distribuição, transmissão, geração, encargos setoriais e tributos.
 
-## Análise de Payback Considerando Bandeiras
+## **Análise de Payback Considerando Bandeiras**
 
 O *payback* de um sistema fotovoltaico é um dos indicadores mais importantes. Considerando as variações de bandêria ao longo do ano, o tempo de retorno pode variar bastante.
 
@@ -106,7 +106,7 @@ Para um sistema de **5kWp** em uma residência com **400 kWh/mês**, tarifa de *
 
 Se o sistema gerar mais do que o imóvel consome, o payback pode ser ainda menor — a energia excedente gera créditos que valem por até **60 meses**, conforme regulamentação da ANEEL.
 
-## Por Que Agora É o Melhor Momento
+## **Por Que Agora É o Melhor Momento**
 
 Com a frequência crescente de bandêrias vermelhas, o momento é favorável. Custos decrescentes dos componentes, financiamento com juros acessíveis e proteção contra aumentos tornam a energia solar cada vez mais atrativa.
 
@@ -114,7 +114,7 @@ A regulação de geração distribuída (RN 482/2012 e atualizações) permite q
 
 Para entender melhor como funciona um sistema completo, confira nosso [guia completo de energia solar](/blog/energia-solar-guia-completo).
 
-## Estratégias de Dimensionamento
+## **Estratégias de Dimensionamento**
 
 Para maximizar a economia em diferentes cenários de bandêria, é fundamental dimensionar o sistema de forma estratégica:
 
@@ -126,6 +126,6 @@ A orientação de um profissional qualificado é essencial para esses cálculos.
 
 ---
 
-**Leia também:**
-- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar)
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
+## **Leia também:**
+- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar) — Descubra como a energia solar reduz de forma consistente o valor da sua conta de luz todos os meses.
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Um passo a passo completo para entender tudo sobre sistemas fotovoltaicos antes de investir.

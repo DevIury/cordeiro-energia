@@ -11,7 +11,7 @@ Uma das dúvidas que mais recebo é como chuva e granizo afetam o sistema fotovo
 
 Vou te mostrar o que realmente acontece com os painéis em cada situação, baseado em dados e testes laboratoriais. Assim você toma uma decisão informada sem surpresas.
 
-## Como a Chuva Afeta a Geração de Energia Solar
+## **Como a Chuva Afeta a Geração de Energia Solar**
 
 Primeiro, a chuva em si **não danifica** os painéis. O que acontece é que as nuvens bloqueiam a passagem da radiação solar, reduzindo a *irradiância* que chega às células fotovoltaicas.
 
@@ -21,7 +21,7 @@ Mas tem um lado bom que pouca gente percebe: a chuva limpa os módulos naturalme
 
 Então, na ponta do lápis, o efeito anual costuma ser positivo. A redução temporária dos dias chuvosos é compensada pela melhoria de eficiência dos módulos limpos nos dias seguintes.
 
-## Resistência dos Painéis a Granizo: Classificações e Testes
+## **Resistência dos Painéis a Granizo: Classificações e Testes**
 
 Os módulos fotovoltaicos modernos são projetados para resistir a impactos. A resistência é medida pela *classificação IK*, que indica o nível de proteção contra impactos mecânicos.
 
@@ -31,7 +31,7 @@ Além disso, os módulos passam por testes padronizados pela norma internacional
 
 A superfície dos painéis é coberta por **vidro temperado de alta resistência**, com espessura entre **3,2 mm e 4 mm** dependendo do fabricante. Esse vidro é tratado termicamente para aumentar a resistência mecânica sem perder transparência.
 
-## Dados Reais de Resistência a Impactos Climáticos
+## **Dados Reais de Resistência a Impactos Climáticos**
 
 Aqui vão dados que talvez te surpreendam. Estudos de campo no Brasil mostram que os módulos modernos aguentam muito mais do que imaginamos.
 
@@ -41,7 +41,7 @@ Produtos certificados por laboratórios reconhecidos internacionalmente — como
 
 Claro, a resistência não é infinita. Granizos extremamente grandes, com diâmetros acima de **4 cm**, podem causar danos. Mas esses eventos são estatisticamente raros e afetam áreas geográficas limitadas.
 
-## O Que Fazer Quando Graniza
+## **O Que Fazer Quando Graniza**
 
 Depois de uma tempestade com granizo, eu recomendo fazer uma **inspeção visual** do sistema. Verifique se há trincas no vidro, deformações na moldura de alumínio ou danos visíveis nas células fotovoltaicas.
 
@@ -49,7 +49,7 @@ Se encontrar qualquer dano, **não tente reparar de forma caseira**. Iso comprom
 
 O ideal é entrar em contato com a empresa instaladora para uma avaliação técnica completa. Se necessário, ela acionará a garantia do fabricante. Para isso, tenha em mãos o projeto elétrico, o certificado de conformidade e as notas fiscais.
 
-## Manutenção Pós-Granizo
+## **Manutenção Pós-Granizo**
 
 A manutenção após granizo segue protocolos específicos para garantir segurança e performance:
 
@@ -59,7 +59,7 @@ A manutenção após granizo segue protocolos específicos para garantir seguran
 
 Uma redução significativa na geração pode indicar danos não visíveis, como *microfissuras* nas células ou danos nas conexões elétricas. Nesses casos, solicite uma inspeção técnica detalhada.
 
-## Seguro para Sistemas Solares
+## **Seguro para Sistemas Solares**
 
 A contratação de seguro para sistemas fotovoltaicos vem ganhando espaço no Brasil. As apólices geralmente cobrem danos por granizo, vendaval, incêndio, roubo e danos elétricos.
 
@@ -67,7 +67,7 @@ O custo varia conforme o valor do sistema, a localização e a seguradora. Em m�
 
 Antes de contratar, verifique se a apólice cobre especificamente **danos por granizo**, se há **carência** para sinistros climáticos e se a cobertura inclui substituição total ou parcial dos módulos.
 
-## Proteção Contra Descargas Atmosféricas (Para-Raios)
+## **Proteção Contra Descargas Atmosféricas (Para-Raios)**
 
 Um raio que atinge diretamente um módulo ou seus arredores pode causar danos severos aos equipamentos eletrônicos. Por isso, a proteção é fundamental.
 
@@ -75,13 +75,13 @@ Ela é feita por meio de **para-raios**, que direcionam a energia da descarga pa
 
 A instalação deve seguir a norma **ABNT NBR 5419** e ser realizada por um profissional habilitado. Uma instalação inadequada não só falha na proteção, como pode criar riscos adicionais.
 
-## Como o Vento Afeta os Painéis Solares
+## **Como o Vento Afeta os Painéis Solares**
 
 Ventos fortes podem causar danos estruturais e criar vibrações que, a longo prazo, comprometem as conexões elétricas. Módulos de qualidade são testados para resistir a ventos de até **2.400 Pa** de pressão, o que equivale a aproximadamente **200 km/h**.
 
 Em regiões com ventos frequentes, como o litoral nordeste ou o planalto central, reforce o sistema de fixação com perfis aerodinâmicos e parafusos de alta resistência. Também é importante manter a limpeza regular dos módulos.
 
-## Adaptações para Regiões com Clima Severo
+## **Adaptações para Regiões com Clima Severo**
 
 Para regiões com condições climáticas severas, algumas adaptações fazem diferença:
 
@@ -91,13 +91,13 @@ Para regiões com condições climáticas severas, algumas adaptações fazem di
 
 Sistemas avançados minimizam o tempo de inatividade e facilitam ações rápidas de manutenção.
 
-## Monitoramento de Performance Após Eventos Climáticos
+## **Monitoramento de Performance Após Eventos Climáticos**
 
 O monitoramento contínuo é essencial para identificar quedas de desempenho rapidamente. Após um evento climático, aumente a frequência de verificação dos dados.
 
 Uma redução superior a **10%** na geração, sem explicação aparente, pode indicar danos ao sistema. Sistemas da **Huawei**, **SolarEdge** e **Enphase** permitem acompanhamento módulo a módulo, facilitando a identificação precisa do problema.
 
-## Mitos vs Realidade Sobre Danos por Clima
+## **Mitos vs Realidade Sobre Danos por Clima**
 
 Vamos esclarecer os principais mitos:
 
@@ -113,7 +113,7 @@ Vamos esclarecer os principais mitos:
 
 **Realidade:** A geração é reduzida entre **10% e 30%**, mas os painéis continuam gerando energia captando a *radiação solar difusa* que atravessa as nuvens.
 
-## Conclusão
+## **Conclusão**
 
 Chuva, granizo e vento não representam uma ameaça significativa para sistemas fotovoltaicos bem projetados e instalados de acordo com as normas técnicas. Os módulos modernos têm resistência mecânica comprovada e vida útil que pode ultrapassar **25 anos** mesmo em regiões com clima severo.
 
@@ -123,6 +123,6 @@ Se quiser entender melhor sobre cuidados com o sistema, leia nosso guia sobre [m
 
 ---
 
-**Leia também:**
-- [Manutenção de Energia Solar](/blog/manutencao-energia-solar)
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
+## **Leia também:**
+- [Manutenção de Energia Solar](/blog/manutencao-energia-solar) — Aprenda a manter seu sistema fotovoltaico funcionando com máxima eficiência ao longo dos anos.
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Entenda todos os componentes, custos e benefícios de um sistema fotovoltaico completo.

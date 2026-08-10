@@ -9,7 +9,7 @@ image: https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit
 
 Vou te mostrar todas as opções de financiamento para energia solar disponíveis no Brasil. O investimento inicial pode parecer alto, mas com as linhas de crédito certas, você começa a economizar já no primeiro mês — mesmo sem ter o capital completo na mão.
 
-## Financiamento Bancário Tradicional
+## **Financiamento Bancário Tradicional**
 
 O financiamento bancário tradicional é a opção mais acessível no mercado brasileiro para quem quer instalar um *sistema fotovoltaico*. Diversos bancos nacionais oferecem linhas de crédito específicas, com condições bastante diferenciadas.
 
@@ -39,7 +39,7 @@ O **Santander Brasil** financia até **80%** do valor do sistema em até **120 m
 
 O banco também tem parcerias com fabricantes e instaladoras, oferecendo condições especiais para quem adquire equipamentos por meio das empresas parceiras.
 
-## Consignado para Servidores Públicos
+## **Consignado para Servidores Públicos**
 
 O financiamento *consignado* para servidores públicos é uma das modalidades mais vantajosas que existem. O contracheque serve como garantia, o que reduz bastante os juros.
 
@@ -49,7 +49,7 @@ Para acessar, precisa estar em **exercício ativo**, com pelo menos **3 a 6 mese
 
 Atenção: não confunda com o *consignado privado*, que tem condições menos atrativas e menor disponibilidade.
 
-## Financiamento com Garantia de Imóvel
+## **Financiamento com Garantia de Imóvel**
 
 O financiamento *hipotecário* é a modalidade mais vantajosa para valores significativos. As taxas ficam abaixo de **1% ao mês** na maioria dos casos.
 
@@ -59,7 +59,7 @@ Você vai precisar da documentação do imóvel (escritura, certidão negativa, 
 
 Para sistemas residenciais acima de **R$ 30.000**, essa costuma ser a melhor opção do mercado.
 
-## Leasing Operacional
+## **Leasing Operacional**
 
 O *leasing operacional* é menos convencional, mas vem ganhando espaço. Uma instituição financeira compra o sistema e você paga parcelas mensais para utilizá-lo, com opção de compra ao final do contrato.
 
@@ -69,7 +69,7 @@ As vantagens? Você usa o sistema sem desembolsar tudo de uma vez, a manutençã
 
 O lado negativo é que o custo total tende a ser maior que outras modalidades. Mas para empresas que querem otimizar o balanço patrimonial, o leasing é uma opção interessante — o compromisso não entra como dívida.
 
-## Compra à Vista vs Financiada
+## **Compra à Vista vs Financiada**
 
 A decisão entre pagar à vista ou financiar depende do seu capital disponível, do custo de oportunidade e da taxa de juros.
 
@@ -83,7 +83,7 @@ Para o mesmo sistema de **5kWp**, financiando **80%** do valor (**R$ 16.000 a R$
 
 A grande sacada é que a parcela é sempre menor do que a economia gerada. Enquanto você paga **R$ 210 a R$ 370**, economiza **R$ 500 a R$ 700** por mês. Ou seja, já sai no lucro desde o primeiro mês.
 
-## Simulações para Diferentes Tamanhos
+## **Simulações para Diferentes Tamanhos**
 
 Para ter uma ideia clara, fiz simulações considerando financiamento de **80%** do valor em **120 meses** a **1,2% ao mês**:
 
@@ -119,7 +119,7 @@ Para ter uma ideia clara, fiz simulações considerando financiamento de **80%**
 - Economia mensal estimada: R$ 4.000 a R$ 6.000
 - Payback: 3 a 4 anos
 
-## Taxa de Juros Média do Mercado
+## **Taxa de Juros Média do Mercado**
 
 As taxas variam conforme o tipo de garantia, seu perfil e a instituição. Para referência em **2026**, as médias são:
 
@@ -131,7 +131,7 @@ As taxas variam conforme o tipo de garantia, seu perfil e a instituição. Para 
 
 Eu recomendo sempre consultar várias instituições para garantir as melhores condições.
 
-## Parcela vs Economia Gerada
+## **Parcela vs Economia Gerada**
 
 Esse é um dos pontos mais importantes na hora de decidir. Na maioria dos casos, a parcela do financiamento é bem menor do que a economia gerada pelo sistema.
 
@@ -139,7 +139,7 @@ Para um sistema residencial de médio porte, financiando **80%** em **120 meses*
 
 Isso significa que mesmo pagando a parcela, você já economiza **R$ 35** por mês desde o primeiro dia. E essa diferença só tende a aumentar, porque as tarifas de energia historicamente sobem entre **5% e 10% ao ano**, enquanto a parcela fica fixa ou é reajustada pelo INPC, que historicamente é inferior.
 
-## Prazos Disponíveis
+## **Prazos Disponíveis**
 
 Os prazos variam conforme a modalidade:
 
@@ -149,7 +149,7 @@ Os prazos variam conforme a modalidade:
 
 Eu recomendo escolher o prazo considerando sua capacidade de pagamento, o custo total e o retorno do investimento. Prazos maiores significam parcelas menores, mas o custo total sobe por causa dos juros acumulados.
 
-## Documentos Necessários
+## **Documentos Necessários**
 
 A documentação varia conforme a instituição e a modalidade, mas os documentos mais comuns são:
 
@@ -162,7 +162,7 @@ A documentação varia conforme a instituição e a modalidade, mas os documento
 
 Para financiamentos com garantia real, você vai precisar da documentação do imóvel (escritura, certidão negativa de ônus reais, IPTU em dia) ou do veículo (CRLV, certificado de propriedade). Para servidores públicos, o **contracheque atualizado** é o documento principal.
 
-## Como o SCORE Afeta a Aprovação
+## **Como o SCORE Afeta a Aprovação**
 
 O *score de crédito* é um dos fatores mais importantes na análise. Ele varia de **0 a 1.000**:
 
@@ -172,7 +172,7 @@ O *score de crédito* é um dos fatores mais importantes na análise. Ele varia 
 
 Um score alto facilita a aprovação e resulta em condições melhores — taxas menores e prazos mais longos. Para melhorar o score antes de solicitar o financiamento, faça pagamentos em dia, reduza o uso de crédito e evite consultas excessivas ao SPC/Serasa.
 
-## Dicas para Conquistar Melhores Condições
+## **Dicas para Conquistar Melhores Condições**
 
 Algumas estratégias podem te ajudar a conseguir condições melhores:
 
@@ -181,7 +181,7 @@ Algumas estratégias podem te ajudar a conseguir condições melhores:
 - **Negocie diretamente:** se você tem bom relacionamento bancário, conversar com o gerente pode render condições melhores
 - **Aproveite parcerias:** adquirir o sistema por meio de empresas instaladoras parceiras dos bancos pode facilitar a aprovação
 
-## Financiamento para Empresas
+## **Financiamento para Empresas**
 
 As empresas brasileiras têm acesso a linhas específicas para sistemas fotovoltaicos:
 
@@ -191,7 +191,7 @@ As empresas brasileiras têm acesso a linhas específicas para sistemas fotovolt
 
 As condições para empresas geralmente são mais atrativas do que o crédito pessoal, pois empresas comprovam renda com mais facilidade e têm mais poder de negociação. As taxas podem chegar a **1,5% ao mês** para pequenas e médias empresas.
 
-## PCEs e PCMSOs que Cobrem Energia Solar
+## **PCEs e PCMSOs que Cobrem Energia Solar**
 
 Embora não exista regulamentação obrigando Planos de Cargos e Salários (**PCEs**) ou Planos de Cargos, Salários, Funções e Comissões (**PCMSOs**) a cobrirem energia solar, algumas empresas vêm incluindo benefícios de sustentabilidade em seus pacotes de remuneração.
 
@@ -199,7 +199,7 @@ Esses benefícios podem incluir **subsídios** para aquisição de sistemas foto
 
 O **Programa de Incentivo à Energia Solar Residencial**, implementado por algumas empresas de grande porte, permite que colaboradores adquiram sistemas com desconto de até **30%** no valor total, mediante desconto em folha. Algumas empresas de energia também oferecem assessoria técnica gratuita, condições especiais de financiamento e garantia estendida nos equipamentos.
 
-## Conclusão
+## **Conclusão**
 
 O financiamento de energia solar no Brasil é uma realidade acessível e vantajosa para residências e empresas de todos os portes. A variedade de modalidades permite que cada consumidor encontre a opção que melhor se adapta ao seu perfil.
 
@@ -207,6 +207,6 @@ Se você quer uma assessoria personalizada para encontrar a melhor linha de cré
 
 ---
 
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
-- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar)
+## **Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Entenda tudo sobre o funcionamento, tipos de sistemas e benefícios da energia fotovoltaica.
+- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar) — Saiba quanto é possível economizar com um sistema instalado em sua residência ou empresa.

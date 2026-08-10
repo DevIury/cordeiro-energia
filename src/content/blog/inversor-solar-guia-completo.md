@@ -13,7 +13,7 @@ Sem um inversor adequado, o sistema simplesmente não funciona. Por isso, escolh
 
 Neste guia, eu vou te mostrar tudo o que você precisa saber antes de tomar essa decisão. São informações práticas, baseadas em experiência real com projetos residenciais e comerciais no Brasil.
 
-## O Que É um Inversor Solar e Como Funciona?
+## **O Que É um Inversor Solar e Como Funciona?**
 
 O inversor solar é um equipamento eletrônico que recebe a energia dos módulos fotovoltaicos em corrente contínua e a converte em corrente alternada senoidal pura, com tensão e frequência adequadas para ser utilizada nos equipamentos elétricos no Brasil (**127V ou 220V, 60Hz**).
 
@@ -25,7 +25,7 @@ Além da conversão DC-AC, o inversor moderno faz várias outras coisas importan
 
 A eficiência de conversão é um parâmetro que você deve olhar com atenção. Os modelos mais modernos já atingem eficiências superiores a **97%**, o que significa que apenas **3%** da energia captada pelos painéis é perdida nesse processo. Existem dois valores que você vai encontrar nas especificações: *eficiência máxima* e *eficiência ponderada europeia*. Essa última é uma representação mais realista do desempenho cotidiano.
 
-## Tipos de Inversores Solares
+## **Tipos de Inversores Solares**
 
 Existem três tecnologias principais no mercado brasileiro. Cada uma tem características que impactam diretamente o desempenho, a manutenção e o custo do sistema. Eu vou te explicar cada uma para você decidir qual faz mais sentido pro seu caso.
 
@@ -63,7 +63,7 @@ A grande vantagem é o **monitoramento módulo a módulo**, semelhante ao micro-
 
 Se você quer entender mais sobre como o inversor se encaixa no sistema completo, eu recomendo ler nosso [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo). E para comparar instalações residenciais e comerciais, confira [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial).
 
-## Marcas Disponíveis no Brasil
+## **Marcas Disponíveis no Brasil**
 
 O mercado brasileiro de energia solar conta com diversas fabricantes nacionais e internacionais. Conhecer as principais marcas ajuda na hora da escolha. Eu vou te mostrar as que mais vejo em projetos reais.
 
@@ -87,7 +87,7 @@ A **SolarEdge** é a pioneira e líder mundial em tecnologia de otimização de 
 
 A **Enphase** é referência mundial em micro-inversores. Seus produtos são conhecidos pela alta eficiência de conversão (acima de **97%**), pelo monitoramento granular módulo a módulo e pela facilidade de instalação. A empresa oferece garantia de **25 anos** em seus micro-inversores — uma das maiores do setor.
 
-## Como Dimensionar o Inversor Corretamente
+## **Como Dimensionar o Inversor Corretamente**
 
 Essa é uma etapa que eu vejo muita gente errar. Um inversor subdimensionado limita a geração de energia, enquanto um sobredimensionado representa um investimento desnecessário. O dimensionamento precisa ser feito por um profissional habilitado.
 
@@ -114,7 +114,7 @@ No Brasil, as perdas totais do sistema variam tipicamente entre **15% e 25%**. I
 
 Para manter seu sistema funcionando com eficiência máxima, confira as melhores práticas de [Manutenção de Energia Solar](/blog/manutencao-energia-solar).
 
-## Garantia e Vida Útil
+## **Garantia e Vida Útil**
 
 A garantia dos inversores solares é um fator que eu sempre oriento meus clientes a olharem com atenção. A maioria dos fabricantes oferece garantia padrão de **5 a 10 anos**, com possibilidade de extensão. A vida útil média de um inversor solar de qualidade é de **15 a 25 anos**, embora alguns modelos já tenham registros de operação ininterrupta por mais de **20 anos**.
 
@@ -129,7 +129,7 @@ Para maximizar a vida útil do inversor, faça manutenção preventiva:
 - **Verificação das conexões** elétricas
 - **Atualização de firmware** quando disponível
 
-## Custo Médio de Inversores no Brasil
+## **Custo Médio de Inversores no Brasil**
 
 O custo do inversor varia significativamente conforme a tecnologia, marca e potência. Para uma referência geral no mercado brasileiro de **2026**:
 
@@ -140,7 +140,7 @@ O custo do inversor varia significativamente conforme a tecnologia, marca e pot�
 
 O custo do inversor representa tipicamente entre **10% a 20%** do investimento total em um sistema fotovoltaico residencial. É fundamental não economizar nesse componente, pois um inversor de baixa qualidade pode comprometer toda a performance do sistema.
 
-## Quando Escolher Cada Tipo
+## **Quando Escolher Cada Tipo**
 
 A decisão sobre qual tipo de inversor utilizar deve considerar as características específicas de cada projeto. Eu sempre oriento meus clientes da seguinte forma:
 
@@ -152,7 +152,7 @@ A decisão sobre qual tipo de inversor utilizar deve considerar as característi
 
 Independentemente da escolha, é fundamental contratar um projeto elaborado por um **engenheiro eletricista habilitado**, que irá realizar os cálculos de dimensionamento e garantir que o sistema atenda a todas as normas técnicas — especialmente a norma **ABNT NBR 16690** e as resoluções da **ANEEL**.
 
-## Conclusão
+## **Conclusão**
 
 Escolher o inversor solar correto é uma decisão que impacta diretamente a economia, a segurança e a durabilidade do seu sistema fotovoltaico. Cada tipo de inversor tem suas vantagens e limitações, e a melhor escolha depende das características específicas do seu telhado, do seu consumo energético e do seu orçamento.
 
@@ -162,7 +162,8 @@ Se você quiser uma avaliação personalizada do seu projeto, a [Cordeiro Energi
 
 ---
 
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
-- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)
-- [Manutenção de Energia Solar](/blog/manutencao-energia-solar)
+## **Leia também:**
+
+- [Guia Completo de Energia Solar — Tudo o que você precisa saber](/blog/energia-solar-guia-completo)
+- [Energia Solar Residencial vs Comercial — Qual a diferença?](/blog/energia-solar-residencial-vs-comercial)
+- [Manutenção de Energia Solar — Como cuidar do seu sistema](/blog/manutencao-energia-solar)

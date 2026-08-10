@@ -11,7 +11,7 @@ Você já parou para olhar sua conta de luz e pensar quanto poderia estar econom
 
 Se você ainda não manja muito do assunto, recomendo dar uma lida no nosso [guia completo de energia solar](/blog/energia-solar-guia-completo) antes de continuar aqui.
 
-## Entendendo Sua Conta de Luz
+## **Entendendo Sua Conta de Luz**
 
 Antes de qualquer coisa, preciso que você entenda como sua conta de luz é composta. Conhecer cada item te ajuda a dimensionar direitinho o quanto a energia solar pode te ajudar.
 
@@ -37,7 +37,7 @@ O terceiro componente é a tarifa base por **kWh**, que muda conforme sua conces
 
 Quem consome mais acaba pagando mais caro por kWh. Por isso, a energia solar fica ainda mais atrativa pra esses perfis.
 
-## Fórmula de Dimensionamento do Sistema
+## **Fórmula de Dimensionamento do Sistema**
 
 Pra calcular o tamanho do sistema que você precisa, eu uso uma fórmula bem simples. Basta dividir seu consumo mensal em kWh pela média de horas de sol da sua região, e multiplicar por um fator de segurança entre **1,1 e 1,3**.
 
@@ -51,7 +51,7 @@ Vou te mostrar com um exemplo. Imagine uma residência que consome **500 kWh** p
 
 Esse dimensionamento já considera perdas naturais do sistema — eficiência do inversor, sujeira nos painéis, cabeamento e variações de temperatura. Um sistema de **4 kWp** nessa região gera em média **520 kWh** por mês, cobrindo o consumo inteiro e gerando créditos pro inverno.
 
-## Como Calcular o Payback
+## **Como Calcular o Payback**
 
 O *payback* é o tempo que leva pra economia acumulada igualar o valor investido. Pra calcular, você precisa considerar o custo total do sistema, a economia mensal e o reajuste anual da tarifa.
 
@@ -68,7 +68,7 @@ Mas esse cálculo não considera o reajuste anual da tarifa, que historicamente 
 
 Com um reajuste anual de **6%**, o payback real pode chegar a **3 anos e 8 meses**. É um retorno muito mais rápido que a maioria dos investimentos do mercado financeiro.
 
-## Simulações por Perfil de Consumo
+## **Simulações por Perfil de Consumo**
 
 Agora vou te mostrar simulações pra diferentes perfis de consumo. Cada um tem suas particularidades, mas todos apresentam retornos expressivos.
 
@@ -115,7 +115,7 @@ Residências de alto padrão, mansões e propriedades rurais. Consumo entre **2.
 
 A economia acumulada em **25 anos** pode ser superior a **R$800.000**. Pra esse perfil, um *estudo de viabilidade técnica* detalhado é essencial, pois cada caso demanda uma análise personalizada.
 
-## Impacto da Bandeira Vermelha na Economia
+## **Impacto da Bandeira Vermelha na Economia**
 
 A **bandeira tarifária vermelha** é o período mais caro da energia no Brasil, geralmente associado à seca. Quando ela entra em vigor, o custo do kWh sobe entre **R$0,0498** (vermelha P1) e **R$0,0975** (vermelha P2).
 
@@ -127,7 +127,7 @@ Com energia solar, esse custo adicional some. O sistema gera energia de forma in
 
 Isso é especialmente valioso em períodos de crise hídrica, quando a bandeira vermelha pode ficar ativa por meses seguidos.
 
-## Como Funcionam os Créditos de Energia
+## **Como Funcionam os Créditos de Energia**
 
 Os *créditos de energia* são o mecanismo que te permite usar o excedente gerado pelo seu sistema. Quando seus painéis produzem mais do que você consome, o excesso vai pra rede da concessionária e vira créditos.
 
@@ -137,7 +137,7 @@ Pra consumidores sazonais, como hotéis e pousadas, isso é ainda mais vantajoso
 
 Os créditos são **pessoais e intransferíveis** — não dá pra vender pra ninguém. Mas em condomínios, é possível criar sistemas de *energia solar compartilhada*, distribuindo os créditos entre os moradores conforme suas cotas.
 
-## Análise de Cenário: Com e Sem Financiamento
+## **Análise de Cenário: Com e Sem Financiamento**
 
 Agora vou te mostrar como fica a análise financeira considerando pagamento à vista e financiamento.
 
@@ -162,7 +162,7 @@ No financiamento, você paga o sistema em parcelas de **60 a 120 meses**. A econ
 
 Com uma economia mensal de **R$400**, você já começa a economizar **R$10** mensais desde o primeiro mês. E essa economia tende a crescer com os reajustes tarifários, enquanto as parcelas ficam fixas ou com reajuste menor.
 
-## Comparativo: Energia Solar vs Outras Aplicações
+## **Comparativo: Energia Solar vs Outras Aplicações**
 
 Pra avaliar se vale a pena, comparei o retorno da energia solar com outras aplicações financeiras:
 
@@ -178,7 +178,7 @@ O risco também é menor, pois a economia gerada depende basicamente da irradiâ
 
 A energia solar também funciona como uma forma de *proteção patrimonial*. Imóveis com sistemas fotovoltaicos podem valorizar entre **3% e 5%** em relação a imóveis similares sem o sistema.
 
-## Conclusão
+## **Conclusão**
 
 A energia solar se mostra um investimento altamente competitivo. Com payback entre **3 e 5 anos**, economia acumulada expressiva ao longo de **25 anos** e retorno anual superior a **15%**, é uma oportunidade única de investimento seguro e lucrativo.
 
@@ -194,7 +194,7 @@ Quer entender as diferenças entre sistemas residenciais e comerciais? confira n
 
 ---
 
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
-- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)
-- [Financiamento de Energia Solar](/blog/financiamento-energia-solar)
+## **Leia também:**
+- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Entenda tudo sobre como funciona a energia solar, desde os painéis até a instalação
+- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial) — Compare as diferenças e vantagens entre sistemas para casas e empresas
+- [Financiamento de Energia Solar](/blog/financiamento-energia-solar) — Conheça as opções de financiamento e comece a economizar sem grandes investimentos iniciais

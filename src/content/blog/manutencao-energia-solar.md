@@ -11,7 +11,7 @@ Um sistema de energia solar fotovoltaica é projetado para funcionar de forma au
 
 Eu sempre digo: uma manutenção preventiva pode fazer a diferença entre um sistema que gera economia por 30 anos e um que precisa de substituições prematuras.
 
-## Frequência Recomendada de Manutenção
+## **Frequência Recomendada de Manutenção**
 
 A manutenção de um sistema fotovoltaico pode ser dividida em tarefas que o próprio proprietário pode realizar e tarefas que exigem um técnico qualificado. A frequência varia de acordo com o tipo de manutenção e as condições locais.
 
@@ -60,7 +60,7 @@ Essa análise deve ser feita a cada **12 meses**, preferencialmente com acompanh
 - Identificação de quedas abruptas de desempenho.
 - Comparação com sistemas similares na mesma região.
 
-## O Que o Proprietário Pode Fazer
+## **O Que o Proprietário Pode Fazer**
 
 Existem várias tarefas de manutenção que você mesmo pode realizar, desde que tome os devidos cuidados de segurança:
 
@@ -72,7 +72,7 @@ Existem várias tarefas de manutenção que você mesmo pode realizar, desde que
 
 Importante: qualquer intervenção que envolva componentes elétricos, estruturas ou acesso ao telhado deve ser realizada exclusivamente por um técnico qualificado. A segurança é prioridade.
 
-## O Que Precisa de Técnico Qualificado
+## **O Que Precisa de Técnico Qualificado**
 
 As seguintes tarefas devem ser realizadas exclusivamente por um profissional habilitado:
 
@@ -82,7 +82,7 @@ As seguintes tarefas devem ser realizadas exclusivamente por um profissional hab
 4. **Diagnóstico de falhas complexas:** a identificação e correção de falhas que envolvem o sistema elétrico como um todo requer expertise técnica.
 5. **Atualização de firmware:** a atualização do firmware do inversor deve ser feita por um técnico autorizado, pois erros nesse processo podem comprometer o equipamento.
 
-## Como a Sujeira e a Poeira Afetam a Geração
+## **Como a Sujeira e a Poeira Afetam a Geração**
 
 A sujeira acumulada nos painéis solares é um dos principais fatores de redução de desempenho em sistemas fotovoltaicos. A camada de poeira, fuligem ou detritos bloqueia parte da radiação solar que deveria ser convertida em energia elétrica.
 
@@ -104,7 +104,7 @@ A sujeira acumulada nos painéis solares é um dos principais fatores de reduç�
 
 A melhor solução é a *manutenção preventiva regular*, com limpeza periódica dos painéis. Em regiões com alta poluição, pode ser necessária limpeza mensal. Para sistemas de grande porte, existem empresas especializadas em limpeza de painéis solares com equipamentos específicos.
 
-## Impacto de Chuvas e Granizo
+## **Impacto de Chuvas e Granizo**
 
 As condições climáticas brasileiras apresentam desafios específicos para sistemas fotovoltaicos, especialmente no período de chuvas e granizo.
 
@@ -136,7 +136,7 @@ Como prevenir:
 
 Para entender melhor como o granizo e outros eventos climáticos afetam seus painéis, confira nosso post sobre [energia solar e granizo/chuva](/blog/energia-solar-granizo-chuva).
 
-## Manutenção Preventiva vs Corretiva
+## **Manutenção Preventiva vs Corretiva**
 
 ### Manutenção Preventiva
 
@@ -162,7 +162,7 @@ Desvantagens:
 
 Eu sempre priorizo a prevenção: um programa regular de manutenção pode prolongar a vida útil do sistema em vários anos e garantir a economia projetada no momento da instalação.
 
-## Checklist de Manutenção
+## **Checklist de Manutenção**
 
 Para facilitar o acompanhamento da manutenção do seu sistema fotovoltaico, segue um checklist completo:
 
@@ -194,7 +194,7 @@ Para facilitar o acompanhamento da manutenção do seu sistema fotovoltaico, seg
 - [ ] Análise detalhada de geração vs projeção.
 - [ ] Relatório de manutenção com recomendações.
 
-## Quando Chamar o Técnico
+## **Quando Chamar o Técnico**
 
 Existem situações em que a intervenção técnica é urgente e não deve ser adiada:
 
@@ -206,7 +206,7 @@ Existem situações em que a intervenção técnica é urgente e não deve ser a
 6. **Após eventos climáticos severos:** após granizo, vendaval ou tempestades elétricas, realize uma inspeção completa do sistema.
 7. **Manutenção programada:** respeite os intervalos de manutenção recomendados pelo fabricante e pela empresa instaladora.
 
-## Custo Estimado da Manutenção Anual
+## **Custo Estimado da Manutenção Anual**
 
 O custo de manutenção de um sistema fotovoltaico residencial no Brasil varia de acordo com o tamanho do sistema, a localização e a complexidade da instalação.
 
@@ -228,7 +228,7 @@ O custo de manutenção de um sistema fotovoltaico residencial no Brasil varia d
 
 Investir em manutenção regular é altamente vantajoso financeiramente. Um sistema bem mantido pode gerar entre **10% e 25%** mais energia ao longo de sua vida útil, o que se traduz em milhares de reais de economia adicional. Além disso, a manutenção preventiva evita reparos emergenciais que podem custar significativamente mais.
 
-## Como Monitorar a Produção do Sistema
+## **Como Monitorar a Produção do Sistema**
 
 O *monitoramento* é uma ferramenta essencial para acompanhar a performance do sistema fotovoltaico e identificar possíveis problemas precocemente.
 
@@ -258,7 +258,7 @@ O monitoramento contínuo permite:
 - Detectar falhas em componentes individuais.
 - Otimizar o consumo de energia com base nos padrões de geração.
 
-## Vida Útil dos Componentes
+## **Vida Útil dos Componentes**
 
 Conhecer a *vida útil dos componentes* do sistema é essencial para planejar a manutenção e o eventual substituição de equipamentos.
 
@@ -269,7 +269,7 @@ Conhecer a *vida útil dos componentes* do sistema é essencial para planejar a 
 - **Estrutura de fixação:** **25 a 30 anos** (com manutenção adequada).
 - **Cabos e conectores:** **20 a 25 anos** (com manutenção adequada).
 
-## Conclusão
+## **Conclusão**
 
 A manutenção de um sistema fotovoltaico é simples, econômica e essencial para garantir o máximo desempenho e a longevidade do investimento. Com um programa regular de manutenção preventiva, seu sistema pode gerar energia limpa e econômica por mais de **30 anos**.
 
@@ -277,7 +277,7 @@ Se você quer um orientação mais detalhada sobre como cuidar do seu sistema, e
 
 ---
 
-**Leia também:**
-- [Energia Solar Fotovoltaica: O Guia Completo para 2026](/blog/energia-solar-guia-completo)
-- [7 Erros Comuns ao Instalar Energia Solar e Como Evitá-los](/blog/erros-comuns-energia-solar)
-- [Energia Solar e Granizo/Chuva](/blog/energia-solar-granizo-chuva)
+## **Leia também:**
+- [Energia Solar Fotovoltaica: O Guia Completo para 2026](/blog/energia-solar-guia-completo) — Entenda tudo sobre como funciona a energia solar, benefícios e como começar.
+- [7 Erros Comuns ao Instalar Energia Solar e Como Evitá-los](/blog/erros-comuns-energia-solar) — Evite os erros mais frequentes na hora de instalar seu sistema fotovoltaico.
+- [Energia Solar e Granizo/Chuva](/blog/energia-solar-granizo-chuva) — Saiba como eventos climáticos afetam seus painéis e como se prevenir.

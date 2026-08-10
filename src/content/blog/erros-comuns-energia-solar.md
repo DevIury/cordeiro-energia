@@ -11,7 +11,7 @@ Você sabia que nem toda instalação de energia solar é feita da maneira certa
 
 Erros na escolha dos componentes, no dimensionamento e na instalação podem prejudicar sua economia, sua segurança e a vida útil do sistema. Por isso, vou te mostrar os 7 erros mais comuns para que você não cometa os mesmos erros.
 
-## 1. Não Fazer Estudo de Sombreamento
+## **1. Não Fazer Estudo de Sombreamento**
 
 Esse é um dos erros mais graves que eu vejo por aí. Instalar painéis solares sem um *estudo de sombreamento* detalhado é receita para decepção. Árvores, chaminés, antenas e até partes do próprio telhado podem criar sombras que reduzem drasticamente a geração.
 
@@ -30,7 +30,7 @@ Muitas empresas oferecem orçamentos rápidos sem visitar o local ou sem mediç�
 
 Sempre solicite um *estudo de sombreamento* antes da instalação. Empresas qualificadas usam softwares como **PVsyst** ou **Helioscope**, além de equipamentos como o **Solar Pathfinder** para mapear sombras ao longo do ano.
 
-## 2. Escolher Painéis Apenas pelo Preço
+## **2. Escolher Painéis Apenas pelo Preço**
 
 Entendo que o preço é importante, mas escolher painéis só pelo menor custo pode ser um *erro caro* no longo prazo. Painéis baratos podem ter eficiência inferior, vida útil reduzida e garantias restritivas.
 
@@ -49,7 +49,7 @@ O mercado brasileiro cresceu rápido e atraiu fabricantes de várias origens. Ne
 
 Escolha painéis de fabricantes reconhecidos com certificação **INMETRO**. Verifique coeficiente de temperatura, eficiência nominal e garantia de performance. Uma garantia de **25 anos** com **80%** de capacidade ao final é o padrão do mercado.
 
-## 3. Não Considerar a Orientação do Telhado
+## **3. Não Considerar a Orientação do Telhado**
 
 A orientação e inclinação do telhado são decisivas na geração. Instalar em telhado com orientação desfavorável pode reduzir muito a produção.
 
@@ -67,7 +67,7 @@ Muita gente acredita que qualquer telhado serve. Na verdade, a orientação e in
 
 No Brasil, a orientação ideal é voltada para o **norte**, com inclinação entre **15 e 25 graus**. Telhados voltados para **oeste** ou **leste** também funcionam, mas com perdas de **10% a 15%**. Voltados para o **sul** têm viabilidade reduzida, especialmente no sul e sudeste. Um profissional deve avaliar isso antes da instalação.
 
-## 4. Dimensionar o Sistema Errado
+## **4. Dimensionar o Sistema Errado**
 
 Dimensionamento incorreto é um dos erros mais prejudiciais. Tanto um sistema abaixo do necessário quanto um acima do consumo real geram *problemas financeiros e técnicos*.
 
@@ -85,7 +85,7 @@ O dimensionamento certo exige uma análise detalhada do consumo, considerando n�
 
 Analise suas últimas **12 contas de luz** para identificar o padrão de consumo. Considere variações sazonais, como ar-condicionado no verão e aquecedores no inverno. Um profissional qualificado deve fazer o dimensionamento considerando todos esses fatores.
 
-## 5. Ignorar a Qualidade do Inversor
+## **5. Ignorar a Qualidade do Inversor**
 
 O *inversor* é o componente mais crítico do sistema. Ele converte a corrente contínua dos painéis em corrente alternada para sua casa. Um inversor ruim compromete toda a geração.
 
@@ -104,7 +104,7 @@ Muitas empresas focam só no preço dos painéis e negligenciam o inversor. As p
 
 Escolha inversores de fabricantes reconhecidos como **Enphase**, **SolarEdge**, **Fronius**, **Huawei** ou **Growatt**. A garantia geralmente vai de **5 a 12 anos** — vale considerar estender. Para sistemas com sombreamento, *microinversores* ou inversores com *otimizadores* maximizam a geração de cada painel.
 
-## 6. Não Verificar a Habilitação da Empresa Instaladora
+## **6. Não Verificar a Habilitação da Empresa Instaladora**
 
 A habilitação da empresa é fundamental para garantir qualidade e segurança. Mas muita gente não verifica se a empresa tem as certificações necessárias.
 
@@ -129,7 +129,7 @@ Verifique sempre se a empresa possui:
 - Experiência comprovada no mercado
 - Referências de clientes anteriores
 
-## 7. Não Pedir Análise de Viabilidade Estrutural do Telhado
+## **7. Não Pedir Análise de Viabilidade Estrutural do Telhado**
 
 O telhado precisa suportar o peso dos painéis e da estrutura de fixação. Ignorar essa análise pode causar *danos estruturais graves*.
 
@@ -148,7 +148,7 @@ Muita gente não considera a capacidade de carga do telhado. O peso dos painéis
 
 Antes da instalação, solicite uma *análise estrutural do telhado* feita por um engenheiro civil ou estrutural. Ele deve avaliar o tipo de estrutura, a capacidade de carga, necessidade de reforço e condições de conservação.
 
-## Conclusão
+## **Conclusão**
 
 Evitar esses sete erros é essencial para garantir que seu sistema funcione com máxima eficiência, segurança e durabilidade. A *energia solar* é um investimento de longo prazo e a qualidade da instalação é o que define o sucesso do projeto.
 
@@ -156,7 +156,8 @@ Se você está pensando em instalar um sistema de energia solar, procure uma emp
 
 ---
 
-**Leia também:**
-- [Energia Solar Fotovoltaica: O Guia Completo para 2026](/blog/energia-solar-guia-completo)
-- [Manutenção de Sistemas Solares: O Que Você Precisa Saber](/blog/manutencao-energia-solar)
-- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)
+## **Leia também:**
+
+- [Energia Solar Fotovoltaica: O Guia Completo para 2026 — Tudo sobre custos, economia e como funciona](/blog/energia-solar-guia-completo)
+- [Manutenção de Sistemas Solares: O Que Você Precisa Saber — Como cuidar do seu sistema para garantir longevidade](/blog/manutencao-energia-solar)
+- [Energia Solar Residencial vs Comercial — Qual a melhor opção para cada tipo de consumo](/blog/energia-solar-residencial-vs-comercial)
