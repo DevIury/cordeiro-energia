@@ -48,54 +48,53 @@ function getTagColor(tag: string): string {
   <Header />
 
   <main>
-    <!-- Article header -->
-    <section style="padding:5rem 0 3rem;background:#ffffff;">
+    <!-- Dark hero header -->
+    <section style="padding:7rem 0 3rem;background:#0a0a0a;">
       <div class="container" style="max-width:760px;margin:0 auto;">
-        <!-- Back link -->
-        <a href="/blog" style="display:inline-flex;align-items:center;gap:0.5rem;color:#FE5C17;text-decoration:none;font-size:0.85rem;font-weight:600;margin-bottom:2.5rem;transition:color 0.2s;">
-          <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-          </svg>
-          Voltar ao Blog
-        </a>
+        <!-- Breadcrumb -->
+        <nav style="margin-bottom:2rem;">
+          <a href="/" style="color:#9ca3af;text-decoration:none;font-size:0.8rem;">Home</a>
+          <span style="color:#6b7280;margin:0 0.5rem;font-size:0.8rem;">/</span>
+          <a href="/blog" style="color:#9ca3af;text-decoration:none;font-size:0.8rem;">Blog</a>
+          <span style="color:#6b7280;margin:0 0.5rem;font-size:0.8rem;">/</span>
+          <span style="color:#d1d5db;font-size:0.8rem;">{post.data.title}</span>
+        </nav>
+
+        <!-- Title block -->
+        <div style="text-align:center;margin-bottom:2.5rem;">
+          <h1 style="font-size:2.75rem;font-weight:900;color:#ffffff;line-height:1.12;margin-bottom:1rem;letter-spacing:-0.025em;">
+            {post.data.title}
+          </h1>
+          <p style="font-size:1.05rem;color:#9ca3af;line-height:1.7;max-width:600px;margin:0 auto;">
+            {post.data.description}
+          </p>
+        </div>
+
+        <!-- Meta: date, reading time, author -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:1rem;padding-top:1.5rem;border-top:1px solid #1f2937;">
+          <time style="font-size:0.8rem;color:#9ca3af;" datetime={post.data.pubDate.toISOString()}>
+            {post.data.pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+          </time>
+          <span style="color:#4b5563;">·</span>
+          <span style="font-size:0.8rem;color:#9ca3af;">{post.data.author}</span>
+        </div>
 
         <!-- Tags -->
-        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.25rem;">
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1.25rem;justify-content:center;">
           {post.data.tags.map((tag) => (
-            <span style={`font-size:0.7rem;font-weight:600;padding:0.35rem 0.75rem;border-radius:9999px;background:${getTagColor(tag)}12;color:${getTagColor(tag)};border:1px solid ${getTagColor(tag)}25;`}>
+            <span style={`font-size:0.7rem;font-weight:600;padding:0.35rem 0.75rem;border-radius:9999px;background:${getTagColor(tag)}18;color:${getTagColor(tag)};border:1px solid ${getTagColor(tag)}30;`}>
               {tag}
             </span>
           ))}
-        </div>
-
-        <h1 style="font-size:2.75rem;font-weight:900;color:#111;line-height:1.12;margin-bottom:1.25rem;letter-spacing:-0.025em;">
-          {post.data.title}
-        </h1>
-
-        <p style="font-size:1.1rem;color:#6b7280;line-height:1.7;margin-bottom:2rem;">
-          {post.data.description}
-        </p>
-
-        <!-- Author + date -->
-        <div style="display:flex;align-items:center;gap:1rem;padding-top:1.5rem;border-top:1px solid #f3f4f6;">
-          <div style="width:2.5rem;height:2.5rem;border-radius:50%;background:linear-gradient(135deg,#FE5C17,#FFC107);display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.7rem;font-weight:800;flex-shrink:0;">
-            CE
-          </div>
-          <div>
-            <div style="font-size:0.85rem;font-weight:600;color:#111;">{post.data.author}</div>
-            <time style="font-size:0.8rem;color:#9ca3af;" datetime={post.data.pubDate.toISOString()}>
-              {post.data.pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
-            </time>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Article content -->
-    <section style="padding:3rem 0 5rem;">
+    <section style="padding:3.5rem 0 5rem;background:#ffffff;">
       <div class="container" style="max-width:760px;margin:0 auto;">
         {post.data.image && (
-          <div style="margin-bottom:2rem;border-radius:0.75rem;overflow:hidden;">
+          <div style="margin-bottom:2.5rem;border-radius:0.75rem;overflow:hidden;">
             <img src={post.data.image} alt={post.data.title} style="width:100%;height:auto;display:block;" loading="lazy" />
           </div>
         )}
@@ -107,26 +106,23 @@ function getTagColor(tag: string): string {
 
     <!-- Related posts -->
     {relatedPosts.length > 0 && (
-      <section style="padding:3rem 0 4rem;background:#f9fafb;">
+      <section style="padding:3.5rem 0 4rem;background:#f9fafb;">
         <div class="container">
-          <div style="text-align:center;margin-bottom:2.5rem;">
-            <h2 style="font-size:1.75rem;font-weight:800;color:#111;margin-bottom:0.5rem;">
-              Artigos <span style="color:#FE5C17;">relacionados</span>
-            </h2>
-            <p style="font-size:0.9rem;color:#6b7280;">Leia também esses artigos que podem interessar</p>
-          </div>
+          <h2 style="font-size:1.75rem;font-weight:800;color:#111;margin-bottom:2rem;text-align:center;">
+            Artigos <span style="color:#FE5C17;">Relacionados</span>
+          </h2>
           <div style="display:grid;grid-template-columns:repeat(1,1fr);gap:1.5rem;max-width:900px;margin:0 auto;" class="related-grid">
             {relatedPosts.map((related) => (
               <a
                 href={`/blog/${related.id}`}
-                style="text-decoration:none;display:flex;gap:1rem;padding:1rem;background:#fff;border-radius:0.75rem;border:1px solid #f3f4f6;transition:all 0.3s;"
+                style="text-decoration:none;display:flex;gap:1rem;padding:1.25rem;background:#fff;border-radius:0.75rem;border:1px solid #f3f4f6;transition:all 0.3s;"
                 class="related-card"
               >
                 <div style="width:4rem;height:4rem;min-width:4rem;border-radius:0.5rem;background:linear-gradient(135deg,#FFF5ED,#FFF0E6);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                   <svg style="width:1.5rem;height:1.5rem;" viewBox="0 0 24 24" fill="none" stroke="#FE5C17" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
                 </div>
                 <div>
-                  <h3 style="font-size:0.9rem;font-weight:700;color:#111;line-height:1.35;margin-bottom:0.25rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
+                  <h3 style="font-size:0.95rem;font-weight:700;color:#111;line-height:1.35;margin-bottom:0.35rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
                     {related.data.title}
                   </h3>
                   <p style="font-size:0.8rem;color:#6b7280;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">
@@ -164,7 +160,7 @@ function getTagColor(tag: string): string {
   .blog-content { font-size: 1.1rem; line-height: 1.9; color: #374151; }
   .blog-content h1 { font-size: 2.75rem; font-weight: 900; color: #111; margin: 4rem 0 1.5rem; line-height: 1.15; letter-spacing: -0.025em; }
   .blog-content h2 { font-size: 2rem; font-weight: 800; color: #111; margin: 4.5rem 0 1.25rem; line-height: 1.2; letter-spacing: -0.02em; }
-  .blog-content h3 { font-size: 1.5rem; font-weight: 700; color: #111; margin: 3.5rem 0 1rem; line-height: 1.3; }
+  .blog-content h3 { font-size: 1.5rem; font-weight: 700; color: #FE5C17; margin: 3.5rem 0 1rem; line-height: 1.3; }
   .blog-content h4 { font-size: 1.25rem; font-weight: 700; color: #111; margin: 3rem 0 0.75rem; line-height: 1.35; }
   .blog-content h5 { font-size: 1.1rem; font-weight: 700; color: #111; margin: 2.5rem 0 0.6rem; line-height: 1.35; }
   .blog-content h6 { font-size: 1rem; font-weight: 700; color: #111; margin: 2rem 0 0.5rem; line-height: 1.35; }
