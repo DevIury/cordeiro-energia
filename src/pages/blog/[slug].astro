@@ -10,7 +10,7 @@ import { getCollection, render } from 'astro:content';
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map(post => ({
-    params: { slug: post.id },
+    params: { slug: post.id.replace(/\.md$/, '') },
     props: { post },
   }));
 }
@@ -142,7 +142,7 @@ function getTagColor(tag: string): string {
   <Analytics />
 </Layout>
 
-<style>
+<style is:global>
   .related-grid { grid-template-columns: 1fr; }
   @media (min-width: 640px) { .related-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1024px) { .related-grid { grid-template-columns: repeat(3, 1fr); } }
@@ -154,7 +154,6 @@ function getTagColor(tag: string): string {
   }
   .related-card:hover h3 { color: #FE5C17 !important; }
 
-  /* Blog content prose */
   .blog-content { font-size: 1.1rem; line-height: 1.9; color: #374151; }
   .blog-content h1 { font-size: 2.75rem; font-weight: 900; color: #111; margin: 4rem 0 1.5rem; line-height: 1.15; letter-spacing: -0.025em; }
   .blog-content h2 { font-size: 2rem; font-weight: 800; color: #111; margin: 4.5rem 0 1.25rem; line-height: 1.2; letter-spacing: -0.02em; }
@@ -168,4 +167,10 @@ function getTagColor(tag: string): string {
   .blog-content li { margin-bottom: 0.6rem; line-height: 1.7; }
   .blog-content a { color: #FE5C17; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
   .blog-content a:hover { color: #E04400; }
+  .blog-content table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem; }
+  .blog-content th, .blog-content td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #e5e7eb; }
+  .blog-content th { font-weight: 700; color: #111; background: #f9fafb; }
+  .blog-content tr:hover { background: #f9fafb; }
+  .blog-content hr { border: none; border-top: 1px solid #e5e7eb; margin: 3rem 0; }
+  .blog-content blockquote { border-left: 4px solid #FE5C17; padding: 1rem 1.5rem; margin: 2rem 0; background: #fff7ed; border-radius: 0 0.5rem 0.5rem 0; color: #374151; }
 </style>

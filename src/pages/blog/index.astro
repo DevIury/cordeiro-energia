@@ -99,7 +99,7 @@ function formatDate(date: Date): string {
     {featured && (
       <section style="padding:0 0 2rem;">
         <div class="container">
-          <a href={`/blog/${featured.id}`} class="blog-featured scroll-reveal" style="text-decoration:none;">
+          <a href={`/blog/${featured.id.replace(/\.md$/, '')}`} class="blog-featured scroll-reveal" style="text-decoration:none;">
             <div class="blog-featured-cover" style={`background:${blogCovers[0]};`}>
               {featured.data.image ? (
                 <img src={featured.data.image} alt={featured.data.title} style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" />
@@ -145,7 +145,7 @@ function formatDate(date: Date): string {
         <div class="blog-grid">
           {rest.map((post, i) => (
             <a
-              href={`/blog/${post.id}`}
+              href={`/blog/${post.id.replace(/\.md$/, '')}`}
               class="blog-card-item scroll-reveal"
               style={`transition-delay: ${i * 60}ms;`}
             >
