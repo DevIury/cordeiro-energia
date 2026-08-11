@@ -18,126 +18,85 @@ const state = 'MG';
   <Header />
 
   <main>
-    <!-- Hero -->
-    <section class="py-16 md:py-24 bg-gradient-to-b from-dark to-white/[0.02]">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div>
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/10 border border-brand-500/20 mb-6">
-              <span class="w-2 h-2 rounded-full bg-eco-500 animate-pulse"></span>
-              <span class="text-sm text-brand-500 font-medium">Atendemos {city} e região metropolitana</span>
-            </div>
+    <section class="hero" style="min-height:70vh;">
+      <div class="hero-bg">
+        <img src="/hero-solar.jpg" alt="Energia solar em Betim" fetchpriority="high" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Atendemos {city} e região metropolitana
+        </div>
+        <h1 style="font-size:2.5rem;">Energia Solar em <span>{city}</span></h1>
+        <p>{city}, polo industrial de MG, tem enorme potencial para energia solar. Empresas e residências podem economizar milhões por ano.</p>
+        <div class="hero-btns">
+          <a href="https://wa.me/5538997350343?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20energia%20solar%20em%20Betim" class="btn btn-orange btn-xl" target="_blank" rel="noopener noreferrer">
+            <svg style="width:1rem;height:1rem;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            ORÇAMENTO GRÁTIS
+          </a>
+          <a href="tel:+5538997350343" class="btn btn-outline btn-xl">📞 LIGAR AGORA</a>
+        </div>
+      </div>
+    </section>
 
-            <h1 class="text-4xl md:text-5xl font-bold text-dark leading-tight mb-6">
-              Energia Solar em
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-eco-500">
-                {city}
-              </span>
-            </h1>
-
-            <p class="text-lg text-gray-600 mb-8">
-              {city}, polo industrial de MG, tem enorme potencial para energia solar. Empresas e residências podem economizar milhões por ano.
-            </p>
-
-            <div class="flex flex-col sm:flex-row items-center gap-4">
-              <a
-                href="https://wa.me/5538997350343?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20energia%20solar%20em%20Betim"
-                class="btn-solar text-lg w-full sm:w-auto justify-center"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                </svg>
-                Orçamento Grátis
-              </a>
-              <a href="tel:+5538997350343" class="btn-eco text-lg w-full sm:w-auto justify-center">
-                📞 Ligar Agora
-              </a>
-            </div>
+    <section style="padding:5rem 0;">
+      <div class="container">
+        <div class="section-header">
+          <div class="tag">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            VANTAGENS
           </div>
-
-          <div class="hidden md:flex items-center justify-center">
-            <div class="relative">
-              <div class="w-72 h-72 rounded-full bg-gradient-to-br from-brand-500/20 to-eco-500/20 flex items-center justify-center">
-                <div class="w-56 h-56 rounded-full bg-gradient-to-br from-brand-500/30 to-eco-500/30 flex items-center justify-center">
-                  <div class="w-40 h-40 rounded-full bg-gradient-to-br from-brand-500 to-eco-500 flex items-center justify-center shadow-2xl shadow-brand-500/30">
-                    <span class="text-4xl">🏭</span>
-                  </div>
-                </div>
-              </div>
-              <div class="absolute -top-4 -right-4 bg-dark/90 backdrop-blur-sm rounded-2xl p-4 border border-white/10 shadow-xl">
-                <div class="text-2xl font-bold text-eco-500">R$ 45.000</div>
-                <div class="text-xs text-gray-600">economia mensal (indústria)</div>
-              </div>
-            </div>
+          <h2>Energia solar para empresas em <span>{city}</span></h2>
+        </div>
+        <div style="display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🏭</div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Indústrias</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.6;">Grandes potências para indústrias com alto consumo. Sistemas de até 5MW com monitoramento 24h.</p>
+          </div>
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🏢</div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Comércios</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.6;">Lojas, shoppings e escritórios economizam até 95% na conta de luz com energia solar.</p>
+          </div>
+          <div class="card" style="padding:2rem;text-align:center;">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">💼</div>
+            <h3 style="font-size:1.05rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Escritórios</h3>
+            <p style="color:#6b7280;font-size:0.9rem;line-height:1.6;">Empresas de tecnologia e serviços podem reduzir drasticamente seus custos operacionais.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Benefits -->
-    <section class="py-16 md:py-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
-            Energia solar para empresas em <span class="text-brand-500">{city}</span>
-          </h2>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <div class="scroll-reveal bg-gray-50 rounded-2xl p-6 border border-white/5">
-            <div class="text-3xl mb-4">🏭</div>
-            <h3 class="text-lg font-bold text-dark mb-2">Indústrias</h3>
-            <p class="text-gray-600 text-sm">Grandes potências para indústrias com alto consumo. Sistemas de até 5MW com monitoramento 24h.</p>
+    <section style="padding:5rem 0;background:#f9fafb;">
+      <div class="container" style="max-width:700px;margin:0 auto;">
+        <div class="section-header">
+          <div class="tag">
+            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            PERGUNTAS FREQUENTES
           </div>
-          <div class="scroll-reveal bg-gray-50 rounded-2xl p-6 border border-white/5">
-            <div class="text-3xl mb-4">🏢</div>
-            <h3 class="text-lg font-bold text-dark mb-2">Comércios</h3>
-            <p class="text-gray-600 text-sm">Lojas, shoppings e escritórios economizam até 95% na conta de luz com energia solar.</p>
-          </div>
-          <div class="scroll-reveal bg-gray-50 rounded-2xl p-6 border border-white/5">
-            <div class="text-3xl mb-4">💼</div>
-            <h3 class="text-lg font-bold text-dark mb-2">Escritórios</h3>
-            <p class="text-gray-600 text-sm">Empresas de tecnologia e serviços podem reduzir drasticamente seus custos operacionais.</p>
-          </div>
+          <h2>Dúvidas <span>frequentes</span></h2>
         </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-16 md:py-24 bg-white/[0.02]">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 scroll-reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-dark">
-            Perguntas frequentes sobre energia solar em <span class="text-brand-500">{city}</span>
-          </h2>
-        </div>
-
-        <div class="space-y-4">
-          <details class="scroll-reveal bg-gray-50 rounded-2xl border border-white/5 overflow-hidden group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer text-dark font-medium hover:text-brand-500 transition-colors list-none">
-              Qual o custo de energia solar para empresas em {city}?
-              <svg class="w-5 h-5 text-gray-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
-              O investimento para empresas em {city} varia conforme o consumo. Para uma indústria que gasta R$ 100.000/mês, o sistema pode custar entre R$ 500.000 e R$ 1.000.000, com payback de 3 a 5 anos.
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              <span>Qual o custo de energia solar para empresas em {city}?</span>
+              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>O investimento para empresas em {city} varia conforme o consumo. Para uma indústria que gasta R$ 100.000/mês, o sistema pode custar entre R$ 500.000 e R$ 1.000.000, com payback de 3 a 5 anos.</p>
             </div>
-          </details>
-
-          <details class="scroll-reveal bg-gray-50 rounded-2xl border border-white/5 overflow-hidden group">
-            <summary class="flex items-center justify-between p-6 cursor-pointer text-dark font-medium hover:text-brand-500 transition-colors list-none">
-              É possível vender a energia excedente?
-              <svg class="w-5 h-5 text-gray-600 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 text-gray-600 text-sm leading-relaxed">
-              Sim! Empresas podem participar de leilões de energia e vender sua energia excedente, gerando uma receita adicional além da economia na conta de luz.
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+              <span>É possível vender a energia excedente?</span>
+              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Empresas podem participar de leilões de energia e vender sua energia excedente, gerando uma receita adicional além da economia na conta de luz.</p>
             </div>
-          </details>
+          </div>
         </div>
       </div>
     </section>
@@ -149,3 +108,17 @@ const state = 'MG';
   <Footer />
   <Analytics />
 </Layout>
+
+<style>
+  .pulse-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #00E676;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+</style>
