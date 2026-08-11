@@ -1,0 +1,40 @@
+---
+interface Props {
+  question: string;
+  answer: string;
+}
+
+const { question, answer } = Astro.props;
+---
+
+<div class="faq-item">
+  <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+    <span>{question}</span>
+    <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;flex-shrink:0;transition:transform 0.3s;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+  <div class="faq-answer">
+    <p set:html={answer} />
+  </div>
+</div>
+
+<style>
+  .faq-item { border: 1px solid #f3f4f6; border-radius: 0.75rem; overflow: hidden; transition: border-color 0.3s; }
+  .faq-item:hover { border-color: rgba(254,92,23,0.2); }
+  .faq-item.open { border-color: rgba(254,92,23,0.3); }
+  .faq-question {
+    width: 100%; display: flex; align-items: center; justify-content: space-between;
+    padding: 1.15rem 1.25rem; background: #fff; border: none; cursor: pointer;
+    font-size: 0.95rem; font-weight: 700; color: #111; text-align: left;
+    font-family: inherit; gap: 1rem;
+  }
+  .faq-question span { flex: 1; }
+  .faq-arrow { color: #FE5C17; }
+  .faq-item.open .faq-arrow { transform: rotate(180deg); }
+  .faq-answer {
+    max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.22,0.61,0.36,1);
+  }
+  .faq-item.open .faq-answer { max-height: 500px; }
+  .faq-answer :global(p) { padding: 0 1.25rem 1.25rem; font-size: 0.9rem; color: #4b5563; line-height: 1.7; }
+</style>

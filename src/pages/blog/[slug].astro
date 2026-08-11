@@ -2,9 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import FloatingWhatsApp from '../../components/FloatingWhatsApp.astro';
 import CtaSection from '../../components/CtaSection.astro';
-import Analytics from '../../components/Analytics.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -58,6 +56,31 @@ const shareText = encodeURIComponent(post.data.title);
   ogType="article"
 >
   <Header />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.data.title,
+    "description": post.data.description,
+    "datePublished": post.data.pubDate.toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": post.data.author || "Cordeiro Energia"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Cordeiro Energia",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "/logo.png"
+      }
+    },
+    "image": post.data.image || "/og-image.svg",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://cordeiro-energia.pages.dev/blog/${post.id.replace(/\.md$/, '')}`
+    }
+  })} />
 
   <main>
     <section class="blog-header-section">
@@ -174,9 +197,7 @@ const shareText = encodeURIComponent(post.data.title);
     <svg style="width:1.25rem;height:1.25rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
 
-  <FloatingWhatsApp />
   <Footer />
-  <Analytics />
 </Layout>
 
 <style is:global>

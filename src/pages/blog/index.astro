@@ -2,9 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import FloatingWhatsApp from '../../components/FloatingWhatsApp.astro';
 import CtaSection from '../../components/CtaSection.astro';
-import Analytics from '../../components/Analytics.astro';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog'))
@@ -206,9 +204,7 @@ function formatDate(date: Date): string {
     <CtaSection />
   </main>
 
-  <FloatingWhatsApp />
   <Footer />
-  <Analytics />
 </Layout>
 
 <style>
