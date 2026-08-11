@@ -311,17 +311,18 @@ function formatDate(date: Date): string {
   .tag-filter-bar {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
+    gap: 0.4rem;
+    padding: 0 1rem 1rem;
     border-bottom: 1px solid #f3f4f6;
   }
+  @media (min-width: 768px) { .tag-filter-bar { padding: 0 0 1rem; gap: 0.5rem; } }
   .tag-filter-btn {
-    padding: 0.4rem 1rem;
+    padding: 0.35rem 0.85rem;
     border-radius: 9999px;
     border: 1.5px solid #e5e7eb;
     background: #fff;
     color: #6b7280;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s;
