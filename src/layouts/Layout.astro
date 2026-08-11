@@ -606,7 +606,7 @@ import CookieConsent from '../components/CookieConsent.astro';
   <slot />
 
   <script>
-    document.addEventListener('astro:page-load', () => {
+    function initScrollReveal() {
       // Reveal on scroll
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -617,7 +617,7 @@ import CookieConsent from '../components/CookieConsent.astro';
         });
       }, { threshold: 0.1 });
 
-      document.querySelectorAll('.serv-card, .proj-card, .depo-card, .passo, .num-card, .blog-card, .reveal, .scroll-reveal').forEach((el) => {
+      document.querySelectorAll('.serv-card, .proj-card, .depo-card, .passo, .num-card, .blog-card, .blog-card-item, .blog-featured, .reveal, .scroll-reveal').forEach((el) => {
         el.classList.add('reveal');
         observer.observe(el);
       });
@@ -680,7 +680,10 @@ import CookieConsent from '../components/CookieConsent.astro';
           }
         });
       });
-    });
+    }
+
+    document.addEventListener('astro:page-load', initScrollReveal);
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
   </script>
   <Analytics />
   <CookieConsent />
