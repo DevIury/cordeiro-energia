@@ -492,7 +492,7 @@ const posts = [
         <div class="projetos-grid">
           <div class="proj-card">
             <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-comercial.webp" alt="Sistema residencial 10kWp" style="height:100%;" />
+              <img src="/proj-comercial.webp" alt="Sistema comercial 50kWp" style="height:100%;" width="400" height="300" />
               <div class="proj-badge">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 CONCLUÍDO
@@ -514,7 +514,7 @@ const posts = [
           </div>
           <div class="proj-card">
             <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-rural.webp" alt="Sistema comercial 50kWp" />
+              <img src="/proj-rural.webp" alt="Sistema rural 30kWp" width="400" height="300" />
               <div class="proj-badge">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 CONCLUÍDO
@@ -536,7 +536,7 @@ const posts = [
           </div>
           <div class="proj-card">
             <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-residencial.webp" alt="Sistema rural 30kWp" />
+              <img src="/proj-residencial.webp" alt="Sistema residencial 10kWp" width="400" height="300" />
               <div class="proj-badge">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 CONCLUÍDO
@@ -715,16 +715,5 @@ const posts = [
     .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
   </style>
 
-  <script>
-    const backToTop = document.getElementById('backToTop');
-    if (backToTop) {
-      window.addEventListener('scroll', () => {
-        backToTop.style.opacity = window.scrollY > 400 ? '1' : '0';
-        backToTop.style.pointerEvents = window.scrollY > 400 ? 'all' : 'none';
-      }, { passive: true });
-      backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-  </script>
+
 </Layout>

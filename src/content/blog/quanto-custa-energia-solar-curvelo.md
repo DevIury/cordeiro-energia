@@ -7,7 +7,7 @@ tags: ["energia solar", "curvelo", "custo", "investimento", "minas gerais"]
 image: /blog/energia-solar-paineis.webp
 ---
 
-A gente na Cordeiro Energia trabalha todos os dias com famílias e empresas de Curvelo que querem deixar de depender da conta de luz. Ao longo dos últimos anos, acompanhamos de perto a evolução dos custos de instalação e da economia real que cada sistema entrega. Com base nessa experiência, preparamos esta simulação completa para você ter noção de quanto vai investir e quanto vai economizar.
+A gente na Cordeiro Energia trabalha todos os dias com famílias e empresas de Curvelo que querem deixar de depender da conta de luz. Ao longo dos últimos anos, acompanhamos de perto a evolução dos custos de instalação e da economia real que cada sistema entrega. Se você ainda não conhece a região, leia nosso [guia completo de energia solar em Curvelo](/blog/energia-solar-curvelo-guia) para entender o potencial fotovoltaico do município. Com base nessa experiência, preparamos esta simulação completa para você ter noção de quanto vai investir e quanto vai economizar.
 
 Curvelo está numa região privilegiada em Minas Gerais, com média de 5,5 horas de sol por dia e tarifas que variam de R$ 0,55 a R$ 0,75 por kWh dependendo da sua distribuidora e faixa de consumo. Esses números fazem a energia solar ser uma das melhores alternativas para reduzir custos fixos no orçamento doméstico. A seguir, você encontra valores atualizados, comparações por porte de imóvel e todas as informações para tomar uma decisão informada.
 
@@ -29,7 +29,7 @@ Com a tarifa média de Curvelo em R$ 0,65 por kWh, uma família que gasta R$ 150
 
 Imóveis com consumo entre 200 kWh e 400 kWh por mês precisam de sistemas na faixa de 3 kWp a 6 kWp. É o caso da maioria das residências de Curvelo com três quartos, sala, cozinha e dois banheiros. A área necessária no telhado fica entre 20 e 40 metros quadrados, e o investimento total fica entre R$ 12.000 e R$ 22.000.
 
-Nesse porte, a economia mensal costuma ficar entre R$ 200 e R$ 350 dependendo do consumo atual e da tarifa praticada. Muitas famílias optam por financiar o sistema com parcelas que ficam abaixo da economia gerada, o que significa que o sistema se paga desde o primeiro mês. O financiamento em até 60 meses é comum e as parcelas ficam em torno de R$ 250 a R$ 400.
+Nesse porte, a economia mensal costuma ficar entre R$ 200 e R$ 350 dependendo do consumo atual e da tarifa praticada. Muitas famílias optam por [financiar o sistema](/blog/financiamento-energia-solar) com parcelas que ficam abaixo da economia gerada, o que significa que o sistema se paga desde o primeiro mês. O financiamento em até 60 meses é comum e as parcelas ficam em torno de R$ 250 a R$ 400.
 
 ### Casas de grande porte
 
@@ -43,7 +43,7 @@ O payback do sistema solar em Curvelo depende de três fatores principais: o con
 
 Com tarifas entre R$ 0,55 e R$ 0,75 por kWh em Curvelo, o payback médio fica entre 3 e 5 anos para residências. Para comércios e empresas, que geralmente pagam tarifas mais altas, o retorno pode ser ainda mais rápido, chegando a 2 ou 3 anos. Após o período de payback, toda a energia gerada é lucro puro para o bolso da família.
 
-Vale considerar também a valorização do imóvel. Estudos mostram que residências com sistema fotovoltaico instalado valorizam entre 3% e 5% no mercado imobiliário. Além disso, a tendência é que as tarifas de energia elétrica continuem subindo anualmente, o que torna o investimento em solar cada vez mais vantajoso ao longo do tempo. Quanto antes instalar, maior será a economia acumulada.
+Vale considerar também a [valorização do imóvel](/blog/energia-solar-valoriza-imovel). Estudos mostram que residências com sistema fotovoltaico instalado valorizam entre 3% e 5% no mercado imobiliário. Além disso, a tendência é que as tarifas de energia elétrica continuem subindo anualmente, o que torna o investimento em solar cada vez mais vantajoso ao longo do tempo. Quanto antes instalar, maior será a economia acumulada.
 
 ## Tabela de simulação completa
 

@@ -13,6 +13,37 @@ import FaqItem from '../components/FaqItem.astro';
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Posso usar energia solar para irrigação?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Sistemas de bomba solar são ideais para irrigação, eliminando o custo com diesel ou energia da rede em áreas remotas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O sistema funciona em áreas sem rede elétrica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Sistemas off-grid com baterias permitem completo funcionamento independente da rede de distribuição."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Tem incentivo para produtores rurais?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! O PRONAF Linha Verde oferece financiamento com juros baixos para sistemas solares em propriedades rurais."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <!-- Hero -->
     <section style="position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden;">

@@ -7,7 +7,7 @@ tags: ["financiamento", "energia solar", "crédito", "investimento"]
 image: /blog/financiamento-energia-solar.webp
 ---
 
-Não ter o valor total para investir em energia solar não significa adiar seu projeto. Existem diversas linhas de financiamento no Brasil que permitem começar a economizar já no primeiro mês, mesmo sem dispor do valor total de uma vez. Vou te mostrar todas as opções disponíveis para você escolher a que melhor se encaixa na sua situação.
+Não ter o valor total para investir em energia solar não significa adiar seu projeto. Existem diversas linhas de financiamento no Brasil que permitam começar a economizar já no primeiro mês, mesmo sem dispor do valor total de uma vez. Entender a [economia na conta de luz com energia solar](/blog/economia-conta-luz-energia-solar) ajuda a dimensionar quanto o sistema vai gerar de retorno. Vou te mostrar todas as opções disponíveis para você escolher a que melhor se encaixa na sua situação.
 
 ## É possível financiar energia solar?
 
@@ -52,7 +52,7 @@ Para acessar, precisa estar em exercício ativo, com pelo menos 3 a 6 meses de s
 
 ### Garantia de imóvel
 
-O financiamento com garantia de imóvel é a modalidade mais vantajosa para valores significativos. As taxas ficam abaixo de 1% ao mês na maioria dos casos, com prazos de até 180 meses e financiamento de até 80% do valor do imóvel avaliado. As parcelas podem ser menores do que a economia gerada pelo sistema.
+O financiamento com garantia de imóvel é a modalidade mais vantajosa para valores significativos. As taxas ficam abaixo de 1% ao mês na maioria dos casos, com prazos de até 180 meses e financiamento de até 80% do valor do imóvel avaliado. As parcelas podem ser menores do que a economia gerada pelo sistema. Vale lembrar que imóveis com energia solar [valorizam entre 3% e 5%](/blog/energia-solar-valoriza-imovel), o que fortalece a garantia oferecida ao banco.
 
 Para acessar essa linha, você vai precisar da documentação do imóvel, como escritura, certidão negativa e IPTU em dia, além de laudo de avaliação e comprovação de renda. A aprovação leva entre 15 e 30 dias úteis, mas para sistemas residenciais acima de R$ 30.000, essa costuma ser a melhor opção do mercado.
 
@@ -124,7 +124,7 @@ Algumas estratégias podem te ajudar a conseguir condições melhores. Compare o
 
 O financiamento de energia solar no Brasil é uma realidade acessível e vantajosa para residências e empresas de todos os portes. A variedade de modalidades permite que cada consumidor encontre a opção que melhor se adapta ao seu perfil, e em muitos casos a parcela já é menor do que a economia gerada desde o primeiro mês.
 
-Se você quer uma assessoria personalizada para encontrar a melhor linha de crédito para o seu projeto, entre em contato com a gente. A gente te ajuda a começar a economizar com energia solar sem comprometer sua saúde financeira, e te acompanha em todas as etapas do processo, da simulação à aprovação final.
+Se você quer uma assessoria personalizada para encontrar a melhor linha de crédito para o seu projeto, entre em contato com a gente. A gente te ajuda a começar a economizar com energia solar sem comprometer sua saúde financeira, e te acompanha em todas as etapas do processo, da simulação à aprovação final. Leia também nosso [guia completo de energia solar](/blog/energia-solar-guia-completo) para entender todos os aspectos antes de investir.
 
 ## Perguntas frequentes
 

@@ -18,6 +18,37 @@ const state = 'MG';
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto custa instalar energia solar em Curvelo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento varia conforme o consumo. Para uma residência que gasta R$ 400/mês, o custo é de aproximadamente R$ 20.000 a R$ 25.000. Com a economia mensal de cerca de R$ 380, o payback ocorre em 4 a 5 anos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A energia solar funciona bem em Curvelo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Curvelo possui uma das melhores irradiações solares de Minas Gerais, com média de 5.5 kWh/m²/dia. Isso significa alta eficiência e payback mais rápido do investimento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de autorização da prefeitura de Curvelo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, é necessário registrar o sistema na prefeitura e na concessionária local. Cuidamos de toda a documentação para você, incluindo o alvará e o registro na CELF."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <section class="hero" style="min-height:70vh;">
       <div class="hero-bg">

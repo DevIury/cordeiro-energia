@@ -25,7 +25,7 @@ Para obter o benefício, você geralmente precisa comprovar a instalação do si
 
 ### Curvelo
 
-Curvelo é uma das cidades que mais se destaca em Minas Gerais quando o assunto é energia solar. A prefeitura local oferece benefícios fiscais significativos para quem instala sistemas fotovoltaicos, tanto em imóveis residenciais quanto comerciais. O incentivo em Curvelo já é reconhecido regionalmente e atrai moradores de cidades vizinhas que buscam economia de longo prazo.
+Curvelo é uma das cidades que mais se destaca em Minas Gerais quando o assunto é energia solar. A prefeitura local oferece benefícios fiscais significativos para quem instala sistemas fotovoltaicos, tanto em imóveis residenciais quanto comerciais. O incentivo em Curvelo já é reconhecido regionalmente e atrai moradores de cidades vizinhas que buscam economia de longo prazo. Saiba mais sobre a [energia solar em Curvelo](/blog/energia-solar-curvelo-guia) para entender as condições da região.
 
 Para solicitar o benefício em Curvelo, você precisa apresentar documentação comprobatória da instalação, incluindo o projeto aprovado pela concessionária e o registro na ANEEL. O prazo para solicitação varia conforme o calendário fiscal municipal, por isso é importante acompanhar as publicações da prefeitura. Muitos dos nossos clientes em Curvelo já aproveitaram essa oportunidade e hoje economizam significativamente todos os anos.
 
@@ -43,9 +43,9 @@ Para descobrir se a sua cidade oferece o benefício, consulte o portal da prefei
 
 ## Quanto você pode economizar no IPTU
 
-A economia real depende do valor do IPTU do seu imóvel e do percentual de desconto oferecido pelo município. Em geral, imóveis residenciais em Minas Gerais pagam entre R$ 800 e R$ 2.500 de IPTU anual. Com uma isenção de 50%, você poderia economizar entre R$ 400 e R$ 1.250 por ano. Em 10 anos, isso representa de R$ 4.000 a R$ 12.500 apenas em impostos.
+A economia real depende do valor do IPTU do seu imóvel e do percentual de desconto oferecido pelo município. Em geral, imóveis residenciais em Minas Gerais pagam entre R$ 800 e R$ 2.500 de IPTU anual. Com uma isenção de 50%, você poderia economizar entre R$ 400 e R$ 1.250 por ano. Para dimensionar melhor a economia total, consulte nosso [quanto custa instalar energia solar em Curvelo](/blog/quanto-custa-energia-solar-curvelo) com simulações detalhadas. Em 10 anos, isso representa de R$ 4.000 a R$ 12.500 apenas em impostos.
 
-Para imóveis comerciais, os valores são ainda mais expressivos. Um estabelecimento que paga R$ 5.000 anuais de IPTU pode economizar R$ 2.500 por ano com 50% de desconto. Somado à economia na conta de luz, que pode ultrapassar 90% do valor atual, o retorno do investimento em energia solar torna-se extremamente rápido. Muitos de nossos clientes em Minas Gerais relatam payback completo em menos de 5 anos quando consideram todos os benefícios combinados.
+Para imóveis comerciais, os valores são ainda mais expressivos. Um estabelecimento que paga R$ 5.000 anuais de IPTU pode economizar R$ 2.500 por ano com 50% de desconto. Somado à economia na conta de luz, que pode ultrapassar 90% do valor atual, o retorno do investimento em energia solar torna-se extremamente rápido. A [valorização do imóvel com energia solar](/blog/energia-solar-valoriza-imovel) de 3% a 5% é mais um benefício que potencializa o retorno financeiro. Muitos de nossos clientes em Minas Gerais relatam payback completo em menos de 5 anos quando consideram todos os benefícios combinados.
 
 ## Tabela de economia por tipo de imóvel
 

@@ -1,9 +1,13 @@
 ---
 // Cookie consent is handled client-side for prerendered pages
+const GA_ID = 'G-XXXXXXXXXX'; // TODO: Replace with actual GA4 measurement ID
 ---
 
-<script>
-  // Check cookie consent client-side
+{GA_ID !== 'G-XXXXXXXXXX' && (
+  <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} is:inline />
+)}
+
+<script define:vars={{ GA_ID }} is:inline>
   function hasConsent(): boolean {
     return document.cookie.split(';').some(c => c.trim().startsWith('cookie-consent=true'));
   }
@@ -16,6 +20,14 @@
 
   function initAnalytics() {
     if (!hasConsent()) return;
+    if (GA_ID === 'G-XXXXXXXXXX') return;
+
+    // Initialize gtag
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', GA_ID);
 
     // WhatsApp click
     document.querySelectorAll('a[href*="wa.me"]').forEach(link => {

@@ -18,6 +18,29 @@ const state = 'MG';
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual o custo de energia solar para empresas em Juiz de Fora?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento para empresas em Juiz de Fora varia conforme o consumo. Sistemas de 30kWp a 500kWp são comuns, com payback de 3 a 5 anos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "É possível vender a energia excedente?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Empresas podem participar de leilões de energia e vender sua energia excedente, gerando uma receita adicional."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <section class="hero" style="min-height:70vh;">
       <div class="hero-bg">

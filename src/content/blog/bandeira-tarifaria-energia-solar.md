@@ -1,5 +1,5 @@
 ---
-title: "Bandêrias Tarifárias e Energia Solar: Como Aproveitar ao Máximo"
+title: "Bandeiras Tarifárias e Energia Solar: Como Aproveitar ao Máximo"
 description: "Entenda como as bandeiras tarifárias brasileiras impactam sua conta de luz e como a energia solar protege contra aumentos nos custos de energia."
 pubDate: 2026-07-05
 author: "Cordeiro Energia"
@@ -45,7 +45,7 @@ A geração fotovoltaica conectada à rede é uma das formas mais eficientes de 
 
 Para quem adota o modelo de compensação de créditos, regulamentado pela ANEEL, os créditos gerados durante o dia abatem o consumo noturno. Quanto maior a capacidade de geração em relação ao consumo, menor a exposição aos acréscimos das banderias.
 
-Um sistema dimensionado para compensar 100% do consumo reduz a dependência da rede a níveis mínimos, praticamente eliminando o impacto das banderias. Para entender melhor como funciona a economia na conta, você pode ler sobre economia na conta de luz com energia solar.
+Um sistema dimensionado para compensar 100% do consumo reduz a dependência da rede a níveis mínimos, praticamente eliminando o impacto das banderias. Para entender melhor como funciona a economia na conta, você pode ler sobre [economia na conta de luz com energia solar](/blog/economia-conta-luz-energia-solar).
 
 ## Quanto você economiza em cada cenário
 
@@ -53,13 +53,13 @@ Para um residencial que consome 400 kWh por mês, com tarifa média de R$ 0,75/k
 
 Na vermelha P1, o total fica em R$ 315,88, com R$ 15,88 evitados. Na vermelha P2, o valor chega a R$ 325,27, com R$ 25,27 evitados. Na preta, o custo sobe para R$ 337,97, mas R$ 37,97 são evitados pelo sistema fotovoltaico.
 
-Quanto mais severa a bandeira, maior a economia do sistema fotovoltaico. A energia solar não é apenas limpa, é uma proteção financeira concreta. Para entender melhor como funciona um sistema completo, confira nosso guia completo de energia solar.
+Quanto mais severa a bandeira, maior a economia do sistema fotovoltaico. A energia solar não é apenas limpa, é uma proteção financeira concreta. Para entender melhor como funciona um sistema completo, confira nosso [guia completo de energia solar](/blog/energia-solar-guia-completo).
 
 ## Qual o payback considerando as banderias
 
 O payback de um sistema fotovoltaico é um dos indicadores mais importantes para avaliar o investimento. Considerando as variações de bandeira ao longo do ano, o tempo de retorno pode variar bastante. Para um sistema de 5kWp em uma residência com 400 kWh/mês, tarifa de R$ 0,75/kWh e média de banderias, o payback fica entre 4 e 6 anos.
 
-Se o sistema gerar mais do que o imóvel consome, o payback pode ser ainda menor. A energia excedente gera créditos que valem por até 60 meses, conforme regulamentação da ANEEL. Essa regulamentação de geração distribuída permite que você gere sua própria energia e compense créditos no longo prazo.
+Se o sistema gerar mais do que o imóvel consome, o payback pode ser ainda menor. A energia excedente gera créditos que valem por até 60 meses, conforme regulamentação da ANEEL. Essa regulamentação de geração distribuída permite que você gere sua própria energia e compense créditos no longo prazo. Para quem não dispõe do valor total à vista, existem [opções de financiamento de energia solar](/blog/financiamento-energia-solar) com parcelas acessíveis.
 
 A manutenção do sistema é simples e a vida útil pode ultrapassar 25 anos. Isso significa décadas de proteção contra aumentos tarifários, com custo de manutenção praticamente zero.
 
@@ -85,7 +85,7 @@ A vida útil do sistema pode ultrapassar 25 anos, o que significa décadas de ec
 
 As bandeiras tarifárias são uma realidade que afeta diretamente o bolso de quem consome energia da rede elétrica. O histórico brasileiro mostra que não é questão de se os aumentos vão acontecer, mas quando vão acontecer. A boa notícia é que a energia solar fotovoltaica oferece uma proteção concreta e duradoura contra esses impactos.
 
-Um sistema bem dimensionado pode praticamente eliminar o efeito das banderias na sua conta, além de gerar economia mensal consistente ao longo de décadas. Se você quer entender melhor como a economia funciona na prática, leia também sobre economia na conta de luz com energia solar.
+Um sistema bem dimensionado pode praticamente eliminar o efeito das banderias na sua conta, além de gerar economia mensal consistente ao longo de décadas. Se você quer entender melhor como a economia funciona na prática, leia também sobre [economia na conta de luz com energia solar](/blog/economia-conta-luz-energia-solar).
 
 ## Perguntas frequentes
 

@@ -18,6 +18,29 @@ const state = 'MG';
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual o custo de energia solar em Montes Claros?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento em Montes Claros é similar ao de outras cidades de MG. Para uma residência média, o custo varia de R$ 15.000 a R$ 25.000, com payback de 4 a 5 anos devido à alta irradiação solar da região."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A concessionária de Montes Claros aceita energia solar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! A CELF (Companhia Energética de Minas Gerais) é responsável pelo fornecimento de energia em Montes Claros e aceita sistemas de energia solar, incluindo o sistema de geração distribuída."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <section class="hero" style="min-height:70vh;">
       <div class="hero-bg">

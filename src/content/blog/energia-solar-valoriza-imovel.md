@@ -9,7 +9,7 @@ image: /blog/energia-solar-valoriza-imovel.webp
 
 Trabalhamos com energia solar há anos e sempre ouvimos a mesma pergunta: vale a pena instalar um sistema fotovoltaico se pretendo vender o imóvel? A resposta curta é sim. Cada vez mais compradores olham para a conta de luz como parte do custo de moradia e buscam casas que já possuam geração própria de energia.
 
-A verdade é que um imóvel com painéis solares se destaca no mercado. Não é apenas uma questão de economia mensal, mas de uma decisão racional que compradores educados fazem ao comparar opções. Quando alguém está entre duas casas similares, a que já possui energia solar tende a vender mais rápido e por um valor superior.
+A verdade é que um imóvel com painéis solares se destaca no mercado. Não é apenas uma questão de economia mensal, mas de uma decisão racional que compradores educados fazem ao comparar opções. Quando alguém está entre duas casas similares, a que já possui energia solar tende a vender mais rápido e por um valor superior. Entender a [economia na conta de luz com energia solar](/blog/economia-conta-luz-energia-solar) ajuda a dimensionar o impacto financeiro real desse investimento.
 
 Neste artigo, vamos mostrar exatamente quanto energia solar pode valorizar o seu imóvel, quais fatores influenciam esse acréscimo e como se preparar para maximizar o retorno na hora da venda.
 
@@ -62,7 +62,7 @@ Estes valores são estimativas baseadas em médias de mercado e podem variar con
 
 Para calcular o retorno real, é necessário considerar o custo de instalação do sistema solar e o valor de valorização obtido na venda. Um sistema residencial de 5 kWp custa em média entre R$ 20.000 e R$ 30.000. A valorização de 3% a 5% pode cobrir uma parte significativa desse investimento.
 
-Além da valorização direta do preço de venda, existe outro benefício importante: o tempo de venda. Imóveis com energia solar tendem a ser vendidos mais rápido porque atraem um público mais amplo de compradores. Menos tempo no mercado significa menos custos com manutenção, IPTU e eventuais danos.
+Além da valorização direta do preço de venda, existe outro benefício importante: o tempo de venda. Imóveis com energia solar tendem a ser vendidos mais rápido porque atraem um público mais amplo de compradores. Menos tempo no mercado significa menos custos com manutenção, IPTU e eventuais danos. Em Minas Gerais, é possível ainda obter [isenção de IPTU para imóveis com energia solar](/blog/isencao-iptu-energia-solar), o que aumenta ainda mais a atratividade do imóvel.
 
 O retorno do investimento ainda pode ser potencializado se o sistema solar estiver funcionando há varios anos e gerando economia comprovável. Compradores confiam mais em sistemas que já estão operando e gerando resultados do que em sistemas recém-instalados sem histórico de desempenho.
 
@@ -90,7 +90,7 @@ Em caso de financiamento, os bancos geralmente exigem documentação completa pa
 
 ### Manutenção em dia
 
-Um sistema solar com manutenção em dia demonstra que o proprietário cuidou bem do imóvel e dos equipamentos. A manutenção preventiva inclui limpeza dos painéis, verificação dos cabos e conexões, e análise do desempenho do inversor. Esses cuidados garantem que o sistema continue funcionando com eficiência.
+Um sistema solar com [manutenção](/blog/manutencao-energia-solar) em dia demonstra que o proprietário cuidou bem do imóvel e dos equipamentos. A manutenção preventiva inclui limpeza dos painéis, verificação dos cabos e conexões, e análise do desempenho do inversor. Esses cuidados garantem que o sistema continue funcionando com eficiência.
 
 O comprador vai querer saber quando foi a última manutenção realizada e qual foi o estado do sistema naquela ocasião. Relatórios de manutenção com fotos e medições de desempenho são muito úteis para comprovar o bom estado de conservação. A ausência de registros pode levantar suspeitas.
 

@@ -7,7 +7,7 @@ tags: ["energia solar", "dicas", "guia", "instalação", "contrato"]
 image: /blog/escolher-empresa-energia-solar.webp
 ---
 
-Escolher a empresa certa de energia solar é uma das decisões mais importantes que você vai tomar ao longo do processo de instalação. Nós já vimos muitos casos de clientes que vieram até nós com problemas causados por empresas inescrupulosas. Desde atrasos absurdos na instalação até equipamentos de qualidade duvidosa, o mercado de energia solar infelizmente ainda tem muitas armadilhas para quem não sabe o que procurar.
+Escolher a empresa certa de energia solar é uma das decisões mais importantes que você vai tomar ao longo do processo de instalação. Nós já vimos muitos casos de clientes que vieram até nós com problemas causados por empresas inescrupulosas. Desde atrasos absurdos na instalação até equipamentos de qualidade duvidosa, o mercado de energia solar infelizmente ainda tem muitas armadilhas para quem não sabe o que procurar. Conhecer os [erros comuns na instalação de energia solar](/blog/erros-comuns-energia-solar) ajuda a evitar problemas sérios.
 
 O objetivo deste guia é te ajudar a tomar uma decisão consciente e segura. Vamos abordar todos os critérios que você deve avaliar, as perguntas que precisa fazer e os sinais de alerta que não podem ser ignorados. Com essa informação em mãos, você estará preparado para escolher uma empresa que realmente entregue o que promete.
 
@@ -23,7 +23,7 @@ A credenciamento junto à Agência Nacional de Energia Elétrica (ANEEL) é o pr
 
 Para verificar se uma empresa possui credenciamento ANEEL, você pode acessar o site da agência e consultar o cadastro. Além disso, empresas credenciadas são obrigadas a ter profissionais habilitados, o que garante que o projeto seja executado com qualidade. Sem esse credenciamento, você corre o risco de ter problemas com a concessionária local e até de ter o sistema desligado.
 
-Outro aspecto importante é que empresas credenciadasANELL também precisam cumprir obrigações de manutenção e suporte pós-venda. Isso significa que, caso ocorra algum problema com o sistema, você terá uma empresa responsável por resolver a situação. Empresas não credenciadas geralmente desaparecem depois de fechar o contrato, deixando o cliente desamparado.
+Outro aspecto importante é que empresas credenciadasANELL também precisam cumprir obrigações de [manutenção](/blog/manutencao-energia-solar) e suporte pós-venda. Isso significa que, caso ocorra algum problema com o sistema, você terá uma empresa responsável por resolver a situação. Empresas não credenciadas geralmente desaparecem depois de fechar o contrato, deixando o cliente desamparado.
 
 ### Experiência no mercado
 
@@ -61,7 +61,7 @@ Além disso, verifique se todas as promessas feitas durante as negociações est
 
 O prazo de garantia é um dos pontos mais importantes do contrato. Painéis solares de qualidade devem ter garantia de no mínimo 25 anos para geração de energia. Garantias menores podem indicar equipamentos inferiores ou empresas que não confiam na qualidade de seus próprios produtos.
 
-Além da garantia dos painéis, verifique a garantia do inversor e demais componentes. Inversores geralmente têm garantia de 5 a 10 anos, dependendo da marca. É essencial que essas garantias estejam claramente especificadas no contrato, com os procedimentos para acionamento em caso de defeito.
+Além da garantia dos painéis, verifique a garantia do [inversor](/blog/inversor-solar-guia-completo) e demais componentes. Inversores geralmente têm garantia de 5 a 10 anos, dependendo da marca. É essencial que essas garantias estejam claramente especificadas no contrato, com os procedimentos para acionamento em caso de defeito.
 
 Também é importante entender o que está coberto pela garantia. Algumas garantias cobrem apenas defeitos de fabricação, enquanto outras incluem danos causados por condições climáticas extremas. Leia atentamente as exclusões para não ser surpreendido posteriormente.
 

@@ -1,5 +1,5 @@
 ---
-title: "Quanto Você Pode Economizar com Energia Solar? Simulção Completa"
+title: "Quanto Você Pode Economizar com Energia Solar? Simulação Completa"
 description: "Aprenda a calcular a economia real com energia solar: fórmulas, simulações por perfil de consumo e análise de payback detalhada"
 pubDate: 2026-04-08
 author: "Cordeiro Energia"

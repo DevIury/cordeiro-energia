@@ -9,7 +9,7 @@ image: /blog/energia-solar-comercial.webp
 
 Trabalho com projetos de energia solar para condomínios há alguns anos e posso afirmar que esse segmento representa uma das maiores oportunidades de economia no mercado. Um condomínio bem dimensionado pode reduzir a conta de luz em até 40%, beneficiando todos os moradores simultaneamente. O investimento é compartilhado e o retorno financeiro chega mais rápido do que em sistemas individuais. Vou te explicar como funciona na prática e quanto você pode economizar.
 
-O conceito de energia solar para condomínios vem ganhando espaço no Brasil inteiro. A possibilidade de instalar um sistema fotovoltaico no telhado do prédio e dividir os custos entre várias unidades faz esse modelo ser extremamente atrativo. Além da economia financeira, o condomínio ganha em sustentabilidade e valorização do imóvel.
+O conceito de energia solar para condomínios vem ganhando espaço no Brasil inteiro. A possibilidade de instalar um sistema fotovoltaico no telhado do prédio e dividir os custos entre várias unidades faz esse modelo ser extremamente atrativo. Além da economia financeira, o condomínio ganha em sustentabilidade e valorização do [imóvel](/blog/energia-solar-valoriza-imovel).
 
 ## Como funciona energia solar em condomínios
 
@@ -92,10 +92,10 @@ Sim, é possível instalar energia solar em apartamentos. O modelo mais indicado
 
 ### Qual a manutenção necessária para o sistema solar do condomínio?
 
-A manutenção é simples e inclui limpeza periódica dos painéis e verificação dos componentes. Recomenda-se a limpeza a cada 3 a 6 meses, dependendo da localidade. A manutenção preventiva garante o máximo desempenho do sistema ao longo dos anos e pode ser contratada junto com a empresa instaladora.
+A manutenção é simples e inclui limpeza periódica dos painéis e verificação dos componentes. Recomenda-se a limpeza a cada 3 a 6 meses, dependendo da localidade. A [manutenção preventiva](/blog/manutencao-energia-solar) garante o máximo desempenho do sistema ao longo dos anos e pode ser contratada junto com a empresa instaladora.
 
 ### É possível financiar o sistema de energia solar do condomínio?
 
-Sim, existem diversas opções de financiamento disponíveis. O sistema pode ser incorporado à taxa de condomínio com parcelas em até 60 meses. Existem também linhas de crédito específicas para energia solar, com taxas de juros facilitadas. A economia gerada pelo sistema tende a ser maior do que o valor das parcelas do financiamento.
+Sim, existem diversas opções de [financiamento](/blog/financiamento-energia-solar) disponíveis. O sistema pode ser incorporado à taxa de condomínio com parcelas em até 60 meses. Existem também linhas de crédito específicas para energia solar, com taxas de juros facilitadas. A economia gerada pelo sistema tende a ser maior do que o valor das parcelas do financiamento.
 
 ---

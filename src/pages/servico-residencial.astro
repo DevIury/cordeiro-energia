@@ -13,6 +13,45 @@ import FaqItem from '../components/FaqItem.astro';
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto custa instalar energia solar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento varia conforme o consumo da residência. Oferecemos opções de financiamento em até 60x e também opção sem entrada. O payback médio é de 3 a 5 anos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual o payback do sistema?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O payback médio é de 3 a 5 anos. Depois disso, a energia gerada é 100% gratuita por mais 20 anos, considerando a garantia de 25 anos dos painéis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de baterias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não necessariamente. O sistema on-grid (mais comum) usa a rede da concessionária como 'bateria'. Baterias são indicadas para quem quer autonomia total ou tem quedas frequentes de energia."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "E se estiver nublado ou chovendo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os painéis geram energia mesmo em dias nublados, porém com menor eficiência. Além disso, os créditos acumulados nos meses de sol compensam os períodos de menor produção."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <!-- Hero -->
     <section style="position:relative;min-height:70vh;display:flex;align-items:center;overflow:hidden;">

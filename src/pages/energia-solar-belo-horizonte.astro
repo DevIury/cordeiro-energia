@@ -18,6 +18,37 @@ const state = 'MG';
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qual o custo de energia solar em BH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento em BH varia conforme o porte do projeto. Para residências, o custo médio é de R$ 18.000 a R$ 35.000. Para empresas, pode variar de R$ 50.000 a R$ 500.000 conforme o consumo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de autorização da prefeitura de BH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim, é necessário alvará da prefeitura e registro na CE-MG. Cuidamos de toda a documentação para você, incluindo o projeto técnico e o registro na concessionária."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funciona em apartamentos em BH?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sim! Para apartamentos, oferecemos o sistema de geração compartilhada (aqueles azuis nos telhados). Muitos condomínios em BH já adotaram essa solução."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <section class="hero" style="min-height:70vh;">
       <div class="hero-bg">
