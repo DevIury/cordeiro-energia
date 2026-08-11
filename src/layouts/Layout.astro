@@ -523,8 +523,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 
     /* Hero high position for tablets and small desktops */
     @media (min-width: 768px) and (max-width: 1199px) {
-      .hero { min-height: 80vh; align-items: flex-start; padding-top: 1.5rem; }
-      .hero-content { padding: 0 0 2rem; }
+      .hero { min-height: 80vh; display: flex; align-items: center; justify-content: flex-start; padding-top: 0; }
+      .hero-content { padding: 0; margin-top: -4rem; }
     }
 
     /* Sidebar */
