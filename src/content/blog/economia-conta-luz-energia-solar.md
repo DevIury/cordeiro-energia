@@ -4,7 +4,7 @@ description: "Aprenda a calcular a economia real com energia solar: fórmulas, s
 pubDate: 2026-04-08
 author: "Cordeiro Energia"
 tags: ["economia", "conta de luz", "simulação", "energia solar"]
-image: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=400&fit=crop
+image: /blog/economia-energia-solar.webp
 ---
 
 Eu costumo pedir que meus clientes mandem as últimas 12 contas de luz antes de qualquer orçamento. Isso porque calcular a economia real com energia solar exige entender os dados do seu consumo antes de qualquer coisa. É exatamente isso que vou te mostrar nesse guia. Vamos calcular juntos quanto dá pra economizar com energia solar e quanto tempo leva pra você recuperar o investimento.

@@ -4,7 +4,7 @@ description: "Guia completo sobre energia solar fotovoltaica: sistemas, componen
 pubDate: 2026-01-10
 author: "Cordeiro Energia"
 tags: ["energia solar", "guia completo", "fotovoltaico", "economia"]
-image: https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=400&fit=crop
+image: /blog/energia-solar-paineis.webp
 ---
 
 Trabalho com energia solar há vários anos e posso afirmar que 2026 é o melhor momento para investir nessa tecnologia. A queda contínua dos custos de componentes e a valorização da tarifa de energia elétrica no Brasil tornaram a fotovoltaica a alternativa mais inteligente para quem busca economia e sustentabilidade. Seja para residências, empresas ou propriedades rurais, o retorno financeiro nunca foi tão atrativo. Vou te explicar tudo o que você precisa saber para tomar a melhor decisão.

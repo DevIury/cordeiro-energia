@@ -4,7 +4,7 @@ description: "Descubra como condomínios residenciais e comerciais podem economi
 pubDate: 2026-09-12
 author: "Cordeiro Energia"
 tags: ["energia solar", "condomínio", "comercial", "economia", "sustentabilidade"]
-image: https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop
+image: /blog/energia-solar-comercial.webp
 ---
 
 Trabalho com projetos de energia solar para condomínios há alguns anos e posso afirmar que esse segmento representa uma das maiores oportunidades de economia no mercado. Um condomínio bem dimensionado pode reduzir a conta de luz em até 40%, beneficiando todos os moradores simultaneamente. O investimento é compartilhado e o retorno financeiro chega mais rápido do que em sistemas individuais. Vou te explicar como funciona na prática e quanto você pode economizar.

@@ -4,7 +4,7 @@ description: "Guia completo sobre inversores solares: tipos, funcionamento, marc
 pubDate: 2026-06-10
 author: "Cordeiro Energia"
 tags: ["inversor", "energia solar", "componentes", "equipamento"]
-image: https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop
+image: /blog/inversor-solar.webp
 ---
 
 Trabalho com energia solar há anos e posso afirmar: o inversor é o coração de qualquer sistema fotovoltaico. Ele recebe a energia contínua dos painéis e a transforma em corrente alternada, que é exatamente o que seus equipamentos domésticos precisam. Sem um inversor adequado, os módulos solares são apenas placas caras no telhado. Por isso, dedicar tempo para entender esse componente antes de fechar um projeto faz toda a diferença no retorno do investimento.

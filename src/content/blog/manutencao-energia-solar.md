@@ -4,7 +4,7 @@ description: "Guia completo de manutenção de sistemas fotovoltaicos: frequênc
 pubDate: 2026-03-12
 author: "Cordeiro Energia"
 tags: ["manutenção", "energia solar", "cuidados", "durabilidade"]
-image: https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=800&h=400&fit=crop
+image: /blog/manutencao-energia-solar.webp
 ---
 
 Trabalho com energia solar há anos e posso afirmar que a manutenção preventiva é o que separa um sistema que gera economia por 30 anos de um que precisa de substituições precoces. Vejo na prática como pequenos cuidados periódicos fazem toda a diferença no desempenho e na durabilidade dos componentes fotovoltaicos.

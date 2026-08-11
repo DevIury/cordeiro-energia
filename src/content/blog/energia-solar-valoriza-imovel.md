@@ -4,7 +4,7 @@ description: "Descubra quanto energia solar aumenta o valor do seu imóvel e por
 pubDate: 2026-09-05
 author: "Cordeiro Energia"
 tags: ["energia solar", "imóvel", "investimento", "valorização", "economia"]
-image: https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=400&fit=crop
+image: /blog/energia-solar-valoriza-imovel.webp
 ---
 
 Trabalhamos com energia solar há anos e sempre ouvimos a mesma pergunta: vale a pena instalar um sistema fotovoltaico se pretendo vender o imóvel? A resposta curta é sim. Cada vez mais compradores olham para a conta de luz como parte do custo de moradia e buscam casas que já possuam geração própria de energia.

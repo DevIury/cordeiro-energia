@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
+import FaqItem from '../components/FaqItem.astro';
 
 const services = [
   { num: '01', icon: '☀️', title: 'Energia Solar', desc: 'Sistema completo com economia de até 95% na conta de luz.', badge: 'MAIS VENDIDO', href: '/servico-residencial', img: '/servico-residencial.webp' },
@@ -656,60 +657,30 @@ const posts = [
           <p>Tire suas dúvidas sobre energia solar</p>
         </div>
         <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false">
-              <span>Quanto custa instalar energia solar?</span>
-              <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>O investimento varia conforme o consumo. Para uma residência comum, o custo gira entre <strong>R$ 8.000 e R$ 50.000</strong>, dependendo do tamanho do sistema. Sistemas de <strong>3 a 6 kWp</strong> são ideais para casas. O payback médio é de <strong>4 a 6 anos</strong>, e o sistema dura mais de 25 anos.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false">
-              <span>Quanto vou economizar na conta de luz?</span>
-              <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Em média, a economia varia de <strong>40% a 95%</strong> na conta de luz. Um sistema bem dimensionado pode gerar economia de <strong>R$ 300 a R$ 1.500 mensais</strong>, dependendo do consumo e da tarifa da concessionária.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false">
-              <span>E se ficar nublado ou chover?</span>
-              <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Os painéis solares funcionam com luz difusa, ou seja, <strong>geram energia mesmo em dias nublados</strong>, porém com redução de 10% a 30%. A chuva ainda limpa os painéis naturalmente. O sistema é dimensionado considerando as condições climáticas da sua região.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false">
-              <span>Preciso de licença da prefeitura?</span>
-              <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Para sistemas residenciais de até <strong>75 kW</strong>, <strong>não é necessária licença da prefeitura</strong>. O processo envolve apenas aprovação da concessionária de energia, que leva de 30 a 60 dias. Cuidamos de toda a documentação para você.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false">
-              <span>O granizo danifica os painéis?</span>
-              <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>Os painéis modernos possuem certificação <strong>IEC 61215</strong> de resistência a granizo. São testados com impacto de granizo de <strong>25 mm de diâmetro a 85 km/h</strong>. Em casos extremos, a cobertura do seguro do imóvel geralmente cobre danos.</p>
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-btn" aria-expanded="false">
-              <span>Como funciona a manutenção?</span>
-              <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p>A manutenção é <strong>simples e de baixo custo</strong>. Basta limpar os painéis a cada 3 a 6 meses com água e pano macio. A inspeção técnica completa é recomendada uma vez por ano, custando entre <strong>R$ 300 e R$ 800</strong>.</p>
-            </div>
-          </div>
+          <FaqItem
+            question="Quanto custa instalar energia solar?"
+            answer="O investimento varia conforme o consumo. Para uma residência comum, o custo gira entre <strong>R$ 8.000 e R$ 50.000</strong>, dependendo do tamanho do sistema. Sistemas de <strong>3 a 6 kWp</strong> são ideais para casas. O payback médio é de <strong>4 a 6 anos</strong>, e o sistema dura mais de 25 anos."
+          />
+          <FaqItem
+            question="Quanto vou economizar na conta de luz?"
+            answer="Em média, a economia varia de <strong>40% a 95%</strong> na conta de luz. Um sistema bem dimensionado pode gerar economia de <strong>R$ 300 a R$ 1.500 mensais</strong>, dependendo do consumo e da tarifa da concessionária."
+          />
+          <FaqItem
+            question="E se ficar nublado ou chover?"
+            answer="Os painéis solares funcionam com luz difusa, ou seja, <strong>geram energia mesmo em dias nublados</strong>, porém com redução de 10% a 30%. A chuva ainda limpa os painéis naturalmente. O sistema é dimensionado considerando as condições climáticas da sua região."
+          />
+          <FaqItem
+            question="Preciso de licença da prefeitura?"
+            answer="Para sistemas residenciais de até <strong>75 kW</strong>, <strong>não é necessária licença da prefeitura</strong>. O processo envolve apenas aprovação da concessionária de energia, que leva de 30 a 60 dias. Cuidamos de toda a documentação para você."
+          />
+          <FaqItem
+            question="O granizo danifica os painéis?"
+            answer="Os painéis modernos possuem certificação <strong>IEC 61215</strong> de resistência a granizo. São testados com impacto de granizo de <strong>25 mm de diâmetro a 85 km/h</strong>. Em casos extremos, a cobertura do seguro do imóvel geralmente cobre danos."
+          />
+          <FaqItem
+            question="Como funciona a manutenção?"
+            answer="A manutenção é <strong>simples e de baixo custo</strong>. Basta limpar os painéis a cada 3 a 6 meses com água e pano macio. A inspeção técnica completa é recomendada uma vez por ano, custando entre <strong>R$ 300 e R$ 800</strong>."
+          />
         </div>
       </div>
     </section>
@@ -742,41 +713,9 @@ const posts = [
 
   <style>
     .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
-    .faq-item { border: 1px solid #f3f4f6; border-radius: 0.75rem; overflow: hidden; transition: border-color 0.3s; }
-    .faq-item:hover { border-color: rgba(254,92,23,0.2); }
-    .faq-item.active { border-color: rgba(254,92,23,0.3); }
-    .faq-btn {
-      width: 100%; display: flex; align-items: center; justify-content: space-between;
-      padding: 1.15rem 1.25rem; background: #fff; border: none; cursor: pointer;
-      font-size: 0.95rem; font-weight: 700; color: #111; text-align: left;
-      font-family: inherit; gap: 1rem;
-    }
-    .faq-btn span { flex: 1; }
-    .faq-icon {
-      width: 1.25rem; height: 1.25rem; flex-shrink: 0; color: #FE5C17;
-      transition: transform 0.3s cubic-bezier(0.22,0.61,0.36,1);
-    }
-    .faq-item.active .faq-icon { transform: rotate(180deg); }
-    .faq-answer {
-      max-height: 0; overflow: hidden; transition: max-height 0.35s cubic-bezier(0.22,0.61,0.36,1);
-    }
-    .faq-item.active .faq-answer { max-height: 300px; }
-    .faq-answer p {
-      padding: 0 1.25rem 1.25rem; font-size: 0.9rem; color: #4b5563; line-height: 1.75; margin: 0;
-    }
-    .faq-answer strong { color: #111; }
   </style>
 
   <script>
-    document.querySelectorAll('.faq-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const wasActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item.active').forEach(i => i.classList.remove('active'));
-        if (!wasActive) item.classList.add('active');
-      });
-    });
-
     const backToTop = document.getElementById('backToTop');
     if (backToTop) {
       window.addEventListener('scroll', () => {

@@ -4,7 +4,7 @@ description: "Guia completo sobre energia solar em Curvelo MG: economia, regulam
 pubDate: 2026-01-25
 author: "Cordeiro Energia"
 tags: ["energia solar", "curvelo", "minas gerais", "guia municipal"]
-image: https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?w=800&h=400&fit=crop
+image: /blog/energia-solar-curvelo-guia.webp
 ---
 
 Eu acompanho de perto o crescimento da energia solar em Curvelo e posso afirmar que este município se tornou um dos melhores locais para investir em fotovoltaica em Minas Gerais. A região central do estado reúne condições climáticas, econômicas e regulatórias que tornam a decisão de instalar painéis solares cada vez mais lógica para residências, comércios e propriedades rurais. Se você quer entender os fundamentos da tecnologia antes de decidir, nosso [guia completo sobre energia solar](/blog/energia-solar-guia-completo) explica tudo do início ao fim.

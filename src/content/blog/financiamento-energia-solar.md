@@ -4,7 +4,7 @@ description: "Descubra as principais opções de financiamento para instalar ene
 pubDate: 2026-09-08
 author: "Cordeiro Energia"
 tags: ["financiamento", "energia solar", "crédito", "investimento"]
-image: https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=400&fit=crop
+image: /blog/financiamento-energia-solar.webp
 ---
 
 Não ter o valor total para investir em energia solar não significa adiar seu projeto. Existem diversas linhas de financiamento no Brasil que permitem começar a economizar já no primeiro mês, mesmo sem dispor do valor total de uma vez. Vou te mostrar todas as opções disponíveis para você escolher a que melhor se encaixa na sua situação.

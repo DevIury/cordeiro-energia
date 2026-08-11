@@ -4,7 +4,7 @@ description: "Aprenda a avaliar empresas de energia solar: critérios essenciais
 pubDate: 2026-09-01
 author: "Cordeiro Energia"
 tags: ["energia solar", "dicas", "guia", "instalação", "contrato"]
-image: https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&h=400&fit=crop
+image: /blog/escolher-empresa-energia-solar.webp
 ---
 
 Escolher a empresa certa de energia solar é uma das decisões mais importantes que você vai tomar ao longo do processo de instalação. Nós já vimos muitos casos de clientes que vieram até nós com problemas causados por empresas inescrupulosas. Desde atrasos absurdos na instalação até equipamentos de qualidade duvidosa, o mercado de energia solar infelizmente ainda tem muitas armadilhas para quem não sabe o que procurar.

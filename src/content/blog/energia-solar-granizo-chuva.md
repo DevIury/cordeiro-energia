@@ -4,7 +4,7 @@ description: "Saiba como chuva, granizo e condições climáticas afetam o desem
 pubDate: 2026-08-12
 author: "Cordeiro Energia"
 tags: ["clima", "energia solar", "granizo", "durabilidade", "segurança"]
-image: https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?w=800&h=400&fit=crop
+image: /blog/granizo-chuva-energia-solar.webp
 ---
 
 Uma das dúvidas que mais recebo dos nossos clientes é sobre o que acontece com sistemas fotovoltaicos quando chove ou graniza. É uma preocupação muito comum, especialmente aqui no Brasil, onde o clima varia bastante entre as regiões. Trabalho com energia solar há anos e posso afirmar que a maioria das pessoas superestima os riscos climáticos para os painéis. Vou explicar o que de fato ocorre com os módulos em cada situação, com base em dados reais e testes laboratoriais. Assim, você entende como o sistema se comporta e pode tomar decisões com tranquilidade.

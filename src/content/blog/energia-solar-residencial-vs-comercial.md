@@ -4,7 +4,7 @@ description: "Comparativo completo entre sistemas residenciais e comerciais de e
 pubDate: 2026-05-15
 author: "Cordeiro Energia"
 tags: ["residencial", "comercial", "energia solar", "comparativo"]
-image: https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop
+image: /blog/energia-solar-comercial.webp
 ---
 
 Trabalho com projetos fotovoltaicos há anos e sei que a energia solar tem crescido muito no Brasil, tanto para casas quanto para empresas. Apesar de usar a mesma tecnologia, existem diferenças importantes entre os sistemas residenciais e comerciais que você precisa entender antes de investir. Vou te mostrar cada uma dessas diferenças pra te ajudar a escolher a melhor opção pro seu caso.

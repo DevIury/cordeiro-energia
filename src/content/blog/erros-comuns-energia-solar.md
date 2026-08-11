@@ -4,7 +4,7 @@ description: "Conheça os 7 erros mais comuns na instalação de energia solar f
 pubDate: 2026-02-05
 author: "Cordeiro Energia"
 tags: ["erros", "energia solar", "dicas", "instalação"]
-image: https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800&h=400&fit=crop
+image: /blog/erros-energia-solar.webp
 ---
 
 Nem toda instalação de energia solar é feita da maneira certa. Já vi muita gente investir e acabar se frustando por erros que poderiam ter sido evitados. Segundo a ABRAAD, o mercado de geração distribuída já ultrapassou 50 GW instalados em 2025, mas nem todas essas instalações foram bem executadas.

@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
 import CtaSection from '../components/CtaSection.astro';
 import Footer from '../components/Footer.astro';
+import FaqItem from '../components/FaqItem.astro';
 ---
 
 <Layout
@@ -173,42 +174,22 @@ import Footer from '../components/Footer.astro';
           <h2 style="font-size:2.25rem;font-weight:800;color:#111;">Perguntas <span style="color:#FE5C17;">frequentes</span></h2>
         </div>
         <div style="display:flex;flex-direction:column;gap:1rem;">
-          <div class="card faq-item" style="overflow:hidden;">
-            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
-              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">Posso deduzir o ICMS?</h4>
-              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">Sim! A energia gerada pode ser utilizada para compensar o ICMS da sua conta, resultando em economia adicional significativa para a sua empresa.</p>
-            </div>
-          </div>
-          <div class="card faq-item" style="overflow:hidden;">
-            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
-              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">E se minha empresa não consumir toda a energia?</h4>
-              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">O excedente é injetado na rede e compensado na sua conta de luz, gerando créditos energéticos que podem ser utilizados em até 60 meses.</p>
-            </div>
-          </div>
-          <div class="card faq-item" style="overflow:hidden;">
-            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
-              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">Qual o tempo de instalação?</h4>
-              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">Sistemas comerciais de médio porte são instalados em 5 a 15 dias, dependendo da complexidade do projeto e da necessidade de aprovações.</p>
-            </div>
-          </div>
-          <div class="card faq-item" style="overflow:hidden;">
-            <button onclick="this.parentElement.classList.toggle('open')" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;background:none;border:none;cursor:pointer;text-align:left;">
-              <h4 style="font-size:0.95rem;font-weight:700;color:#111;margin:0;">É necessário autorização da prefeitura?</h4>
-              <svg class="faq-arrow" style="width:1.25rem;height:1.25rem;color:#6b7280;transition:transform 0.3s;flex-shrink:0;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-            </button>
-            <div class="faq-answer">
-              <p style="color:#6b7280;font-size:0.85rem;line-height:1.7;padding:0 1.5rem 1.25rem;">Sim, para sistemas maiores é necessária aprovação da prefeitura e da concessionária de energia. Cuidamos de todo o processo burocrático para você.</p>
-            </div>
-          </div>
+          <FaqItem
+            question="Posso deduzir o ICMS?"
+            answer="Sim! A energia gerada pode ser utilizada para compensar o ICMS da sua conta, resultando em economia adicional significativa para a sua empresa."
+          />
+          <FaqItem
+            question="E se minha empresa não consumir toda a energia?"
+            answer="O excedente é injetado na rede e compensado na sua conta de luz, gerando créditos energéticos que podem ser utilizados em até 60 meses."
+          />
+          <FaqItem
+            question="Qual o tempo de instalação?"
+            answer="Sistemas comerciais de médio porte são instalados em 5 a 15 dias, dependendo da complexidade do projeto e da necessidade de aprovações."
+          />
+          <FaqItem
+            question="É necessário autorização da prefeitura?"
+            answer="Sim, para sistemas maiores é necessária aprovação da prefeitura e da concessionária de energia. Cuidamos de todo o processo burocrático para você."
+          />
         </div>
       </div>
     </section>
@@ -223,14 +204,5 @@ import Footer from '../components/Footer.astro';
   .benefit-card:hover .benefit-icon {
     transform: rotate(10deg) scale(1.1);
     background: #FE5C17;
-  }
-  .faq-item .faq-answer {
-    max-height: 0;
-  }
-  .faq-item.open .faq-answer {
-    max-height: 500px !important;
-  }
-  .faq-item.open .faq-arrow {
-    transform: rotate(180deg);
   }
 </style>

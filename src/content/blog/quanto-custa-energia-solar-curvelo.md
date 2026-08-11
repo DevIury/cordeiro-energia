@@ -4,7 +4,7 @@ description: "Simulação completa com valores, economia mensal e payback para i
 pubDate: 2026-09-15
 author: "Cordeiro Energia"
 tags: ["energia solar", "curvelo", "custo", "investimento", "minas gerais"]
-image: https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=400&fit=crop
+image: /blog/energia-solar-paineis.webp
 ---
 
 A gente na Cordeiro Energia trabalha todos os dias com famílias e empresas de Curvelo que querem deixar de depender da conta de luz. Ao longo dos últimos anos, acompanhamos de perto a evolução dos custos de instalação e da economia real que cada sistema entrega. Com base nessa experiência, preparamos esta simulação completa para você ter noção de quanto vai investir e quanto vai economizar.

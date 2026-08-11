@@ -4,7 +4,7 @@ description: "Entenda como as bandeiras tarifárias brasileiras impactam sua con
 pubDate: 2026-07-05
 author: "Cordeiro Energia"
 tags: ["bandeira tarifária", "energia solar", "economia", "tarifa"]
-image: https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&h=400&fit=crop
+image: /blog/bandeira-tarifaria-energia-solar.webp
 ---
 
 Ninguém gosta de abrir a conta de luz e ver o valor subir sem aviso prévio. Essa é uma das dúvidas que mais recebo dos meus clientes: por que a conta aumentou de uma hora para outra? A resposta muitas vezes está nas bandeiras tarifárias, um sistema que influencia diretamente quanto você paga pela energia elétrica. Vou te explicar como isso funciona e como a energia solar pode ser o seu escudo contra esses aumentos imprevistos.

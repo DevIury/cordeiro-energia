@@ -4,7 +4,7 @@ description: "Saiba como obter isenção ou desconto no IPTU ao instalar energia
 pubDate: 2026-09-10
 author: "Cordeiro Energia"
 tags: ["energia solar", "iptu", "incentivo", "minas gerais", "economia"]
-image: https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=400&fit=crop
+image: /blog/isencao-iptu-energia-solar.webp
 ---
 
 A Cordeiro Energia tem ajudado centenas de famílias em Minas Gerais a transformar seus imóveis em fontes de energia limpa e econômica. Um dos benefícios que mais surpreende nossos clientes é a possibilidade de obter isenção ou desconto no IPTU ao instalar um sistema de energia solar fotovoltaica. Pouca gente sabe, mas diversas cidades mineiras oferecem esse incentivo fiscal, e ele pode representar uma economia significativa ao longo dos anos.
