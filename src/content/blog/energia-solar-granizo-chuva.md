@@ -122,8 +122,3 @@ Embora não seja obrigatório, o seguro é recomendado. As apólices cobrem dano
 Sim. Os painéis captam a radiação solar difusa que atravessa as nuvens. A geração é menor, geralmente entre 10% e 30% da capacidade nominal, mas o sistema continua produzindo energia e gerando economia na conta de luz.
 
 ---
-
-**Leia também:**
-
-- [Manutenção de Energia Solar](/blog/manutencao-energia-solar) - Aprenda a manter seu sistema fotovoltaico funcionando com máxima eficiência ao longo dos anos.
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) - Entenda todos os componentes, custos e benefícios de um sistema fotovoltaico completo.

@@ -14,6 +14,8 @@ const posts = (await getCollection('blog'))
 const featured = posts[0];
 const rest = posts.slice(1);
 
+const allTags = [...new Set(posts.flatMap(p => p.data.tags))].sort();
+
 const tagColors: Record<string, string> = {
   'energia solar': '#FE5C17',
   'economia': '#00C853',
@@ -95,6 +97,18 @@ function formatDate(date: Date): string {
       </div>
     </section>
 
+    <!-- Tag filter -->
+    <section style="padding:0 0 2rem;">
+      <div class="container">
+        <div class="tag-filter-bar" id="tagFilter">
+          <button class="tag-filter-btn active" data-tag="all">Todos</button>
+          {allTags.map(tag => (
+            <button class="tag-filter-btn" data-tag={tag}>{tag}</button>
+          ))}
+        </div>
+      </div>
+    </section>
+
     <!-- Featured post -->
     {featured && (
       <section style="padding:0 0 2rem;">
@@ -148,6 +162,7 @@ function formatDate(date: Date): string {
               href={`/blog/${post.id.replace(/\.md$/, '')}`}
               class="blog-card-item scroll-reveal"
               style={`transition-delay: ${i * 60}ms;`}
+              data-tags={post.data.tags.join(',')}
             >
               <div class="blog-card-cover" style={`background:${blogCovers[(i + 1) % blogCovers.length]};`}>
                 {post.data.image ? (
@@ -292,4 +307,64 @@ function formatDate(date: Date): string {
     flex: 1;
     background: #fff;
   }
+
+  .tag-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .tag-filter-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    border: 1.5px solid #e5e7eb;
+    background: #fff;
+    color: #6b7280;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .tag-filter-btn:hover { border-color: #FE5C17; color: #FE5C17; }
+  .tag-filter-btn.active { background: #FE5C17; color: #fff; border-color: #FE5C17; }
 </style>
+
+<script>
+  function initBlogFilter() {
+    const filterBar = document.getElementById('tagFilter');
+    if (!filterBar) return;
+    const btns = filterBar.querySelectorAll('.tag-filter-btn');
+    const cards = document.querySelectorAll('.blog-card-item');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const tag = btn.dataset.tag;
+        cards.forEach(card => {
+          if (tag === 'all') {
+            card.style.display = '';
+          } else {
+            const tags = card.dataset.tags || '';
+            card.style.display = tags.includes(tag) ? '' : 'none';
+          }
+        });
+      });
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    const activeTag = params.get('tag');
+    if (activeTag) {
+      btns.forEach(b => {
+        b.classList.toggle('active', b.dataset.tag === activeTag);
+      });
+      cards.forEach(card => {
+        const tags = card.dataset.tags || '';
+        card.style.display = tags.includes(activeTag) ? '' : 'none';
+      });
+    }
+  }
+  document.addEventListener('astro:page-load', initBlogFilter);
+  document.addEventListener('DOMContentLoaded', initBlogFilter);
+</script>

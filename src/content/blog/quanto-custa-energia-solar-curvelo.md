@@ -115,8 +115,3 @@ A manutenção dos painéis solares é bastante simples e consiste basicamente n
 Sim, a energia solar é especialmente vantajosa em áreas rurais e bairros periféricos onde a tarifa de energia pode ser mais elevada e a rede elétrica apresenta mais instabilidades. Muitas propriedades rurais de Curvelo já utilizam sistemas fotovoltaicos e relatam economia significativa além da segurança de ter energia própria mesmo durante quedas de energia na rede da distribuidora.
 
 ---
-
-**Leia também:**
-- [Financiamento de Energia Solar](/blog/financiamento-energia-solar)
-- [Economia na Conta de Luz](/blog/economia-conta-luz-energia-solar)
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)

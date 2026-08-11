@@ -106,7 +106,3 @@ Em grande parte sim. Um sistema dimensionado para compensar 100% do consumo redu
 O payback médio fica entre 4 e 6 anos, dependendo do tamanho do sistema, do consumo mensal e da tarifa praticada na sua região. Após esse período, toda a economia é líquida por mais de 20 anos.
 
 ---
-
-**Leia também:**
-- [Economia na Conta de Luz com Energia Solar](/blog/economia-conta-luz-energia-solar)
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)

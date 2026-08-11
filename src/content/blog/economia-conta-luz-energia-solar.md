@@ -119,8 +119,3 @@ O excedente vai para a rede da concessionária e vira créditos de energia. Voc�
 Sim. Existem opções de financiamento com parcelas de 60 a 120 meses. A economia mensal gerada pelo sistema parcialmente ou totalmente cobre o valor das parcelas, permitindo que você comece a economizar já no primeiro mês de funcionamento.
 
 ---
-
-**Leia também:**
-- Guia Completo de Energia Solar (/blog/energia-solar-guia-completo)
-- Energia Solar Residencial vs Comercial (/blog/energia-solar-residencial-vs-comercial)
-- Financiamento de Energia Solar (/blog/financiamento-energia-solar)

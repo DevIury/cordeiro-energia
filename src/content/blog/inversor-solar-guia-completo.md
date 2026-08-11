@@ -119,9 +119,3 @@ O custo varia conforme a tecnologia e potência. Inversores string residenciais 
 O inversor string centraliza a conversão de energia de vários módulos em um único equipamento, sendo mais econômico porém vulnerável ao sombreamento. O micro-inversor realiza a conversão individualmente em cada módulo, oferecendo maior eficiência em condições de sombra parcial, porém com custo inicial mais elevado. A escolha entre eles depende das características do telhado e do orçamento disponível para o projeto.
 
 ---
-
-**Leia também:**
-
-- [Guia completo de energia solar](/blog/energia-solar-guia-completo)
-- [Energia solar residencial versus comercial](/blog/energia-solar-residencial-vs-comercial)
-- [Manutenção de energia solar](/blog/manutencao-energia-solar)

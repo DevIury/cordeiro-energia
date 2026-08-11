@@ -99,8 +99,3 @@ A manutenção é simples e inclui limpeza periódica dos painéis e verificaç�
 Sim, existem diversas opções de financiamento disponíveis. O sistema pode ser incorporado à taxa de condomínio com parcelas em até 60 meses. Existem também linhas de crédito específicas para energia solar, com taxas de juros facilitadas. A economia gerada pelo sistema tende a ser maior do que o valor das parcelas do financiamento.
 
 ---
-
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)
-- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)
-- [Erros Comuns em Energia Solar](/blog/erros-comuns-energia-solar)

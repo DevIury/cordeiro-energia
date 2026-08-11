@@ -94,9 +94,3 @@ Não. Painéis muito baratos geralmente têm eficiência inferior, vida útil re
 Sim, é fundamental. O telhado precisa suportar o peso dos painéis e da estrutura de fixação, que pode variar de 12 a 18 kg por metro quadrado. Uma análise feita por um engenheiro civil ou estrutural verifica a capacidade de carga, necessidade de reforço e condições de conservação, evitando danos estruturais graves e prejuízos financeiros.
 
 ---
-
-**Leia também:**
-
-- [Energia Solar Fotovoltaica: O Guia Completo para 2026](/blog/energia-solar-guia-completo)
-- [Manutenção de Sistemas Solares: O Que Você Precisa Saber](/blog/manutencao-energia-solar)
-- [Energia Solar Residencial vs Comercial](/blog/energia-solar-residencial-vs-comercial)

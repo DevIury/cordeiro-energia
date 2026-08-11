@@ -123,8 +123,3 @@ O tempo de payback varia conforme o custo do sistema e a economia gerada. Em mé
 Sim, imóveis comerciais tendem a ter valorização percentual maior porque o consumo de energia é superior e o impacto nos custos operacionais é mais significativo. Um estabelecimento comercial com sistema solar reduz seus custos fixos mensais, o que aumenta a margem de lucro. Compradores comerciais fazem cálculos mais detalhados de retorno do investimento e reconhecem o valor do sistema solar de forma mais rápida.
 
 ---
-
-**Leia também:**
-- [Quanto Custa Energia Solar em Curvelo](/blog/quanto-custa-energia-solar-curvelo)
-- [Manutenção de Energia Solar](/blog/manutencao-energia-solar)
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo)

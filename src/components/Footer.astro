@@ -104,6 +104,7 @@ const currentYear = new Date().getFullYear();
 <style>
   .footer-grid { grid-template-columns: 1fr !important; }
   @media (min-width: 640px) { .footer-grid { grid-template-columns: repeat(2, 1fr) !important; } }
+  @media (min-width: 768px) and (max-width: 1023px) { .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2rem !important; } }
   @media (min-width: 1024px) { .footer-grid { grid-template-columns: repeat(4, 1fr) !important; } }
 
   .footer-title {

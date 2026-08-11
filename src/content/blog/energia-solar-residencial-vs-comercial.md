@@ -133,8 +133,3 @@ No residencial, painéis monocristalinos com eficiência entre 18% e 22% são id
 No residencial, o principal benefício é a isenção do ICMS garantida pela Lei Complementar 162/2018. No comercial, além da isenção do ICMS, existe a depreciação acelerada que permite deduzir o investimento do lucro tributável em período menor.
 
 ---
-
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Entenda tudo sobre como funciona a energia solar, benefícios e como começar a economizar.
-- [Erros Comuns ao Investir em Energia Solar](/blog/erros-comuns-energia-solar) — Evite os erros mais cometidos na hora de escolher e instalar seu sistema fotovoltaico.
-- [Guia Completo de Inversores Solares](/blog/inversor-solar-guia-completo) — Saiba como escolher o inversor ideal para o seu sistema e maximizar a eficiência.

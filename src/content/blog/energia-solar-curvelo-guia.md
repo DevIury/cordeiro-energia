@@ -136,7 +136,3 @@ A manutenção é simples e consiste basicamente na limpeza periódica dos pain�
 No sistema de compensação de créditos regulamentado pela ANEEL, você não vende o excedente propriamente dito, mas acumula créditos na conta de luz para abater o consumo nos meses seguintes.
 
 ---
-
-**Leia também:**
-- [Guia Completo de Energia Solar](/blog/energia-solar-guia-completo) — Tudo o que você precisa saber sobre energia solar, do funcionamento ao passo a passo da instalação.
-- [Quanto Você Pode Economizar com Energia Solar?](/blog/economia-conta-luz-energia-solar) — Simule sua economia e descubra em quanto tempo o sistema se paga.

@@ -214,9 +214,3 @@ Sim, granizo é um dos maiores riscos para painéis solares. Verifique se seus p
 Chame um técnico imediatamente se houver queda abrupta na geração, códigos de erro persistentes no inversor, danos visíveis nos painéis, cheiro de queimado ou desligamentos frequentes do sistema.
 
 ---
-
-## Leia também
-
-- [Energia Solar Fotovoltaica: O Guia Completo para 2026](/blog/energia-solar-guia-completo) — Entenda tudo sobre como funciona a energia solar, benefícios e como começar
-- [7 Erros Comuns ao Instalar Energia Solar e Como Evitá-los](/blog/erros-comuns-energia-solar) — Evite os erros mais frequentes na hora de instalar seu sistema fotovoltaico
-- [Energia Solar e Granizo/Chuva](/blog/energia-solar-granizo-chuva) — Saiba como eventos climáticos afetam seus painéis e como se prevenir

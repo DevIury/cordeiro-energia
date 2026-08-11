@@ -116,8 +116,3 @@ Para apartamentos, a instalação é viável em coberturas ou áreas comuns auto
 A manutenção é simples e inclui limpeza periódica dos painéis e inspeção dos componentes. Recomenda-se a limpeza a cada 3 a 6 meses, dependendo da localidade. A manutenção preventiva garante o máximo desempenho do sistema ao longo dos anos. Para mais detalhes, confira nosso post sobre manutenção de energia solar.
 
 ---
-
-**Leia também:**
-- [Erros comuns na instalação de energia solar](/blog/erros-comuns-energia-solar)
-- [Manutenção de sistemas solares](/blog/manutencao-energia-solar)
-- [Financiamento de energia solar](/blog/financiamento-energia-solar)

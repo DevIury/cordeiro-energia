@@ -145,7 +145,3 @@ As menores taxas geralmente estão nos financiamentos com garantia hipotecária,
 A aprovação varia conforme a modalidade. Consignado leva até 5 dias úteis, crédito pessoal de 1 a 3 dias úteis, e financiamento com garantia hipotecária de 15 a 30 dias úteis.
 
 ---
-
-**Leia também:**
-- [Guia completo de energia solar](/blog/energia-solar-guia-completo) — Entenda tudo sobre o funcionamento, tipos de sistemas e benefícios da energia fotovoltaica.
-- [Economia na conta de luz com energia solar](/blog/economia-conta-luz-energia-solar) — Saiba quanto é possível economizar com um sistema instalado em sua residência ou empresa.
