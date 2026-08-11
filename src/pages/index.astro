@@ -4,10 +4,10 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const services = [
-  { num: '01', icon: '☀️', title: 'Energia Solar', desc: 'Sistema completo com economia de até 95% na conta de luz.', badge: 'MAIS VENDIDO', href: '/servico-residencial', img: '/servico-residencial.jpg' },
-  { num: '02', icon: '🏢', title: 'Comercial', desc: 'Soluções sob medida para empresas e comércios.', badge: '', href: '/servico-comercial', img: '/servico-comercial.jpg' },
-  { num: '03', icon: '🏭', title: 'Industrial', desc: 'Grandes potências para indústrias com alto consumo.', badge: '', href: '/servico-industrial', img: '/hero-solar.jpg' },
-  { num: '04', icon: '🔧', title: 'Manutenção', desc: 'Manutenção preventiva e corretiva para seu sistema.', badge: '', href: '/#contato', img: '/servico-manutencao.jpg' },
+  { num: '01', icon: '☀️', title: 'Energia Solar', desc: 'Sistema completo com economia de até 95% na conta de luz.', badge: 'MAIS VENDIDO', href: '/servico-residencial', img: '/servico-residencial.webp' },
+  { num: '02', icon: '🏢', title: 'Comercial', desc: 'Soluções sob medida para empresas e comércios.', badge: '', href: '/servico-comercial', img: '/servico-comercial.webp' },
+  { num: '03', icon: '🏭', title: 'Industrial', desc: 'Grandes potências para indústrias com alto consumo.', badge: '', href: '/servico-industrial', img: '/hero-solar.webp' },
+  { num: '04', icon: '🔧', title: 'Manutenção', desc: 'Manutenção preventiva e corretiva para seu sistema.', badge: '', href: '/#contato', img: '/servico-manutencao.webp' },
 ];
 
 const steps = [
@@ -25,9 +25,9 @@ const stats = [
 ];
 
 const projects = [
-  { type: 'RESIDENCIAL', title: 'Sistema 10kWp', econ: 'R$ 420/mês de economia', img: '/proj-residencial.jpg' },
-  { type: 'COMERCIAL', title: 'Sistema 50kWp', econ: 'R$ 8.500/mês de economia', img: '/proj-comercial.jpg' },
-  { type: 'RURAL', title: 'Sistema 30kWp', econ: 'R$ 5.200/mês de economia', img: '/proj-rural.jpg' },
+  { type: 'RESIDENCIAL', title: 'Sistema 10kWp', econ: 'R$ 420/mês de economia', img: '/proj-residencial.webp' },
+  { type: 'COMERCIAL', title: 'Sistema 50kWp', econ: 'R$ 8.500/mês de economia', img: '/proj-comercial.webp' },
+  { type: 'RURAL', title: 'Sistema 30kWp', econ: 'R$ 5.200/mês de economia', img: '/proj-rural.webp' },
 ];
 
 const testimonials = [
@@ -37,10 +37,10 @@ const testimonials = [
 ];
 
 const posts = [
-  { cat: 'MERCADO', title: 'Energia Solar em Minas Gerais', desc: 'Oportunidades e incentivios no estado.', date: '20 Jul 2026', href: '/blog/energia-solar-curvelo-guia', img: '/hero-solar.jpg' },
-  { cat: 'EDUCAÇÃO', title: 'Guia Completo de Energia Solar', desc: 'Entenda o sistema fotovoltaico de forma simples.', date: '15 Jul 2026', href: '/blog/energia-solar-guia-completo', img: '/sobre-solar.jpg' },
-  { cat: 'ECONOMIA', title: 'Erros Comuns ao Escolher Energia Solar', desc: 'Dicas práticas para não errar na escolha.', date: '10 Jul 2026', href: '/blog/erros-comuns-energia-solar', img: '/servico-comercial.jpg' },
-  { cat: 'MANUTENÇÃO', title: 'Manutenção de Sistemas Solares', desc: 'Como cuidar do seu sistema para durar mais.', date: '05 Jul 2026', href: '/blog/manutencao-energia-solar', img: '/servico-manutencao.jpg' },
+  { cat: 'MERCADO', title: 'Energia Solar em Minas Gerais', desc: 'Oportunidades e incentivios no estado.', date: '20 Jul 2026', href: '/blog/energia-solar-curvelo-guia', img: '/hero-solar.webp' },
+  { cat: 'EDUCAÇÃO', title: 'Guia Completo de Energia Solar', desc: 'Entenda o sistema fotovoltaico de forma simples.', date: '15 Jul 2026', href: '/blog/energia-solar-guia-completo', img: '/sobre-solar.webp' },
+  { cat: 'ECONOMIA', title: 'Erros Comuns ao Escolher Energia Solar', desc: 'Dicas práticas para não errar na escolha.', date: '10 Jul 2026', href: '/blog/erros-comuns-energia-solar', img: '/servico-comercial.webp' },
+  { cat: 'MANUTENÇÃO', title: 'Manutenção de Sistemas Solares', desc: 'Como cuidar do seu sistema para durar mais.', date: '05 Jul 2026', href: '/blog/manutencao-energia-solar', img: '/servico-manutencao.webp' },
 ];
 ---
 
@@ -50,11 +50,66 @@ const posts = [
 >
   <Header />
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto custa instalar energia solar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "O investimento varia conforme o consumo. Para uma residência comum, o custo gira entre R$ 8.000 e R$ 50.000, dependendo do tamanho do sistema. Sistemas de 3 a 6 kWp são ideais para casas. O payback médio é de 4 a 6 anos, e o sistema dura mais de 25 anos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto vou economizar na conta de luz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em média, a economia varia de 40% a 95% na conta de luz. Um sistema bem dimensionado pode gerar economia de R$ 300 a R$ 1.500 mensais, dependendo do consumo e da tarifa da concessionária."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "E se ficar nublado ou chover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os painéis solares funcionam com luz difusa, ou seja, geram energia mesmo em dias nublados, porém com redução de 10% a 30%. A chuva ainda limpa os painéis naturalmente. O sistema é dimensionado considerando as condições climáticas da sua região."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso de licença da prefeitura?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para sistemas residenciais de até 75 kW, não é necessária licença da prefeitura. O processo envolve apenas aprovação da concessionária de energia, que leva de 30 a 60 dias. Cuidamos de toda a documentação para você."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "O granizo danifica os painéis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Os painéis modernos possuem certificação IEC 61215 de resistência a granizo. São testados com impacto de granizo de 25 mm de diâmetro a 85 km/h. Em casos extremos, a cobertura do seguro do imóvel geralmente cobre danos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a manutenção?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A manutenção é simples e de baixo custo. Basta limpar os painéis a cada 3 a 6 meses com água e pano macio. A inspeção técnica completa é recomendada uma vez por ano, custando entre R$ 300 e R$ 800."
+        }
+      }
+    ]
+  })} />
+
   <main>
     <!-- Hero -->
     <section class="hero" id="hero">
       <div class="hero-bg">
-        <img src="/hero-solar.jpg" alt="" fetchpriority="high" />
+        <img src="/hero-solar.webp" alt="Painéis solares instalados em residência gerando energia limpa" fetchpriority="high" />
         <div class="hero-overlay"></div>
       </div>
       <div class="container hero-content">
@@ -120,7 +175,7 @@ const posts = [
           <div style="position:relative;">
             <!-- Imagem principal -->
             <div style="position:relative;border-radius:1.5rem;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,0.12);">
-              <img src="/sobre-solar.jpg" alt="Equipe Cordeiro Energia" style="width:100%;height:500px;object-fit:cover;display:block;" />
+              <img src="/sobre-solar.webp" alt="Equipe Cordeiro Energia" style="width:100%;height:500px;object-fit:cover;display:block;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,0.4) 100%);"></div>
             </div>
 
@@ -257,7 +312,7 @@ const posts = [
         <div class="segmentos-grid">
           <a href="/servico-residencial" class="segmento-card">
             <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-casa.jpg" alt="Energia solar residencial" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="/cat-casa.webp" alt="Energia solar residencial" style="width:100%;height:100%;object-fit:cover;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
               <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">RESIDENCIAL</div>
 
@@ -276,7 +331,7 @@ const posts = [
 
           <a href="/servico-comercial" class="segmento-card">
             <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-empresa.jpg" alt="Energia solar comercial" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="/cat-empresa.webp" alt="Energia solar comercial" style="width:100%;height:100%;object-fit:cover;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
               <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">COMERCIAL</div>
 
@@ -295,7 +350,7 @@ const posts = [
 
           <a href="/usina-solar" class="segmento-card">
             <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-usina.jpg" alt="Usina solar" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="/cat-usina.webp" alt="Usina solar" style="width:100%;height:100%;object-fit:cover;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
               <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">USINAS</div>
 
@@ -314,7 +369,7 @@ const posts = [
 
           <a href="/agronegocio" class="segmento-card">
             <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-agro.jpg" alt="Energia solar agronegócio" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="/cat-agro.webp" alt="Energia solar agronegócio" style="width:100%;height:100%;object-fit:cover;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
               <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">AGRONEGÓCIO</div>
 
@@ -333,7 +388,7 @@ const posts = [
 
           <a href="/investidores" class="segmento-card">
             <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-investidor.jpg" alt="Investimento em energia solar" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="/cat-investidor.webp" alt="Investimento em energia solar" style="width:100%;height:100%;object-fit:cover;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
               <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">INVESTIDORES</div>
 
@@ -352,7 +407,7 @@ const posts = [
 
           <a href="/carregamento-ev" class="segmento-card">
             <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-ev.jpg" alt="Carregamento veicular solar" style="width:100%;height:100%;object-fit:cover;" />
+              <img src="/cat-ev.webp" alt="Carregamento veicular solar" style="width:100%;height:100%;object-fit:cover;" />
               <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
               <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">VEÍCULOS</div>
 
@@ -435,7 +490,7 @@ const posts = [
         <div class="projetos-grid">
           <div class="proj-card">
             <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-comercial.jpg" alt="Sistema residencial 10kWp" style="height:100%;" />
+              <img src="/proj-comercial.webp" alt="Sistema residencial 10kWp" style="height:100%;" />
               <div class="proj-badge">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 CONCLUÍDO
@@ -457,7 +512,7 @@ const posts = [
           </div>
           <div class="proj-card">
             <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-rural.jpg" alt="Sistema comercial 50kWp" />
+              <img src="/proj-rural.webp" alt="Sistema comercial 50kWp" />
               <div class="proj-badge">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 CONCLUÍDO
@@ -479,7 +534,7 @@ const posts = [
           </div>
           <div class="proj-card">
             <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-residencial.jpg" alt="Sistema rural 30kWp" />
+              <img src="/proj-residencial.webp" alt="Sistema rural 30kWp" />
               <div class="proj-badge">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 CONCLUÍDO
@@ -661,7 +716,7 @@ const posts = [
     <!-- CTA Final -->
     <section class="cta-final" id="contato">
       <div class="cta-bg">
-        <img src="/cta-solar.jpg" alt="" />
+        <img src="/cta-solar.webp" alt="Instalação de painéis solares profissional" />
         <div class="cta-overlay"></div>
       </div>
       <div class="container cta-inner">

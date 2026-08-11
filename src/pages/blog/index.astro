@@ -116,7 +116,7 @@ function formatDate(date: Date): string {
           <a href={`/blog/${featured.id.replace(/\.md$/, '')}`} class="blog-featured scroll-reveal" style="text-decoration:none;">
             <div class="blog-featured-cover" style={`background:${blogCovers[0]};`}>
               {featured.data.image ? (
-                <img src={featured.data.image} alt={featured.data.title} style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" />
+                <img src={featured.data.image} alt={featured.data.title} width="800" height="400" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" />
               ) : (
                 <div style="position:relative;z-index:1;opacity:0.5;" set:html={blogIcons[0]} />
               )}
@@ -166,7 +166,7 @@ function formatDate(date: Date): string {
             >
               <div class="blog-card-cover" style={`background:${blogCovers[(i + 1) % blogCovers.length]};`}>
                 {post.data.image ? (
-                  <img src={post.data.image} alt={post.data.title} style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" />
+                  <img src={post.data.image} alt={post.data.title} width="800" height="400" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" />
                 ) : (
                   <div style="opacity:0.5;" set:html={blogIcons[(i + 1) % blogIcons.length]} />
                 )}

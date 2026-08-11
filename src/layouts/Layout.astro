@@ -5,6 +5,7 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   lang?: string;
+  geoCity?: string;
 }
 
 const {
@@ -12,10 +13,13 @@ const {
   description,
   ogImage = '/og-image.svg',
   ogType = 'website',
-  lang = 'pt-BR'
+  lang = 'pt-BR',
+  geoCity = 'Curvelo'
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+import Analytics from '../components/Analytics.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 ---
 
 <!DOCTYPE html>
@@ -36,7 +40,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
   <meta property="og:site_name" content="Cordeiro Energia" />
 
   <meta name="geo.region" content="BR-MG" />
-  <meta name="geo.placename" content="Curvelo" />
+  <meta name="geo.placename" content={geoCity} />
 
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/favicon.png" />
@@ -47,7 +51,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 
   <style is:global>
     @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/inter/Inter-Regular.woff2') format('woff2'); }
-    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2'); }
     @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/inter/Inter-Bold.woff2') format('woff2'); }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -544,7 +547,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
     "name": "Cordeiro Energia",
     "description": description,
     "url": canonicalURL,
-    "logo": "/logo.webp",
+    "logo": "/logo.png",
     "image": ogImage,
     "telephone": "+5538997350343",
     "email": "contato@cordeiroenergia.com.br",
@@ -671,5 +674,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
       });
     });
   </script>
+  <Analytics />
+  <CookieConsent />
 </body>
 </html>

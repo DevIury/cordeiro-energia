@@ -1,0 +1,59 @@
+---
+// Cookie Consent Banner for LGPD compliance
+---
+
+<div id="cookie-consent" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;background:#111;color:#fff;padding:1rem 1.5rem;box-shadow:0 -4px 20px rgba(0,0,0,0.2);font-family:Inter,system-ui,sans-serif;">
+  <div style="max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:1rem;">
+    <p style="flex:1;min-width:250px;font-size:0.85rem;line-height:1.6;color:rgba(255,255,255,0.85);margin:0;">
+      Utilizamos cookies para melhorar sua experiência e analisar o tráfego do site. Ao continuar navegando, você concorda com o uso de cookies conforme nossa política de privacidade.
+    </p>
+    <div style="display:flex;gap:0.5rem;flex-shrink:0;">
+      <button id="cookie-accept" style="background:#FE5C17;color:#fff;border:none;padding:0.6rem 1.25rem;border-radius:0.5rem;font-size:0.8rem;font-weight:700;cursor:pointer;transition:background 0.2s;">
+        Aceitar
+      </button>
+      <button id="cookie-reject" style="background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);padding:0.6rem 1.25rem;border-radius:0.5rem;font-size:0.8rem;font-weight:600;cursor:pointer;transition:all 0.2s;">
+        Rejeitar
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initCookieConsent() {
+    const consent = document.getElementById('cookie-consent');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+    
+    if (!consent || !acceptBtn || !rejectBtn) return;
+    
+    // Check if consent already given
+    const hasConsent = document.cookie.split(';').some(c => c.trim().startsWith('cookie-consent='));
+    
+    if (!hasConsent) {
+      consent.style.display = 'block';
+    }
+    
+    acceptBtn.addEventListener('click', () => {
+      document.cookie = 'cookie-consent=true;path=/;max-age=31536000;SameSite=Lax';
+      consent.style.display = 'none';
+      // Reload to activate analytics
+      if (typeof (window as any).gtag === 'function') {
+        location.reload();
+      }
+    });
+    
+    rejectBtn.addEventListener('click', () => {
+      document.cookie = 'cookie-consent=false;path=/;max-age=31536000;SameSite=Lax';
+      consent.style.display = 'none';
+    });
+    
+    // Hover effects
+    acceptBtn.addEventListener('mouseenter', () => { acceptBtn.style.background = '#E04400'; });
+    acceptBtn.addEventListener('mouseleave', () => { acceptBtn.style.background = '#FE5C17'; });
+    rejectBtn.addEventListener('mouseenter', () => { rejectBtn.style.borderColor = 'rgba(255,255,255,0.5)'; rejectBtn.style.color = '#fff'; });
+    rejectBtn.addEventListener('mouseleave', () => { rejectBtn.style.borderColor = 'rgba(255,255,255,0.2)'; rejectBtn.style.color = 'rgba(255,255,255,0.7)'; });
+  }
+
+  document.addEventListener('astro:page-load', initCookieConsent);
+  document.addEventListener('DOMContentLoaded', initCookieConsent);
+</script>
