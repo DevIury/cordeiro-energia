@@ -141,13 +141,8 @@ const currentPath = Astro.url.pathname;
 
   /* === DESKTOP NAV === */
   .nav-desktop { display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .nav-desktop { display: flex; align-items: center; gap: 0.125rem; }
-  }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .nav-desktop { gap: 0; }
-    .nav-link { font-size: 0.78rem; padding: 0.5rem 0.5rem; letter-spacing: -0.02em; }
-    .nav-cta-btn { padding: 0.6rem 1rem !important; font-size: 0.8rem !important; }
   }
   .nav-link {
     font-size: 0.9rem;
@@ -193,11 +188,8 @@ const currentPath = Astro.url.pathname;
     box-shadow: 0 6px 25px rgba(254,92,23,0.35);
     transform: translateY(-1px);
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     .nav-cta-btn { display: none !important; }
-  }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .nav-cta-btn { padding: 0.55rem 1rem !important; font-size: 0.8rem !important; }
   }
 
   /* === HAMBURGER === */
@@ -233,7 +225,7 @@ const currentPath = Astro.url.pathname;
   .hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
   .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); background: #FE5C17; }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .hamburger { display: none; }
   }
 
