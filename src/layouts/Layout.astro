@@ -65,18 +65,21 @@ import CookieConsent from '../components/CookieConsent.astro';
     @media (min-width: 768px) { .container { padding: 0 2rem; } }
 
     /* Buttons */
-    .btn { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 700; border-radius: 9999px; transition: all 0.2s; text-decoration: none; font-size: 0.875rem; padding: 0.75rem 1.5rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-weight: 700; border-radius: 9999px; transition: all 0.2s; text-decoration: none; font-size: 0.875rem; padding: 0.75rem 1.5rem; text-transform: uppercase; letter-spacing: 0.06em; }
     .btn-orange { background: #FE5C17; color: #fff; }
     .btn-orange:hover { background: #E04400; transform: scale(1.03); box-shadow: 0 0 30px rgba(254, 92, 23, 0.4); }
     .btn-whatsapp { background: #25D366; color: #fff; }
     .btn-whatsapp:hover { background: #20BD5C; transform: scale(1.03); box-shadow: 0 0 30px rgba(37, 211, 102, 0.4); }
     .btn-white { background: #fff; color: #111; }
     .btn-white:hover { background: #f0f0f0; transform: scale(1.03); }
-    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
-    .btn-outline:hover { border-color: #FE5C17; color: #FE5C17; }
+.btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
+.btn-outline:hover { border-color: #FE5C17; color: #FE5C17; transform: scale(1.03); box-shadow: 0 0 30px rgba(254, 92, 23, 0.25); }
+.btn-ghost { background: transparent; color: #111; border: 2px solid rgba(10, 14, 23, 0.2); }
+.btn-ghost:hover { border-color: #FE5C17; color: #FE5C17; transform: scale(1.03); box-shadow: 0 0 30px rgba(254, 92, 23, 0.2); }
     .btn-dark { background: #111; color: #fff; }
     .btn-dark:hover { background: #333; transform: scale(1.03); }
     .btn-xl { padding: 1rem 2rem; font-size: 1rem; }
+@media (max-width: 767px) { .btn-xl { padding: 0.875rem 1.5rem; font-size: 0.9rem; } }
 
     /* Tag */
     .tag { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #FE5C17; background: rgba(254, 92, 23, 0.08); border: 1px solid rgba(254, 92, 23, 0.2); padding: 0.5rem 1rem; border-radius: 9999px; }
@@ -160,11 +163,7 @@ import CookieConsent from '../components/CookieConsent.astro';
     .hero p strong { color: #FE5C17; }
     .hero-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; }
     .hero-btns .btn { padding: 0.875rem 1.5rem; font-size: 0.85rem; }
-    @media (min-width: 768px) { .hero-btns .btn { padding: 1rem 2rem; font-size: 0.95rem; } }
-    .hero-trust { display: flex; flex-wrap: wrap; gap: 1.5rem; }
-    .trust { display: flex; align-items: center; gap: 0.5rem; color: #d1d5db; font-size: 0.8rem; }
-    .trust i { color: #FE5C17; }
-    @media (min-width: 768px) { .hero h1 { font-size: 3.5rem; } .trust { font-size: 0.875rem; } }
+    @media (min-width: 768px) { .hero-btns .btn { padding: 1rem 2rem; font-size: 0.95rem; } .hero h1 { font-size: 3.5rem; } }
     @media (min-width: 1024px) { .hero h1 { font-size: 4rem; } }
 
     /* Urgency */
@@ -415,7 +414,6 @@ import CookieConsent from '../components/CookieConsent.astro';
     /* Mobile comprehensive */
     @media (max-width: 767px) {
       /* Sobre */
-      #sobre .container > div:first-child { grid-template-columns: 1fr !important; gap: 3rem !important; }
       .sobre-features { grid-template-columns: 1fr !important; gap: 0.75rem !important; }
       #wa-badge { display: none !important; }
 
@@ -470,11 +468,8 @@ import CookieConsent from '../components/CookieConsent.astro';
       .hero p { font-size: 1.05rem; }
       .hero-btns { gap: 0.75rem; }
       .hero-btns .btn { padding: 0.875rem 1.75rem; font-size: 0.9rem; }
-      .hero-trust { gap: 1.25rem; }
-      .trust { font-size: 0.8rem; }
 
       /* Sobre */
-      #sobre .container > div:first-child { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
       .sobre-features { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
       .sobre-text h2 { font-size: 2rem; }
       #wa-badge { display: none; }

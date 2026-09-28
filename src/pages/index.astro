@@ -5,44 +5,59 @@ import Footer from '../components/Footer.astro';
 import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
 import FaqItem from '../components/FaqItem.astro';
 
-const services = [
-  { num: '01', icon: '☀️', title: 'Energia Solar', desc: 'Sistema completo com economia de até 95% na conta de luz.', badge: 'MAIS VENDIDO', href: '/servico-residencial', img: '/servico-residencial.webp' },
-  { num: '02', icon: '🏢', title: 'Comercial', desc: 'Soluções sob medida para empresas e comércios.', badge: '', href: '/servico-comercial', img: '/servico-comercial.webp' },
-  { num: '03', icon: '🏭', title: 'Industrial', desc: 'Grandes potências para indústrias com alto consumo.', badge: '', href: '/servico-industrial', img: '/hero-solar.webp' },
-  { num: '04', icon: '🔧', title: 'Manutenção', desc: 'Manutenção preventiva e corretiva para seu sistema.', badge: '', href: '/#contato', img: '/servico-manutencao.webp' },
+const segments = [
+  { cat: 'RESIDENCIAL', title: 'Para sua casa', desc: 'Economize até 95% com um sistema dimensionado para o seu telhado e para o seu consumo real.', href: '/servico-residencial', img: '/cat-casa.webp' },
+  { cat: 'COMERCIAL', title: 'Para sua empresa', desc: 'Reduza o custo fixo da operação e proteja a margem contra a tarifa que sobe todo ano.', href: '/servico-comercial', img: '/cat-empresa.webp' },
+  { cat: 'USINAS', title: 'Para sua usina solar', desc: 'Geração em escala com monitoramento, operação e manutenção do projeto à entrega da energia.', href: '/usina-solar', img: '/cat-usina.webp' },
+  { cat: 'AGRONEGÓCIO', title: 'Para o agro', desc: 'Energia estável para irrigação, câmara fria e armazenagem, inclusive onde a rede oscila.', href: '/agronegocio', img: '/cat-agro.webp' },
+  { cat: 'INVESTIDORES', title: 'Para investidores', desc: 'Usinas solares com contrato de longo prazo e gestão profissional de todo o ativo.', href: '/investidores', img: '/cat-investidor.webp' },
+  { cat: 'VEÍCULOS', title: 'Para seu carro elétrico', desc: 'Recarregue o carro com a energia que o seu próprio telhado produz de graça.', href: '/carregamento-ev', img: '/cat-ev.webp' },
 ];
 
 const steps = [
-  { num: '01', icon: '💬', title: 'Consulta Grátis', desc: 'Envie sua conta de luz e fazemos a análise.' },
-  { num: '02', icon: '📐', title: 'Projeto', desc: 'Desenvolvemos o sistema sob medida.' },
-  { num: '03', icon: '🔨', title: 'Instalação', desc: 'Instalação rápida e profissional.' },
-  { num: '04', icon: '💰', title: 'Economia', desc: 'Comece a economizar já no 1º mês!' },
+  {
+    n: '01', title: 'Consulta', icon: 'chat',
+    chip: 'Resposta em até 24 horas',
+    desc: 'Você manda a conta de luz e a gente devolve a análise em até 24 horas — sem custo e sem compromisso.',
+    points: ['Leitura do consumo real da sua conta', 'Estimativa de geração para o seu telhado', 'Simulação da economia no mês e no ano'],
+  },
+  {
+    n: '02', title: 'Projeto', icon: 'ruler',
+    chip: 'Aprovação na concessionária: 30 a 60 dias',
+    desc: 'Dimensionamento sob medida para o seu telhado, o seu consumo e a sua concessionária. Cuidamos de toda a documentação para você.',
+    points: ['Projeto elétrico sob medida para o seu telhado', 'Lista de materiais e equipamentos', 'Documentação e aprovação por nossa conta'],
+  },
+  {
+    n: '03', title: 'Instalação', icon: 'tool',
+    chip: 'Sem licença da prefeitura até 75 kW',
+    desc: 'Equipe própria, obra limpa e todo o processo regularizado junto à distribuidora — do primeiro parafuso ao primeiro kWh.',
+    points: ['Montagem, cabeamento e testes de segurança', 'Atendimento na sua casa ou empresa', 'Ligações regularizadas na distribuidora'],
+  },
+  {
+    n: '04', title: 'Economia', icon: 'coin',
+    chip: 'Payback médio de 4 a 6 anos',
+    desc: 'Sistema ligado, monitorado no celular e a conta caindo já no primeiro mês. Você acompanha tudo pelo aplicativo.',
+    points: ['Monitoramento pelo celular, a qualquer hora', 'Conta menor já na primeira fatura', 'Sistema com garantia de 25 anos'],
+  },
 ];
 
-const stats = [
-  { value: '500', suffix: '+', label: 'Projetos Instalados' },
-  { value: '150', suffix: '+', label: 'Residências' },
-  { value: '5000000', suffix: '+', label: 'Economizados (R$)' },
-  { value: '1000', suffix: '+', label: 'Toneladas CO₂' },
-];
-
-const projects = [
-  { type: 'RESIDENCIAL', title: 'Sistema 10kWp', econ: 'R$ 420/mês de economia', img: '/proj-residencial.webp' },
-  { type: 'COMERCIAL', title: 'Sistema 50kWp', econ: 'R$ 8.500/mês de economia', img: '/proj-comercial.webp' },
-  { type: 'RURAL', title: 'Sistema 30kWp', econ: 'R$ 5.200/mês de economia', img: '/proj-rural.webp' },
+const cases = [
+  { type: 'RESIDENCIAL', title: 'Sistema 10 kWp', local: 'Curvelo / MG', econ: '420', img: '/proj-residencial.webp', alt: 'Sistema solar residencial de 10 kWp instalado em Curvelo', specs: [['PAINÉIS', '18'], ['POTÊNCIA', '10 kWp'], ['ECONOMIA', 'R$ 420/mês']] },
+  { type: 'COMERCIAL', title: 'Sistema 50 kWp', local: 'Curvelo / MG', econ: '8.500', img: '/proj-comercial.webp', alt: 'Sistema solar comercial de 50 kWp em operação', specs: [['PAINÉIS', '90'], ['POTÊNCIA', '50 kWp'], ['ECONOMIA', 'R$ 8.500/mês']] },
+  { type: 'RURAL', title: 'Sistema 30 kWp', local: 'Região de Curvelo / MG', econ: '5.200', img: '/proj-rural.webp', alt: 'Sistema solar rural de 30 kWp em propriedade produtiva', specs: [['PAINÉIS', '54'], ['POTÊNCIA', '30 kWp'], ['ECONOMIA', 'R$ 5.200/mês']] },
 ];
 
 const testimonials = [
-  { text: 'Minha conta caiu de R$ 450 para R$ 25! Profissionalismo e qualidade.', name: 'Carlos Eduardo', loc: 'Curvelo/MG' },
-  { text: 'Economia de 80% na propriedade rural. Melhor investimento que fiz!', name: 'César Bonifácio', loc: 'Curvelo/MG' },
-  { text: 'Economia de R$ 400/mês desde a instalação. Equipe nota 10!', name: 'Sonia Valgas', loc: 'Curvelo/MG' },
+  { text: 'Minha conta caiu de R$ 450 para R$ 25. Profissionalismo e qualidade do começo ao fim.', name: 'Carlos Eduardo', loc: 'Curvelo/MG' },
+  { text: 'Economia de 80% na propriedade rural. Foi o melhor investimento que fiz nos últimos anos.', name: 'César Bonifácio', loc: 'Curvelo/MG' },
+  { text: 'Economia de R$ 400 por mês desde a instalação. Equipe nota 10, sempre pontual.', name: 'Sonia Valgas', loc: 'Curvelo/MG' },
 ];
 
 const posts = [
-  { cat: 'MERCADO', title: 'Energia Solar em Minas Gerais', desc: 'Oportunidades e incentivios no estado.', date: '20 Jul 2026', href: '/blog/energia-solar-curvelo-guia', img: '/hero-solar.webp' },
-  { cat: 'EDUCAÇÃO', title: 'Guia Completo de Energia Solar', desc: 'Entenda o sistema fotovoltaico de forma simples.', date: '15 Jul 2026', href: '/blog/energia-solar-guia-completo', img: '/sobre-solar.webp' },
-  { cat: 'ECONOMIA', title: 'Erros Comuns ao Escolher Energia Solar', desc: 'Dicas práticas para não errar na escolha.', date: '10 Jul 2026', href: '/blog/erros-comuns-energia-solar', img: '/servico-comercial.webp' },
-  { cat: 'MANUTENÇÃO', title: 'Manutenção de Sistemas Solares', desc: 'Como cuidar do seu sistema para durar mais.', date: '05 Jul 2026', href: '/blog/manutencao-energia-solar', img: '/servico-manutencao.webp' },
+  { cat: 'MERCADO', title: 'Energia solar em Minas Gerais', desc: 'Oportunidades e incentivos para quem quer gerar a própria energia no estado.', date: '20 Jul 2026', href: '/blog/energia-solar-curvelo-guia', img: '/hero-solar.webp' },
+  { cat: 'EDUCAÇÃO', title: 'Guia completo de energia solar', desc: 'Entenda o sistema fotovoltaico sem jargão técnico, do painel ao inversor.', date: '15 Jul 2026', href: '/blog/energia-solar-guia-completo', img: '/sobre-solar.webp' },
+  { cat: 'ECONOMIA', title: 'Erros comuns ao escolher energia solar', desc: 'Os deslizes que fazem o payback dobrar — e como evitar cada um deles.', date: '10 Jul 2026', href: '/blog/erros-comuns-energia-solar', img: '/servico-comercial.webp' },
+  { cat: 'MANUTENÇÃO', title: 'Manutenção de sistemas solares', desc: 'Limpeza, inspeção e o calendário simples que faz o sistema durar 25 anos.', date: '05 Jul 2026', href: '/blog/manutencao-energia-solar', img: '/servico-manutencao.webp' },
 ];
 ---
 
@@ -130,554 +145,429 @@ const posts = [
             WHATSAPP
           </a>
         </div>
-        <div class="hero-trust">
-          <div class="trust">
-            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            Garantia 25 anos
-          </div>
-          <div class="trust">
-            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
-            Sem entrada
-          </div>
-          <div class="trust">
-            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            Instalação grátis
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- Urgência -->
-    <section class="urgencia">
-      <div class="container">
-        <div class="urgencia-card">
-          <div class="urg-icon-wrap">
-            <div class="urg-icon-ring"></div>
-            <div class="urg-icon-ring urg-icon-ring-2"></div>
-            <svg style="width:1.25rem;height:1.25rem;color:#FE5C17;z-index:1;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+    <!-- Simulador -->
+    <section class="sim" id="economia">
+      <div class="sim-cells" aria-hidden="true"></div>
+      <div class="container sim-inner">
+        <div class="sim-copy scroll-reveal">
+          <span class="eyebrow">Simulador de economia</span>
+          <h2>Quanto o sol <span class="hl">devolve</span> pro seu bolso</h2>
+          <p class="sim-lead">Arraste o valor da sua conta de luz e veja, em tempo real, quanto sobra por mês com um sistema bem dimensionado para o seu consumo.</p>
+
+          <div class="slider">
+            <div class="slider-head">
+              <label for="bill">Sua conta atual</label>
+              <output id="billOut" for="bill">R$ 450</output>
+            </div>
+            <input type="range" id="bill" min="100" max="5000" step="10" value="450" aria-describedby="billHelp" />
+            <div class="slider-scale" id="billHelp"><span>R$ 100</span><span>R$ 5.000</span></div>
           </div>
-          <strong class="urg-title">OFERTA ESPECIAL</strong>
-          <span class="urg-desc">Orçamento gratuito + análise de consumo. Vagas limitadas!</span>
-          <a href="#contato" class="urg-btn">GARANTIR VAGA
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+
+          <a href="#contato" class="btn btn-orange btn-xl">QUERO ESSE NÚMERO
+            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
         </div>
-      </div>
-    </section>
 
-    <!-- Sobre -->
-    <section id="sobre" style="padding:6rem 0;position:relative;overflow:hidden;">
-      <!-- Background decorative elements -->
-      <div style="position:absolute;top:0;right:0;width:400px;height:400px;background:radial-gradient(circle,rgba(254,92,23,0.06) 0%,transparent 70%);pointer-events:none;"></div>
-      <div style="position:absolute;bottom:0;left:0;width:300px;height:300px;background:radial-gradient(circle,rgba(254,92,23,0.04) 0%,transparent 70%);pointer-events:none;"></div>
+        <div class="panel scroll-reveal">
+          <div class="panel-top">
+            <span class="panel-name">Painel de economia</span>
+            <span class="panel-led" aria-hidden="true"></span>
+          </div>
 
-      <div class="container">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
-          <!-- Lado Esquerdo - Imagem -->
-          <div style="position:relative;">
-            <!-- Imagem principal -->
-            <div style="position:relative;border-radius:1.5rem;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,0.12);">
-              <img src="/sobre-solar.webp" alt="Equipe Cordeiro Energia" style="width:100%;height:500px;object-fit:cover;display:block;" width="800" height="500" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(10,10,10,0.4) 100%);"></div>
+          <div class="read">
+            <span class="read-label">Conta atual</span>
+            <span class="read-val read-mute" id="vAtual">R$ 450</span>
+          </div>
+          <div class="track"><span class="track-fill" id="barAtual"></span></div>
+
+          <div class="read">
+            <span class="read-label">Com energia solar</span>
+            <span class="read-val read-sol" id="vNovo">R$ 54</span>
+          </div>
+          <div class="track track-sol"><span class="track-fill" id="barNovo"></span></div>
+
+          <div class="out">
+            <div class="out-cell">
+              <span class="read-label">Economia / mês</span>
+              <strong id="vMes">R$ 396</strong>
             </div>
-
-            <!-- Card flutuante 1 - Stats -->
-            <div style="position:absolute;top:-1.5rem;left:-1.5rem;background:#fff;border-radius:1rem;padding:1.25rem 1.5rem;box-shadow:0 15px 40px rgba(0,0,0,0.1);z-index:3;min-width:160px;">
-              <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.5rem;">
-                <div style="width:2.5rem;height:2.5rem;background:linear-gradient(135deg,#FE5C17,#E04400);border-radius:0.5rem;display:flex;align-items:center;justify-content:center;">
-                  <svg style="width:1.25rem;height:1.25rem;color:#fff;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                </div>
-                <div style="font-size:1.75rem;font-weight:800;color:#111;line-height:1;">500+</div>
-              </div>
-              <div style="font-size:0.8rem;color:#6b7280;">Projetos instalados</div>
+            <div class="out-cell">
+              <span class="read-label">Economia / ano</span>
+              <strong id="vAno">R$ 4.752</strong>
             </div>
-
-            <!-- Card flutuante 2 - Selo -->
-            <div style="position:absolute;bottom:-1.5rem;right:2rem;background:linear-gradient(135deg,#FE5C17,#E04400);border-radius:1rem;padding:1.5rem;box-shadow:0 15px 40px rgba(254,92,23,0.3);z-index:3;text-align:center;color:#fff;">
-              <div style="font-size:2.5rem;font-weight:800;line-height:1;">10+</div>
-              <div style="font-size:0.8rem;opacity:0.9;font-weight:600;">Anos de experiência</div>
-            </div>
-
-            <!-- Card flutuante 3 - Badge -->
-            <div id="wa-badge" style="position:absolute;top:50%;right:-2rem;transform:translateY(-50%);background:#fff;border-radius:0.75rem;padding:0.75rem 1rem;box-shadow:0 10px 30px rgba(0,0,0,0.08);z-index:3;display:flex;align-items:center;gap:0.5rem;">
-              <div style="width:2rem;height:2rem;background:rgba(37,211,102,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;">
-                <svg style="width:1rem;height:1rem;color:#25D366;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              </div>
-              <div>
-                <div style="font-size:0.75rem;font-weight:700;color:#111;">WhatsApp</div>
-                <div style="font-size:0.65rem;color:#6b7280;">Resposta rápida</div>
-              </div>
+            <div class="out-cell">
+              <span class="read-label">CO₂ evitado / ano</span>
+              <strong id="vCo2">297 kg</strong>
             </div>
           </div>
 
-          <!-- Lado Direito - Conteúdo -->
-          <div>
-            <div class="tag" style="margin-bottom:1.5rem;">
-              <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-              QUEM SOMOS
-            </div>
+          <p class="panel-note">Estimativa com tarifa média de R$ 0,70/kWh e substituição de 88% do consumo. Payback médio de 4 a 6 anos, garantia de 25 anos.</p>
+        </div>
+      </div>
+    </section>
 
-            <h2 style="font-size:2.75rem;font-weight:800;color:#111;line-height:1.15;margin-bottom:1.5rem;letter-spacing:-0.02em;">
-              Especialistas em <span style="color:#FE5C17;">energia solar</span>
-            </h2>
+    <!-- Segmentos -->
+    <section class="segs" id="servicos">
+      <div class="container">
+        <div class="bento scroll-reveal stagger">
+          <div class="bento-intro">
+            <span class="eyebrow">Segmentos</span>
+            <h2>Onde o sol <span class="hl">trabalha</span></h2>
+            <p>Seis frentes de atendimento, a mesma engenharia por trás de cada uma delas.</p>
+            <a href="#contato" class="bento-cta">
+              Pedir orçamento
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
 
-            <p style="font-size:1.05rem;color:#6b7280;line-height:1.8;margin-bottom:2rem;">
-              A <strong style="color:#111;">Cordeiro Energia</strong> é referência em projetos de energia solar em Curvelo/MG. Cuidamos de todo o processo — do projeto à instalação — até a economia chegar na sua conta.
-            </p>
+          {segments.map((s) => (
+            <a href={s.href} class="tile">
+              <img class="tile-img" src={s.img} alt="" width="800" height="600" loading="lazy" />
+              <span class="tile-scrim" aria-hidden="true"></span>
+              <span class="tile-cat">{s.cat}</span>
+              <span class="tile-body">
+                <span class="tile-title">{s.title}</span>
+                <span class="tile-desc">{s.desc}</span>
+              </span>
+              <span class="tile-go" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
 
-            <!-- Features Grid -->
-            <div class="sobre-features" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2.5rem;">
-              <div style="display:flex;align-items:flex-start;gap:0.75rem;padding:1rem;border-radius:0.75rem;background:#f9fafb;transition:all 0.2s;">
-                <div style="width:2.25rem;height:2.25rem;background:linear-gradient(135deg,rgba(254,92,23,0.15),rgba(254,92,23,0.05));border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <svg style="width:1.125rem;height:1.125rem;color:#FE5C17;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                </div>
-                <div>
-                  <div style="font-size:0.9rem;font-weight:700;color:#111;margin-bottom:0.15rem;">Projeto personalizado</div>
-                  <div style="font-size:0.75rem;color:#9ca3af;">Sob medida para seu telhado</div>
-                </div>
-              </div>
-              <div style="display:flex;align-items:flex-start;gap:0.75rem;padding:1rem;border-radius:0.75rem;background:#f9fafb;transition:all 0.2s;">
-                <div style="width:2.25rem;height:2.25rem;background:linear-gradient(135deg,rgba(254,92,23,0.15),rgba(254,92,23,0.05));border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <svg style="width:1.125rem;height:1.125rem;color:#FE5C17;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-                </div>
-                <div>
-                  <div style="font-size:0.9rem;font-weight:700;color:#111;margin-bottom:0.15rem;">Suporte pós-venda</div>
-                  <div style="font-size:0.75rem;color:#9ca3af;">Acompanhamento contínuo</div>
-                </div>
-              </div>
-              <div style="display:flex;align-items:flex-start;gap:0.75rem;padding:1rem;border-radius:0.75rem;background:#f9fafb;transition:all 0.2s;">
-                <div style="width:2.25rem;height:2.25rem;background:linear-gradient(135deg,rgba(254,92,23,0.15),rgba(254,92,23,0.05));border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <svg style="width:1.125rem;height:1.125rem;color:#FE5C17;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <div>
-                  <div style="font-size:0.9rem;font-weight:700;color:#111;margin-bottom:0.15rem;">Financiamento facilitado</div>
-                  <div style="font-size:0.75rem;color:#9ca3af;">Parcelamos em até 60x</div>
-                </div>
-              </div>
-              <div style="display:flex;align-items:flex-start;gap:0.75rem;padding:1rem;border-radius:0.75rem;background:#f9fafb;transition:all 0.2s;">
-                <div style="width:2.25rem;height:2.25rem;background:linear-gradient(135deg,rgba(254,92,23,0.15),rgba(254,92,23,0.05));border-radius:0.5rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-                  <svg style="width:1.125rem;height:1.125rem;color:#FE5C17;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <div>
-                  <div style="font-size:0.9rem;font-weight:700;color:#111;margin-bottom:0.15rem;">Garantia 25 anos</div>
-                  <div style="font-size:0.75rem;color:#9ca3af;">Equipamentos premium</div>
-                </div>
-              </div>
-            </div>
+    <!-- Sobre + números -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="about-split">
+          <figure class="about-media scroll-reveal">
+            <img src="/servico-residencial.webp" alt="Técnico da Cordeiro Energia conectando os cabos de um módulo fotovoltaico no telhado" width="1200" height="675" loading="lazy" />
+            <figcaption class="about-pin">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span class="about-pin-t"><b>Curvelo</b>Minas Gerais</span>
+            </figcaption>
+          </figure>
 
-            <!-- CTA Row -->
-            <div class="cta-row">
-              <a href="#contato" class="cta-btn cta-orange">CONHEÇA A CORDEIRO
-                <svg style="width:0.875rem;height:0.875rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          <div class="claim scroll-reveal">
+            <span class="eyebrow">Quem somos</span>
+            <h2>Da visita técnica à primeira economia, a gente faz o caminho <span class="hl">inteiro</span></h2>
+            <p class="claim-lead">A <strong>Cordeiro Energia</strong> é uma equipe de Curvelo/MG que projeta, instala e acompanha sistemas fotovoltaicos para casas, empresas, sítios e usinas. Você manda a conta de luz, a gente devolve o projeto — e continua por perto depois que o sistema liga.</p>
+            <div class="claim-actions">
+              <a href="#contato" class="btn btn-orange btn-xl">Falar com um especialista
+                <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </a>
-              <a href="https://wa.me/5538997350343" class="cta-btn cta-whatsapp" target="_blank" rel="noopener noreferrer">
-                <svg style="width:1.125rem;height:1.125rem;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Fale Conosco
+              <a href="https://wa.me/5538997350343" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+                <svg style="width:1.05rem;height:1.05rem;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
               </a>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Stats Row -->
-        <div class="stats-bar" style="gap:0;margin-top:4rem;background:linear-gradient(135deg,#FFF5ED,#FFF8F2);border-radius:1.5rem;border:1.5px solid rgba(254,92,23,0.15);overflow:hidden;box-shadow:0 8px 30px rgba(254,92,23,0.06);">
-          <div style="text-align:center;padding:2rem 1.5rem;border-right:1px solid rgba(254,92,23,0.12);">
-            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">500<span style="font-size:1.25rem;">+</span></div>
-            <div style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem;font-weight:500;">Projetos instalados</div>
+      <div class="ledger-band">
+        <div class="container">
+          <div class="ledger scroll-reveal stagger" role="group" aria-label="Resultados da Cordeiro Energia">
+            <div class="ledger-item">
+              <span class="ledger-num"><span class="num-val" data-target="500">500</span><sup>+</sup></span>
+              <span class="ledger-lab">Projetos instalados</span>
+            </div>
+            <div class="ledger-item">
+              <span class="ledger-num"><span class="num-val" data-target="150">150</span><sup>+</sup></span>
+              <span class="ledger-lab">Residências atendidas</span>
+            </div>
+            <div class="ledger-item">
+              <span class="ledger-num"><i>R$</i><span class="num-val" data-target="5">5</span><i>mi</i></span>
+              <span class="ledger-lab">Economizados por nossos clientes</span>
+            </div>
+            <div class="ledger-item">
+              <span class="ledger-num"><span class="num-val" data-target="1000">1.000</span><i>t</i></span>
+              <span class="ledger-lab">de CO₂ evitado</span>
+            </div>
           </div>
-          <div style="text-align:center;padding:2rem 1.5rem;border-right:1px solid rgba(254,92,23,0.12);">
-            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">150<span style="font-size:1.25rem;">+</span></div>
-            <div style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem;font-weight:500;">Residências atendidas</div>
-          </div>
-          <div style="text-align:center;padding:2rem 1.5rem;border-right:1px solid rgba(254,92,23,0.12);">
-            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">R$ 5M<span style="font-size:1.25rem;">+</span></div>
-            <div style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem;font-weight:500;">Economizados</div>
-          </div>
-          <div style="text-align:center;padding:2rem 1.5rem;">
-            <div style="font-size:2.5rem;font-weight:800;color:#FE5C17;line-height:1;">1.000<span style="font-size:1.25rem;">+</span></div>
-            <div style="font-size:0.8rem;color:#6b7280;margin-top:0.5rem;font-weight:500;">Toneladas CO₂ evitadas</div>
-          </div>
+
+          <p class="ledger-note scroll-reveal"><b>Notas:</b> Números consolidados dos sistemas que instalamos e acompanhamos. A emissão de CO₂ é estimada pela média da matriz elétrica nacional.</p>
         </div>
       </div>
     </section>
 
-    <!-- Serviços -->
-    <section class="servicos" id="servicos">
+    <!-- Processo -->
+    <section class="proc">
       <div class="container">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-            SEGMENTOS
+        <header class="head head-split scroll-reveal">
+          <div class="head-main">
+            <span class="eyebrow">Processo</span>
+            <h2>Do primeiro zap à <span class="hl">economia</span></h2>
           </div>
-          <h2>Tudo que você precisa em <span>um só lugar</span></h2>
-          <p>Temos a solução ideal para cada cliente, com a confiabilidade de um grupo completo e experiente.</p>
-        </div>
-        <div class="segmentos-grid">
-          <a href="/servico-residencial" class="segmento-card">
-            <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-casa.webp" alt="Energia solar residencial" style="width:100%;height:100%;object-fit:cover;" width="400" height="300" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
-              <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">RESIDENCIAL</div>
+          <div class="head-side">
+            <p>Quatro etapas, sem letra miúda e sem custo nenhum até você aprovar o projeto.</p>
+            <a href="#contato" class="btn btn-orange btn-xl">Começar agora
+              <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+          </div>
+        </header>
 
-            </div>
-            <div>
-              <h3 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Para Sua Casa</h3>
-              <p style="color:#6b7280;font-size:0.875rem;line-height:1.75;margin-bottom:1.5rem;">Economize com um sistema solar personalizado com instalação rápida e forma de pagamento facilitada.</p>
-              <div>
-                Saiba mais
-                <div>
-                  <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        <div class="flow scroll-reveal stagger" data-flow>
+          <div class="flow-tabs" role="tablist" aria-label="Etapas do processo">
+            {steps.map((s, i) => (
+              <button
+                class="flow-tab"
+                type="button"
+                role="tab"
+                id={`flow-t${i}`}
+                aria-controls={`flow-p${i}`}
+                aria-selected={i === 0 ? 'true' : 'false'}
+                tabindex={i === 0 ? 0 : -1}
+              >
+                <span class="flow-tn">{s.n}</span>
+                <span class="flow-tt">{s.title}</span>
+              </button>
+            ))}
+          </div>
+          <div class="flow-stage">
+            {steps.map((s, i) => (
+              <div
+                class="flow-panel"
+                id={`flow-p${i}`}
+                role="tabpanel"
+                aria-labelledby={`flow-t${i}`}
+                tabindex="0"
+                data-n={s.n}
+                hidden={i !== 0}
+              >
+                <div class="flow-top">
+                  <span class="flow-badge" aria-hidden="true">
+                    {s.icon === 'chat' && <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8m-8 4h5M21 12a8 8 0 01-8 8H7l-4 3v-5.5A8 8 0 1121 12z" /></svg>}
+                    {s.icon === 'ruler' && <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zm0 0v14m6-12v14" /></svg>}
+                    {s.icon === 'tool' && <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4l7-2 4 4-2 7-9.5 9.5a2.12 2.12 0 01-3-3L11 4zm5.5 1.5L14 8" /></svg>}
+                    {s.icon === 'coin' && <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m5-14H9.5a2.5 2.5 0 000 5h5a2.5 2.5 0 010 5H6" /></svg>}
+                  </span>
+                  <span class="flow-chip">{s.chip}</span>
+                </div>
+                <div class="flow-grid">
+                  <div class="flow-copy">
+                    <h3>{s.title}</h3>
+                    <p>{s.desc}</p>
+                  </div>
+                  <ul class="flow-points">
+                    {s.points.map((p) => <li>{p}</li>)}
+                  </ul>
                 </div>
               </div>
-            </div>
-          </a>
-
-          <a href="/servico-comercial" class="segmento-card">
-            <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-empresa.webp" alt="Energia solar comercial" style="width:100%;height:100%;object-fit:cover;" width="400" height="300" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
-              <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">COMERCIAL</div>
-
-            </div>
-            <div>
-              <h3 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Para Sua Empresa</h3>
-              <p style="color:#6b7280;font-size:0.875rem;line-height:1.75;margin-bottom:1.5rem;">Soluções energéticas integradas para todos os portes, focadas em performance e retorno sobre o investimento.</p>
-              <div>
-                Saiba mais
-                <div>
-                  <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="/usina-solar" class="segmento-card">
-            <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-usina.webp" alt="Usina solar" style="width:100%;height:100%;object-fit:cover;" width="400" height="300" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
-              <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">USINAS</div>
-
-            </div>
-            <div>
-              <h3 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Para Sua Usina Solar</h3>
-              <p style="color:#6b7280;font-size:0.875rem;line-height:1.75;margin-bottom:1.5rem;">Maximize sua geração com gestão e tecnologia de ponta. Suporte completo do projeto à operação.</p>
-              <div>
-                Saiba mais
-                <div>
-                  <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="/agronegocio" class="segmento-card">
-            <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-agro.webp" alt="Energia solar agronegócio" style="width:100%;height:100%;object-fit:cover;" width="400" height="300" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
-              <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">AGRONEGÓCIO</div>
-
-            </div>
-            <div>
-              <h3 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Para Agronegócio</h3>
-              <p style="color:#6b7280;font-size:0.875rem;line-height:1.75;margin-bottom:1.5rem;">Projetos com soluções em energia solar para propriedades rurais e agroindústrias.</p>
-              <div>
-                Saiba mais
-                <div>
-                  <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="/investidores" class="segmento-card">
-            <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-investidor.webp" alt="Investimento em energia solar" style="width:100%;height:100%;object-fit:cover;" width="400" height="300" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
-              <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">INVESTIDORES</div>
-
-            </div>
-            <div>
-              <h3 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Para Investidores</h3>
-              <p style="color:#6b7280;font-size:0.875rem;line-height:1.75;margin-bottom:1.5rem;">Invista em usinas solares com retorno garantido e gestão profissional do seu ativo.</p>
-              <div>
-                Saiba mais
-                <div>
-                  <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </div>
-              </div>
-            </div>
-          </a>
-
-          <a href="/carregamento-ev" class="segmento-card">
-            <div style="position:relative;height:220px;overflow:hidden;">
-              <img src="/cat-ev.webp" alt="Carregamento veicular solar" style="width:100%;height:100%;object-fit:cover;" width="400" height="300" loading="lazy" />
-              <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.65) 100%);"></div>
-              <div style="position:absolute;top:1rem;left:1rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);color:#FE5C17;font-size:0.65rem;font-weight:700;padding:0.4rem 0.85rem;border-radius:9999px;text-transform:uppercase;letter-spacing:0.06em;box-shadow:0 2px 8px rgba(0,0,0,0.1);">VEÍCULOS</div>
-
-            </div>
-            <div>
-              <h3 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Para Seu Carro</h3>
-              <p style="color:#6b7280;font-size:0.875rem;line-height:1.75;margin-bottom:1.5rem;">Recarregue seu veículo elétrico com energia limpa e economize ainda mais.</p>
-              <div>
-                Saiba mais
-                <div>
-                  <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Como funciona -->
-    <section class="como-funciona">
-      <div class="container">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
-            PROCESSO
-          </div>
-          <h2>Como <span>funciona</span></h2>
-          <p>Em 4 passos simples você já está economizando</p>
-        </div>
-        <div class="passos-grid">
-          <div class="passo">
-            <div class="passo-num">01</div>
-            <div class="passo-icon"><span>💬</span></div>
-            <h3>Consulta Grátis</h3>
-            <p>Envie sua conta de luz e fazemos a análise.</p>
-          </div>
-          <div class="passo-arrow">
-            <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </div>
-          <div class="passo">
-            <div class="passo-num">02</div>
-            <div class="passo-icon"><span>📐</span></div>
-            <h3>Projeto</h3>
-            <p>Desenvolvemos o sistema sob medida.</p>
-          </div>
-          <div class="passo-arrow">
-            <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </div>
-          <div class="passo">
-            <div class="passo-num">03</div>
-            <div class="passo-icon"><span>🔨</span></div>
-            <h3>Instalação</h3>
-            <p>Instalação rápida e profissional.</p>
-          </div>
-          <div class="passo-arrow">
-            <svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-          </div>
-          <div class="passo">
-            <div class="passo-num">04</div>
-            <div class="passo-icon"><span>💰</span></div>
-            <h3>Economia</h3>
-            <p>Comece a economizar já no 1º mês!</p>
+            ))}
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projetos -->
-    <section class="projetos" id="portfolio">
+    <section class="work" id="portfolio">
       <div class="container">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-            PROJETOS
-          </div>
-          <h2>Nossos <span>resultados</span></h2>
-          <p>Vejam o impacto real da energia solar</p>
-        </div>
-        <div class="projetos-grid">
-          <div class="proj-card">
-            <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-comercial.webp" alt="Sistema comercial 50kWp" style="height:100%;" width="400" height="300" />
-              <div class="proj-badge">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                CONCLUÍDO
+        <header class="head head-dark scroll-reveal">
+          <span class="eyebrow">Projetos</span>
+          <h2>Instalado, ligado, <span class="hl">medido</span></h2>
+          <p>Três sistemas entregues na região de Curvelo, com a economia real de cada um.</p>
+        </header>
+
+        <div class="cases">
+          {cases.map((c) => (
+            <article class="case scroll-reveal">
+              <div class="case-img">
+                <img src={c.img} alt={c.alt} width="800" height="560" loading="lazy" />
+                <span class="case-type">{c.type}</span>
               </div>
-              <div class="proj-overlay">
-                <span class="proj-type" style="background:rgba(0,0,0,0.7);backdrop-filter:blur(4px);color:#fff;">
-                  <svg style="width:0.65rem;height:0.65rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
-                  RESIDENCIAL
-                </span>
-                <h4>Sistema 10kWp</h4>
-                <p class="proj-econ">R$ 420/mês de economia</p>
-                <div class="proj-stats">
-                  <div class="proj-stat"><strong>18</strong><span>Painéis</span></div>
-                  <div class="proj-stat"><strong>10kWp</strong><span>Potência</span></div>
-                  <div class="proj-stat"><strong>5 anos</strong><span>Garantia</span></div>
-                </div>
+              <div class="case-body">
+                <span class="case-local">{c.local}</span>
+                <h3>{c.title}</h3>
+                <p class="case-econ"><span>R$</span>{c.econ}<span>/mês de economia</span></p>
+                <dl class="spec">
+                  {c.specs.map(([k, v]) => (
+                    <div><dt>{k}</dt><dd>{v}</dd></div>
+                  ))}
+                </dl>
+                <a href="#contato" class="btn btn-orange btn-xl case-cta">Quero um projeto assim
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.25"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="proj-card">
-            <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-rural.webp" alt="Sistema rural 30kWp" width="400" height="300" />
-              <div class="proj-badge">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                CONCLUÍDO
-              </div>
-              <div class="proj-overlay">
-                <span class="proj-type" style="background:rgba(0,0,0,0.7);backdrop-filter:blur(4px);color:#fff;">
-                  <svg style="width:0.65rem;height:0.65rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                  COMERCIAL
-                </span>
-                <h4>Sistema 50kWp</h4>
-                <p class="proj-econ">R$ 8.500/mês de economia</p>
-                <div class="proj-stats">
-                  <div class="proj-stat"><strong>90</strong><span>Painéis</span></div>
-                  <div class="proj-stat"><strong>50kWp</strong><span>Potência</span></div>
-                  <div class="proj-stat"><strong>8 anos</strong><span>Garantia</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="proj-card">
-            <div class="proj-card-img" style="position:relative;">
-              <img src="/proj-residencial.webp" alt="Sistema residencial 10kWp" width="400" height="300" />
-              <div class="proj-badge">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                CONCLUÍDO
-              </div>
-              <div class="proj-overlay">
-                <span class="proj-type" style="background:rgba(0,0,0,0.7);backdrop-filter:blur(4px);color:#fff;">
-                  <svg style="width:0.65rem;height:0.65rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                  RURAL
-                </span>
-                <h4>Sistema 30kWp</h4>
-                <p class="proj-econ">R$ 5.200/mês de economia</p>
-                <div class="proj-stats">
-                  <div class="proj-stat"><strong>54</strong><span>Painéis</span></div>
-                  <div class="proj-stat"><strong>30kWp</strong><span>Potência</span></div>
-                  <div class="proj-stat"><strong>10 anos</strong><span>Garantia</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
 
     <!-- Depoimentos -->
-    <section class="depoimentos">
+    <section class="says">
       <div class="container">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-            DEPOIMENTOS
+        <header class="head head-split scroll-reveal">
+          <div class="head-main">
+            <span class="eyebrow">Depoimentos</span>
+            <h2>A conta que <span class="hl">cai</span> fala por si</h2>
           </div>
-          <h2>O que nossos clientes <span>dizem</span></h2>
-        </div>
-        <div class="depo-grid">
-          {testimonials.map((t) => (
-            <div class="depo-card">
-              <div class="depo-quote">
-                <svg style="width:1.125rem;height:1.125rem;color:#FE5C17;" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-              </div>
-              <div class="depo-stars">
-                {Array.from({ length: 5 }).map(() => (
-                  <svg style="width:0.875rem;height:0.875rem;" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                ))}
-              </div>
-              <p>"{t.text}"</p>
-              <div class="depo-author">
-                <div class="depo-avatar">
-                  <svg style="width:1.125rem;height:1.125rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                </div>
-                <div>
-                  <strong>{t.name}</strong>
-                  <span class="depo-loc">
-                    <svg style="width:0.65rem;height:0.65rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                    {t.loc}
-                  </span>
-                </div>
-              </div>
+          <div class="head-side">
+            <div class="score">
+              <span class="score-num">5.0</span>
+              <span class="score-body">
+                <span class="stars" aria-label="Avaliação 5 de 5">
+                  {Array.from({ length: 5 }).map(() => (
+                    <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                  ))}
+                </span>
+                <span class="score-sub">Média de 8 avaliações de clientes</span>
+              </span>
             </div>
-          ))}
+          </div>
+        </header>
+
+        <div class="says-slider scroll-reveal" data-slider style="--i:0">
+          <div class="says-viewport">
+            <div class="says-track">
+              {testimonials.map((t, i) => (
+                <figure class:list={['says-slide', i === 0 && 'is-active']} data-slide aria-hidden={i !== 0 ? 'true' : 'false'}>
+                  <span class="says-mark" aria-hidden="true">“</span>
+                  <span class="says-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                  <div class="stars" aria-label="Avaliação 5 de 5">
+                    {Array.from({ length: 5 }).map(() => (
+                      <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    ))}
+                  </div>
+                  <blockquote>{t.text}</blockquote>
+                  <figcaption>
+                    <span class="quote-avatar" aria-hidden="true">{t.name.charAt(0)}</span>
+                    <span class="quote-id">
+                      <strong>{t.name}</strong>
+                      <em>{t.loc}</em>
+                    </span>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+            <button type="button" class="says-arrow says-arrow-prev" data-prev aria-label="Depoimento anterior">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="says-arrow says-arrow-next" data-next aria-label="Próximo depoimento">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+
+          <div class="says-bar">
+            <div class="says-dots" role="group" aria-label="Escolher depoimento">
+              {testimonials.map((t, i) => (
+                <button type="button" class:list={['says-dot', i === 0 && 'is-on']} data-dot={i} aria-label={`Depoimento de ${t.name}`} aria-current={i === 0 ? 'true' : 'false'}></button>
+              ))}
+            </div>
+            <span class="says-count" data-count>01 / {String(testimonials.length).padStart(2, '0')}</span>
+          </div>
+          <span class="says-progress" data-progress aria-hidden="true"></span>
         </div>
       </div>
     </section>
 
     <!-- Blog -->
-    <section class="blog-preview">
+    <section class="picks">
       <div class="container">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
-            BLOG
+        <header class="head head-split head-dark scroll-reveal">
+          <div class="head-main">
+            <span class="eyebrow">Blog</span>
+            <h2>Decisão boa é <span class="hl">decisão informada</span></h2>
+            <p>Leitura direta, sem enrolação, para você não errar na hora de escolher.</p>
           </div>
-          <h2>Dicas de <span>energia solar</span></h2>
-          <p>Informações para você tomar a melhor decisão</p>
-        </div>
-        <div class="blog-grid">
-          {posts.map((p) => (
-            <a href={p.href} class="blog-card">
-              <div class="blog-img">
-                <img src={p.img} alt={p.title} width="400" height="300" loading="lazy" />
-                <div class="blog-read">
-                  <svg style="width:0.875rem;height:0.875rem;color:#FE5C17;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
-                </div>
-              </div>
-              <div class="blog-body">
-                <span class="blog-cat">{p.cat}</span>
-                <h4>{p.title}</h4>
-                <p>{p.desc}</p>
-                <div class="blog-footer">
-                  <span class="blog-date">
-                    <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                    {p.date}
-                  </span>
-                  <div class="blog-arrow">
-                    <svg style="width:0.75rem;height:0.75rem;color:#FE5C17;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                  </div>
-                </div>
-              </div>
+          <div class="head-side">
+            <a href="/blog" class="btn btn-orange btn-xl">Ver todos os artigos
+              <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-          ))}
-        </div>
-        <div style="text-align:center;margin-top:2.5rem;">
-          <a href="/blog" class="btn btn-orange">VER TODOS OS ARTIGOS
-            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </header>
+
+        <div class="picks-grid scroll-reveal stagger">
+          <a href={posts[0].href} class="pick-lead">
+            <span class="pick-img">
+              <img src={posts[0].img} alt={posts[0].title} width="800" height="520" loading="lazy" />
+              <span class="pick-shade" aria-hidden="true"></span>
+              <span class="pick-flag">{posts[0].cat}</span>
+              <span class="pick-arrow" aria-hidden="true">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.25"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </span>
+            </span>
+            <span class="pick-lead-body">
+              <span class="pick-title">{posts[0].title}</span>
+              <span class="pick-desc">{posts[0].desc}</span>
+              <span class="pick-foot">
+                <span class="pick-meta">{posts[0].date} · 6 min de leitura</span>
+                <span class="pick-cta">Ler artigo
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </span>
+              </span>
+            </span>
           </a>
+
+          <div class="pick-side">
+            {posts.slice(1).map((p, i) => (
+              <a href={p.href} class="pick-row">
+                <span class="pick-thumb">
+                  <img src={p.img} alt="" width="200" height="200" loading="lazy" />
+                  <span class="pick-n" aria-hidden="true">{`0${i + 2}`}</span>
+                </span>
+                <span class="pick-row-body">
+                  <span class="pick-cat">{p.cat}</span>
+                  <span class="pick-title">{p.title}</span>
+                  <span class="pick-meta">{p.date}</span>
+                </span>
+                <span class="pick-go" aria-hidden="true">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section style="padding:4.5rem 0;background:#fff;">
-      <div class="container" style="max-width:780px;">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            FAQ
-          </div>
-          <h2>Perguntas <span>frequentes</span></h2>
-          <p>Tire suas dúvidas sobre energia solar</p>
+    <section class="faq" id="faq">
+      <div class="container faq-wrap">
+        <div class="faq-side scroll-reveal">
+          <span class="eyebrow">Perguntas frequentes</span>
+          <h2>O que todo mundo <span class="hl">pergunta</span></h2>
+          <p>Sem enrolação: as respostas diretas para as dúvidas que mais aparecem antes de assinar.</p>
+          <a href="https://wa.me/5538997350343?text=Ol%C3%A1%2C%20gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20energia%20solar" class="btn btn-orange btn-xl faq-cta" target="_blank" rel="noopener noreferrer">
+            Tirar minha dúvida
+            <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
         </div>
-        <div class="faq-list">
+
+        <div class="faq-list scroll-reveal stagger">
           <FaqItem
+            n="01"
             question="Quanto custa instalar energia solar?"
             answer="O investimento varia conforme o consumo. Para uma residência comum, o custo gira entre <strong>R$ 8.000 e R$ 50.000</strong>, dependendo do tamanho do sistema. Sistemas de <strong>3 a 6 kWp</strong> são ideais para casas. O payback médio é de <strong>4 a 6 anos</strong>, e o sistema dura mais de 25 anos."
           />
           <FaqItem
+            n="02"
             question="Quanto vou economizar na conta de luz?"
             answer="Em média, a economia varia de <strong>40% a 95%</strong> na conta de luz. Um sistema bem dimensionado pode gerar economia de <strong>R$ 300 a R$ 1.500 mensais</strong>, dependendo do consumo e da tarifa da concessionária."
           />
           <FaqItem
+            n="03"
             question="E se ficar nublado ou chover?"
             answer="Os painéis solares funcionam com luz difusa, ou seja, <strong>geram energia mesmo em dias nublados</strong>, porém com redução de 10% a 30%. A chuva ainda limpa os painéis naturalmente. O sistema é dimensionado considerando as condições climáticas da sua região."
           />
           <FaqItem
+            n="04"
             question="Preciso de licença da prefeitura?"
             answer="Para sistemas residenciais de até <strong>75 kW</strong>, <strong>não é necessária licença da prefeitura</strong>. O processo envolve apenas aprovação da concessionária de energia, que leva de 30 a 60 dias. Cuidamos de toda a documentação para você."
           />
           <FaqItem
+            n="05"
             question="O granizo danifica os painéis?"
             answer="Os painéis modernos possuem certificação <strong>IEC 61215</strong> de resistência a granizo. São testados com impacto de granizo de <strong>25 mm de diâmetro a 85 km/h</strong>. Em casos extremos, a cobertura do seguro do imóvel geralmente cobre danos."
           />
           <FaqItem
+            n="06"
             question="Como funciona a manutenção?"
             answer="A manutenção é <strong>simples e de baixo custo</strong>. Basta limpar os painéis a cada 3 a 6 meses com água e pano macio. A inspeção técnica completa é recomendada uma vez por ano, custando entre <strong>R$ 300 e R$ 800</strong>."
           />
@@ -685,24 +575,22 @@ const posts = [
       </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="cta-final" id="contato">
-      <div class="cta-bg">
-        <img src="/cta-solar.webp" alt="Instalação de painéis solares profissional" width="800" height="400" loading="lazy" />
-        <div class="cta-overlay"></div>
+    <!-- CTA final -->
+    <section class="end" id="contato">
+      <div class="end-bg">
+        <img src="/cta-solar.webp" alt="Instalação profissional de painéis solares" width="800" height="400" loading="lazy" />
       </div>
-      <div class="container cta-inner">
-        <h2>Pronto para <span>economizar</span>?</h2>
-        <p>Fale agora com um especialista. Atendimento gratuito e sem compromisso.</p>
-        <div class="cta-btns">
+      <div class="container end-inner scroll-reveal">
+        <span class="eyebrow">Orçamento gratuito</span>
+        <h2>Sua conta de luz <span class="hl">pode cair</span> neste mês</h2>
+        <p>Mande a conta de luz no WhatsApp e receba o dimensionamento do seu sistema sem custo e sem compromisso.</p>
+        <div class="end-btns">
           <a href="https://wa.me/5538997350343?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20energia%20solar" class="btn btn-orange btn-xl" target="_blank" rel="noopener noreferrer">SOLICITAR ORÇAMENTO
             <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
-          <a href="https://wa.me/5538997350343?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento%20para%20energia%20solar" class="btn btn-outline btn-xl" target="_blank" rel="noopener noreferrer">
-            <svg style="width:1.1rem;height:1.1rem;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            WHATSAPP
-          </a>
+          <a href="tel:+5538997350343" class="btn btn-outline btn-xl">(38) 99735-0343</a>
         </div>
+        <span class="end-note">Atendimento em Curvelo, Belo Horizonte e todo o interior de Minas Gerais.</span>
       </div>
     </section>
   </main>
@@ -712,8 +600,931 @@ const posts = [
   <Footer />
 
   <style>
-    .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
+    :root {
+      --sol: #FE5C17; --sol-pro: #C93A00; --sol-luz: #FFC24D;
+      --painel: #0A0E17; --prata: #A8B0BD; --papel: #FFFFFF;
+      --dia: #F5F7FB; --dia-2: #ECF0F6; --fio: rgba(10, 14, 23, 0.1);
+      --horizonte: linear-gradient(90deg, transparent 0%, rgba(254, 92, 23, 0.9) 24%, rgba(255, 194, 77, 0.9) 76%, transparent 100%);
+    }
+    .hl { color: var(--sol); }
+    .mono, .eyebrow, .tile-cat, .flow-tn, .flow-chip, .read-label, .read-val, .num-val, .case-type, .case-local, .case-econ, .spec dt, .spec dd, .pick-cat, .pick-meta, .pick-n, .panel-name, .slider-head output, .slider-scale, .out-cell strong, .end-note {
+      font-family: ui-monospace, "SFMono-Regular", "Menlo", "Consolas", "Liberation Mono", monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--sol); font-weight: 700;
+    }
+    .eyebrow::before { content: ''; width: 1.75rem; height: 1px; background: currentColor; }
+
+    .head { max-width: 46rem; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+    .head h2 {
+      font-size: clamp(2.1rem, 5.4vw, 3.5rem); font-weight: 700; letter-spacing: -0.035em;
+      line-height: 1.05; margin: 1.1rem 0 0.9rem; color: #111; text-wrap: balance;
+    }
+    .head p { color: #6b7280; font-size: clamp(1rem, 1.4vw, 1.125rem); line-height: 1.7; max-width: 40rem; }
+    .head-dark h2 { color: #fff; }
+    .head-dark p { color: var(--prata); }
+
+    .case-body .case-cta { margin-top: 0.35rem; width: fit-content; box-shadow: 0 14px 34px rgba(254, 92, 23, 0.4); }
+    .case-body .case-cta:hover { box-shadow: 0 20px 48px rgba(254, 92, 23, 0.55); }
+    .case-body .case-cta svg { width: 1rem; height: 1rem; transition: transform 0.25s; }
+    .case-body .case-cta:hover svg { transform: translateX(6px); }
+    @media (max-width: 767px) {
+      .case-body .case-cta { width: 100%; padding: 0.85rem 1.25rem; font-size: 0.875rem; }
+    }
+
+
+    .btn:focus-visible, .seg:focus-visible, .pick-lead:focus-visible, .pick-row:focus-visible { outline: 2px solid var(--sol); outline-offset: 4px; }
+
+    .stagger.visible > :global(*) { animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) backwards; }
+    .stagger.visible > :global(*):nth-child(2) { animation-delay: 0.07s; }
+    .stagger.visible > :global(*):nth-child(3) { animation-delay: 0.14s; }
+    .stagger.visible > :global(*):nth-child(4) { animation-delay: 0.21s; }
+    .stagger.visible > :global(*):nth-child(5) { animation-delay: 0.28s; }
+    .stagger.visible > :global(*):nth-child(6) { animation-delay: 0.35s; }
+    .stagger.visible > :global(*):nth-child(7) { animation-delay: 0.42s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+    /* ============ SIMULADOR ============ */
+    .sim { position: relative; background: var(--painel); padding: clamp(3.5rem, 8vw, 6.5rem) 0; overflow: hidden; }
+    .sim-cells {
+      position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+      background-image:
+        linear-gradient(to right, rgba(168, 176, 189, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(168, 176, 189, 0.07) 1px, transparent 1px);
+      background-size: 84px 84px;
+      mask-image: radial-gradient(ellipse at 70% 30%, #000 20%, transparent 78%);
+      -webkit-mask-image: radial-gradient(ellipse at 70% 30%, #000 20%, transparent 78%);
+    }
+    .sim-inner { position: relative; display: grid; gap: clamp(2.5rem, 5vw, 4rem); align-items: center; }
+    @media (min-width: 960px) { .sim-inner { grid-template-columns: 1fr 1fr; } }
+
+    .sim-copy h2 {
+      color: #fff; font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 700;
+      letter-spacing: -0.04em; line-height: 1.03; margin: 1.1rem 0 1.1rem;
+    }
+    .sim-lead { color: var(--prata); font-size: 1.05rem; line-height: 1.75; max-width: 34rem; margin-bottom: 2.25rem; }
+
+    .slider { margin-bottom: 2rem; }
+    .slider-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+    .slider-head label { font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--prata); font-weight: 700; }
+    .slider-head output { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; color: #fff; letter-spacing: -0.03em; }
+    .slider-scale { display: flex; justify-content: space-between; font-size: 0.68rem; color: #5b6373; letter-spacing: 0.1em; margin-top: 0.6rem; }
+
+    input[type="range"] {
+      -webkit-appearance: none; appearance: none; width: 100%; height: 3px; border-radius: 999px;
+      background: linear-gradient(90deg, var(--sol) var(--pct, 7%), rgba(168, 176, 189, 0.22) var(--pct, 7%));
+      outline: none; cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none; width: 26px; height: 26px; border-radius: 50%;
+      background: #fff; border: 6px solid var(--sol); cursor: grab;
+      box-shadow: 0 0 0 6px rgba(254, 92, 23, 0.16), 0 6px 18px rgba(0, 0, 0, 0.5);
+      transition: box-shadow 0.2s;
+    }
+    input[type="range"]:active::-webkit-slider-thumb { cursor: grabbing; box-shadow: 0 0 0 10px rgba(254, 92, 23, 0.2), 0 6px 18px rgba(0, 0, 0, 0.5); }
+    input[type="range"]::-moz-range-thumb {
+      width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 6px solid var(--sol); cursor: grab;
+      box-shadow: 0 0 0 6px rgba(254, 92, 23, 0.16);
+    }
+    input[type="range"]:focus-visible { outline: 2px solid var(--sol-luz); outline-offset: 8px; }
+
+    .panel {
+      position: relative; background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(168, 176, 189, 0.18); border-radius: 1.25rem;
+      padding: clamp(1.5rem, 3vw, 2.25rem);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px);
+    }
+    .panel::after {
+      content: ''; position: absolute; inset: 0; border-radius: 1.25rem; pointer-events: none;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), transparent 45%);
+    }
+    .panel-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 1.25rem; margin-bottom: 1.5rem; border-bottom: 1px solid rgba(168, 176, 189, 0.16); }
+    .panel-name { font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--prata); }
+    .panel-led { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--sol); box-shadow: 0 0 10px var(--sol); animation: blink 2.4s ease-in-out infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+    .read { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; }
+    .read-label { font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: #6b7383; }
+    .read-val { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; }
+    .read-mute { color: var(--prata); }
+    .read-sol { color: var(--sol); }
+
+    .track { height: 10px; border-radius: 999px; background: rgba(168, 176, 189, 0.13); overflow: hidden; margin: 0.7rem 0 1.6rem; }
+    .track-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #6b7383, var(--prata)); transition: width 0.4s cubic-bezier(0.2, 0.7, 0.3, 1); }
+    .track-sol .track-fill { background: linear-gradient(90deg, var(--sol-pro), var(--sol), var(--sol-luz)); }
+
+    .out { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; border-top: 1px solid rgba(168, 176, 189, 0.16); padding-top: 1.4rem; }
+    .out-cell { min-width: 0; }
+    .out-cell strong { display: block; font-size: clamp(0.95rem, 2vw, 1.25rem); color: #fff; font-weight: 700; margin-top: 0.45rem; letter-spacing: -0.02em; }
+    .out-cell:first-child strong { color: var(--sol); }
+    .panel-note { margin-top: 1.4rem; font-size: 0.72rem; line-height: 1.7; color: #5b6373; }
+
+    /* ============ SEGMENTOS ============ */
+    .segs {
+      padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+      background-color: var(--dia);
+      background-image: var(--horizonte), radial-gradient(46rem 24rem at 90% -8%, rgba(254, 92, 23, 0.14), transparent 70%);
+      background-size: 100% 2px, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, right top;
+    }
+    .bento { display: grid; gap: clamp(0.75rem, 1.6vw, 1.1rem); grid-template-columns: 1fr; }
+
+    .bento-intro {
+      position: relative; overflow: hidden; border-radius: 1.15rem;
+      background-color: var(--painel);
+      background-image:
+        radial-gradient(34rem 20rem at 118% -25%, rgba(254, 92, 23, 0.42), transparent 70%),
+        linear-gradient(to right, rgba(168, 176, 189, 0.09) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(168, 176, 189, 0.09) 1px, transparent 1px);
+      background-size: auto, 44px 44px, 44px 44px;
+      padding: clamp(1.75rem, 3.5vw, 2.75rem);
+      display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+      box-shadow: 0 24px 50px rgba(10, 14, 23, 0.16);
+    }
+    .bento-intro h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.75rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1.05; margin: 1rem 0 0.85rem; }
+    .bento-intro p { color: var(--prata); font-size: 1rem; line-height: 1.7; margin-bottom: 1.5rem; max-width: 34ch; }
+    .bento-cta {
+      display: inline-flex; align-items: center; gap: 0.55rem; text-decoration: none;
+      color: var(--sol-luz); font-weight: 700; font-size: 0.85rem;
+      border-bottom: 1px solid rgba(255, 194, 77, 0.4); padding-bottom: 0.25rem;
+      transition: gap 0.25s, border-color 0.25s;
+    }
+    .bento-cta svg { width: 0.9rem; height: 0.9rem; }
+    .bento-cta:hover { gap: 0.9rem; border-color: var(--sol-luz); }
+    .bento-cta:focus-visible { outline: 2px solid var(--sol-luz); outline-offset: 4px; }
+
+    .tile {
+      position: relative; display: block; overflow: hidden; isolation: isolate;
+      min-height: 220px; border-radius: 1.15rem; text-decoration: none; color: #fff;
+      background: #141a26;
+      transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.45s;
+    }
+    .tile-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.3, 1); }
+    .tile-scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 14, 23, 0.28) 0%, rgba(10, 14, 23, 0.58) 45%, rgba(10, 14, 23, 0.93) 100%); transition: background 0.45s; }
+    .tile-cat {
+      position: absolute; top: clamp(0.9rem, 2vw, 1.25rem); left: clamp(0.9rem, 2vw, 1.25rem); z-index: 2;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      font-size: 0.6rem; letter-spacing: 0.2em; font-weight: 700; color: var(--sol-luz);
+      background: rgba(10, 14, 23, 0.5); border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(6px); padding: 0.35rem 0.7rem; border-radius: 999px;
+    }
+    .tile-body {
+      position: absolute; left: clamp(0.95rem, 2vw, 1.35rem); right: 4.25rem;
+      bottom: clamp(0.95rem, 2vw, 1.35rem); z-index: 2;
+    }
+    .tile-title { display: block; font-size: clamp(1.15rem, 2vw, 1.55rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 0.45rem; }
+    .tile-desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 0.83rem; line-height: 1.55; color: rgba(255, 255, 255, 0.72); max-width: 34ch; }
+    .tile-go {
+      position: absolute; right: clamp(0.95rem, 2vw, 1.35rem); bottom: clamp(0.95rem, 2vw, 1.35rem); z-index: 2;
+      width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.35);
+      display: flex; align-items: center; justify-content: center; color: #fff;
+      transition: all 0.4s cubic-bezier(0.2, 0.7, 0.3, 1);
+    }
+    .tile-go svg { width: 0.95rem; height: 0.95rem; }
+    .tile::after {
+      content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; z-index: 3;
+      background-image: var(--horizonte); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.3, 1);
+    }
+    .tile:hover, .tile:focus-visible { transform: translateY(-4px); box-shadow: 0 26px 50px rgba(10, 14, 23, 0.22); }
+    .tile:hover .tile-img, .tile:focus-visible .tile-img { transform: scale(1.07); }
+    .tile:hover .tile-scrim, .tile:focus-visible .tile-scrim { background: linear-gradient(180deg, rgba(10, 14, 23, 0.16) 0%, rgba(10, 14, 23, 0.5) 45%, rgba(10, 14, 23, 0.95) 100%); }
+    .tile:hover .tile-go, .tile:focus-visible .tile-go { background: var(--sol); border-color: var(--sol); transform: translateX(4px); }
+    .tile:hover::after, .tile:focus-visible::after { transform: scaleX(1); }
+    .tile:focus-visible { outline: 2px solid var(--sol); outline-offset: 3px; }
+
+    @media (min-width: 640px) {
+      .bento { grid-template-columns: repeat(2, 1fr); }
+      .bento-intro { grid-column: 1 / -1; }
+      .tile:first-of-type { grid-column: 1 / -1; min-height: 270px; }
+    }
+
+    @media (min-width: 1024px) {
+      .bento { grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(168px, auto); }
+      .bento-intro { grid-column: 1 / span 4; grid-row: 1 / span 2; }
+      .tile:nth-of-type(1) { grid-column: 5 / span 4; grid-row: 1 / span 2; min-height: 0; }
+      .tile:nth-of-type(2) { grid-column: 9 / span 4; grid-row: 1; }
+      .tile:nth-of-type(3) { grid-column: 9 / span 4; grid-row: 2; }
+      .tile:nth-of-type(4) { grid-column: 1 / span 4; grid-row: 3; }
+      .tile:nth-of-type(5) { grid-column: 5 / span 4; grid-row: 3; }
+      .tile:nth-of-type(6) { grid-column: 9 / span 4; grid-row: 3; }
+      .tile-title { font-size: clamp(1.3rem, 1.7vw, 1.6rem); }
+    }
+
+    /* ============ SOBRE + NÚMEROS ============ */
+    .about {
+      padding: clamp(3.25rem, 7vw, 5.75rem) 0 0;
+      background-color: var(--dia-2);
+      background-image: var(--horizonte), radial-gradient(46rem 24rem at 97% 4%, rgba(254, 92, 23, 0.16), transparent 70%);
+      background-size: 100% 2px, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, right top;
+    }
+
+    .about-split { display: grid; gap: clamp(1.75rem, 4vw, 3.5rem); }
+    @media (min-width: 900px) {
+      .about-split { grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr); gap: clamp(2.5rem, 4vw, 4.5rem); }
+      .claim { align-self: center; }
+      .about-media { min-height: clamp(20rem, 32vw, 28rem); }
+    }
+
+    .about-media { position: relative; margin: 0; overflow: hidden; aspect-ratio: 16 / 10; background: #d6dbe3; }
+    @media (min-width: 900px) { .about-media { aspect-ratio: auto; } }
+    .about-media img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 62%; }
+    .about-media::before {
+      content: ''; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none;
+      width: clamp(3rem, 5vw, 5rem); height: clamp(3rem, 5vw, 5rem);
+      border-top: 4px solid var(--sol); border-left: 4px solid var(--sol);
+    }
+    .about-media::after {
+      content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background: linear-gradient(0deg, rgba(10, 14, 23, 0.68) 0%, rgba(10, 14, 23, 0.1) 34%, transparent 52%);
+    }
+    .about-pin {
+      position: absolute; left: clamp(0.75rem, 2vw, 1.25rem); bottom: clamp(0.75rem, 2vw, 1.25rem); z-index: 3;
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.6rem 0.95rem; background: rgba(10, 14, 23, 0.9);
+      box-shadow: 0 12px 32px rgba(10, 14, 23, 0.4);
+    }
+    .about-pin svg { width: 1.05rem; height: 1.05rem; flex: none; color: var(--sol-luz); }
+    .about-pin-t { font-size: 0.64rem; line-height: 1.3; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); }
+    .about-pin-t b { display: block; font-size: 0.95rem; letter-spacing: -0.01em; text-transform: none; color: #fff; }
+
+    .claim { min-width: 0; }
+    .claim h2 {
+      font-size: clamp(2.05rem, 4.6vw, 3.5rem); font-weight: 700;
+      letter-spacing: -0.042em; line-height: 1.04; color: #111;
+      text-wrap: balance; margin-top: clamp(0.9rem, 2vw, 1.3rem);
+    }
+    .claim-lead { margin-top: clamp(1.1rem, 2.2vw, 1.5rem); color: #52525b; font-size: clamp(1rem, 1.1vw, 1.09rem); line-height: 1.75; max-width: 56ch; }
+    .claim-lead strong { color: #111; font-weight: 700; }
+    .claim-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: clamp(1.5rem, 3vw, 2.25rem); }
+
+    .ledger-band {
+      position: relative; isolation: isolate;
+      margin-top: clamp(2.5rem, 6vw, 4.5rem);
+      background-color: var(--painel);
+      padding: clamp(2.75rem, 6vw, 4.75rem) 0 clamp(1.75rem, 4vw, 2.75rem);
+    }
+    .ledger-band::before {
+      content: ''; position: absolute; inset: 0; z-index: -1;
+      background: url('/sobre-solar.webp') center 86% / cover no-repeat;
+    }
+    .ledger-band::after {
+      content: ''; position: absolute; inset: 0; z-index: -1;
+      background-image: var(--horizonte),
+        linear-gradient(180deg, rgba(10, 14, 23, 0.93) 0%, rgba(10, 14, 23, 0.84) 45%, rgba(10, 14, 23, 0.96) 100%);
+      background-size: 100% 2px, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, center;
+    }
+    .ledger-band > .container { position: relative; z-index: 1; }
+
+    .ledger {
+      display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-top: 2px solid rgba(255, 255, 255, 0.88);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .ledger-item { min-width: 0; padding: clamp(1.3rem, 3vw, 1.75rem) 0; border-bottom: 1px solid rgba(255, 255, 255, 0.13); }
+    .ledger-item:nth-child(odd) { padding-right: clamp(1rem, 2.5vw, 1.75rem); }
+    .ledger-item:nth-child(even) { padding-left: clamp(1rem, 2.5vw, 1.75rem); border-left: 1px solid rgba(255, 255, 255, 0.13); }
+    .ledger-item:nth-child(n+3) { border-bottom: none; }
+    .ledger-num {
+      display: flex; align-items: baseline; gap: 0.12em;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+      font-variant-numeric: tabular-nums; font-weight: 700;
+      font-size: clamp(2rem, 5vw, 4.25rem); letter-spacing: -0.06em;
+      line-height: 1; color: #fff;
+    }
+    .ledger .num-val { font-size: inherit; font-weight: inherit; color: inherit; letter-spacing: inherit; line-height: inherit; }
+    .ledger-num sup { font-size: 0.4em; color: var(--sol-luz); position: relative; top: -0.6em; line-height: 0; letter-spacing: 0; }
+    .ledger-num i { font-style: normal; font-size: 0.34em; color: var(--sol-luz); letter-spacing: 0.02em; }
+    .ledger-num i:first-child { position: relative; top: -0.45em; }
+    .ledger-lab { display: block; margin-top: clamp(0.6rem, 1.3vw, 0.9rem); font-size: clamp(0.78rem, 1vw, 0.9rem); line-height: 1.45; color: rgba(255, 255, 255, 0.55); max-width: 24ch; text-wrap: pretty; }
+    .ledger-note { margin-top: clamp(1.25rem, 3vw, 1.75rem); font-size: 0.78rem; line-height: 1.65; color: rgba(255, 255, 255, 0.45); max-width: 76ch; }
+    .ledger-note b { font-weight: 700; color: rgba(255, 255, 255, 0.75); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.9em; margin-right: 0.5rem; }
+
+    @media (min-width: 768px) {
+      .ledger { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .ledger-item,
+      .ledger-item:nth-child(odd),
+      .ledger-item:nth-child(even),
+      .ledger-item:nth-child(n+3) {
+        padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.1rem, 2.2vw, 2rem);
+        border-bottom: none;
+        border-left: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      .ledger-item:first-child { border-left: none; padding-left: 0; }
+      .ledger-item:last-child { border-right: none; padding-right: 0; }
+    }
+
+    /* ============ PROCESSO ============ */
+    .proc {
+      padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+      background-color: var(--dia);
+      background-image: var(--horizonte), radial-gradient(44rem 22rem at 8% -10%, rgba(254, 92, 23, 0.13), transparent 70%);
+      background-size: 100% 2px, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, left top;
+    }
+    .head-split { max-width: none; display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: end; }
+    @media (min-width: 900px) { .head-split { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); } }
+    .head-side p { color: #52525b; font-size: clamp(1rem, 1.3vw, 1.1rem); line-height: 1.75; max-width: 44ch; }
+    .head-side .btn { margin-top: clamp(1.25rem, 2.5vw, 1.75rem); }
+
+    .flow-tabs {
+      display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(0.5rem, 1vw, 0.75rem);
+    }
+    .flow-tab {
+      display: flex; align-items: center; gap: clamp(0.5rem, 1vw, 0.85rem);
+      min-width: 0; padding: clamp(0.85rem, 1.6vw, 1.1rem) clamp(0.9rem, 1.8vw, 1.35rem);
+      background: var(--papel); border: 1px solid var(--fio); border-radius: 0.85rem;
+      box-shadow: 0 6px 18px rgba(10, 14, 23, 0.05);
+      font: inherit; text-align: left; cursor: pointer; color: #6b7280;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+    .flow-tab:hover { border-color: rgba(254, 92, 23, 0.5); color: #111; transform: translateY(-2px); }
+    .flow-tab:focus-visible { outline: 2px solid var(--sol); outline-offset: 3px; }
+    .flow-tab[aria-selected='true'] {
+      background: var(--painel); border-color: var(--painel); color: #fff;
+      box-shadow: 0 16px 34px rgba(10, 14, 23, 0.22); transform: none;
+    }
+    .flow-tn { flex: none; font-size: 0.72rem; letter-spacing: 0.2em; color: var(--sol-pro); font-weight: 700; }
+    .flow-tab[aria-selected='true'] .flow-tn { color: var(--sol-luz); }
+    .flow-tt {
+      min-width: 0; font-weight: 700; font-size: clamp(0.98rem, 1.3vw, 1.1rem);
+      letter-spacing: -0.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    .flow-stage {
+      position: relative; margin-top: clamp(0.75rem, 1.5vw, 1.1rem);
+      background: var(--papel); border: 1px solid var(--fio); border-radius: 1rem;
+      padding: clamp(1.5rem, 3.5vw, 3rem);
+      box-shadow: 0 26px 60px rgba(10, 14, 23, 0.09);
+      overflow: hidden;
+    }
+    .flow-panel { position: relative; }
+    .flow-panel::after {
+      content: attr(data-n); position: absolute; z-index: 0; pointer-events: none;
+      right: clamp(0.75rem, 3vw, 2.5rem); bottom: -2.75rem;
+      font-size: clamp(7rem, 17vw, 13rem); font-weight: 800; line-height: 0.78;
+      letter-spacing: -0.07em; color: rgba(254, 92, 23, 0.06);
+      -webkit-text-stroke: 2px rgba(254, 92, 23, 0.16);
+    }
+    .flow-top {
+      position: relative; z-index: 1;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem;
+    }
+    .flow-badge {
+      flex: none; width: 2.5rem; height: 2.5rem; border-radius: 0.6rem;
+      display: grid; place-items: center;
+      background: var(--painel); color: var(--sol-luz);
+    }
+    .flow-badge svg { width: 1.3rem; height: 1.3rem; }
+    .flow-chip {
+      display: inline-flex; align-items: center;
+      font-family: ui-monospace, "SFMono-Regular", "Menlo", "Consolas", "Liberation Mono", monospace;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--sol-pro); background: rgba(254, 92, 23, 0.08);
+      border: 1px solid rgba(254, 92, 23, 0.32); border-radius: 999px;
+      padding: 0.45rem 0.85rem;
+    }
+    .flow-chip::before { content: ''; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: var(--sol); }
+    .flow-grid {
+      position: relative; z-index: 1; display: grid;
+      gap: clamp(1.5rem, 3vw, 2.75rem);
+      margin-top: clamp(1.25rem, 3vw, 2.25rem);
+    }
+    @media (min-width: 900px) { .flow-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); } }
+    .flow-copy h3 {
+      font-size: clamp(1.9rem, 4vw, 3rem); font-weight: 700;
+      letter-spacing: -0.035em; line-height: 1.03; color: #111;
+    }
+    .flow-copy p {
+      margin-top: 0.9rem; color: #52525b;
+      font-size: clamp(1rem, 1.2vw, 1.08rem); line-height: 1.75;
+    }
+    .flow-points {
+      list-style: none; align-self: start; display: grid; gap: 0.85rem;
+      padding-left: clamp(1rem, 2vw, 1.5rem);
+      border-left: 2px solid rgba(254, 92, 23, 0.35);
+    }
+    .flow-points li {
+      display: flex; align-items: flex-start; gap: 0.7rem;
+      font-size: 0.97rem; line-height: 1.6; color: #3f3f46;
+    }
+    .flow-points li::before {
+      content: '\2713'; flex: none; margin-top: 0.15rem;
+      width: 1.35rem; height: 1.35rem; display: grid; place-items: center;
+      font-size: 0.72rem; font-weight: 700; color: #fff; background: var(--sol); border-radius: 50%;
+    }
+    @keyframes flowIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+    .flow-panel:not([hidden]) { animation: flowIn 0.5s cubic-bezier(0.2, 0.7, 0.3, 1) backwards; }
+
+    @media (max-width: 899px) {
+      .flow-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+      .flow-tab {
+        flex-direction: column; align-items: flex-start; justify-content: center;
+        gap: 0.3rem; min-height: 4.4rem; padding: 0.8rem 0.95rem; border-radius: 0.75rem;
+      }
+      .flow-tt { font-size: 1rem; white-space: normal; }
+      .flow-stage { border-radius: 0.85rem; padding: clamp(1.25rem, 5vw, 1.6rem); }
+      .flow-panel::after { font-size: clamp(5.5rem, 30vw, 8rem); bottom: -1.75rem; }
+      .flow-copy h3 { font-size: clamp(1.75rem, 8vw, 2.3rem); }
+      .flow-points { gap: 0.7rem; }
+    }
+
+    /* ============ PROJETOS ============ */
+    .work { background: var(--painel); padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+    .cases { display: grid; gap: clamp(2rem, 5vw, 4rem); }
+    .case { display: grid; gap: clamp(1.5rem, 3vw, 3rem); align-items: center; }
+    @media (min-width: 900px) {
+      .case { grid-template-columns: 1.15fr 1fr; }
+      .case:nth-child(even) .case-img { order: 2; }
+    }
+    .case-img { position: relative; border-radius: 1rem; overflow: hidden; background: #141a26; }
+    .case-img img { width: 100%; height: 100%; aspect-ratio: 16 / 11; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.3, 1); }
+    .case:hover .case-img img { transform: scale(1.04); }
+    .case-type {
+      position: absolute; top: 1rem; left: 1rem; font-size: 0.62rem; letter-spacing: 0.18em;
+      background: rgba(10, 14, 23, 0.75); backdrop-filter: blur(6px); color: var(--sol-luz);
+      border: 1px solid rgba(255, 255, 255, 0.16); padding: 0.4rem 0.8rem; border-radius: 999px;
+    }
+    .case-local { font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase; color: #6b7383; }
+    .case-body h3 { color: #fff; font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; letter-spacing: -0.035em; margin: 0.7rem 0 0.5rem; }
+    .case-econ { color: var(--sol); font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 700; letter-spacing: -0.04em; margin-bottom: 1.75rem; }
+    .case-econ span { font-size: 0.45em; letter-spacing: 0.1em; color: var(--prata); vertical-align: middle; margin: 0 0.15em 0 0.2em; }
+    .case-econ span:last-child { margin-left: 0.35em; }
+    .spec { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(168, 176, 189, 0.2); margin-bottom: 1.75rem; }
+    .spec > div { padding: 1rem 1rem 0 0; border-right: 1px solid rgba(168, 176, 189, 0.14); }
+    .spec > div:last-child { border-right: none; }
+    .spec dt { font-size: 0.6rem; letter-spacing: 0.16em; color: #6b7383; }
+    .spec dd { font-size: clamp(0.9rem, 1.6vw, 1.1rem); color: #fff; font-weight: 700; margin-top: 0.5rem; }
+
+    /* ============ DEPOIMENTOS ============ */
+    .says {
+      padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+      background-color: var(--dia-2);
+      background-image: var(--horizonte), radial-gradient(46rem 24rem at 92% -8%, rgba(254, 92, 23, 0.13), transparent 70%);
+      background-size: 100% 2px, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, right top;
+    }
+    .score {
+      display: inline-flex; align-items: center; gap: 1rem;
+      background: #fff; border: 1px solid rgba(10, 14, 23, 0.07); border-radius: 1rem;
+      padding: 1rem 1.4rem; box-shadow: 0 18px 40px rgba(10, 14, 23, 0.07);
+    }
+    .score-num { font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 800; line-height: 0.9; letter-spacing: -0.04em; color: #111; }
+    .score-body { display: grid; gap: 0.3rem; }
+    .score .stars { margin-bottom: 0; }
+    .score-sub { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.68rem; letter-spacing: 0.06em; color: #52525b; }
+    @media (min-width: 900px) { .says .head-side { justify-self: end; } }
+
+    .says-slider { --gap: 1.5rem; --slide-w: calc(100% - var(--gap)); position: relative; }
+    @media (min-width: 900px) { .says-slider { --slide-w: clamp(460px, 62vw, 820px); } }
+    .says-viewport { position: relative; overflow: hidden; padding-bottom: 0.25rem; cursor: grab; touch-action: pan-y; }
+    .says-viewport.is-drag { cursor: grabbing; }
+    @media (min-width: 768px) {
+      .says-viewport::before, .says-viewport::after {
+        content: ''; position: absolute; top: 0; bottom: 0.25rem; width: 5.5rem;
+        z-index: 1; pointer-events: none;
+      }
+      .says-viewport::before { left: 0; background: linear-gradient(to right, var(--dia-2), rgba(236, 240, 246, 0)); }
+      .says-viewport::after { right: 0; background: linear-gradient(to left, var(--dia-2), rgba(236, 240, 246, 0)); }
+    }
+    .says-track {
+      display: flex; gap: var(--gap); width: 100%;
+      margin-left: calc((100% - var(--slide-w)) / 2);
+      transform: translateX(calc(var(--i, 0) * (var(--slide-w) + var(--gap)) * -1));
+      transition: transform 0.7s cubic-bezier(0.65, 0, 0.2, 1);
+    }
+    .says-slide {
+      position: relative; flex: 0 0 var(--slide-w); overflow: hidden;
+      display: flex; flex-direction: column;
+      background: #fff; border: 1px solid rgba(10, 14, 23, 0.07); border-radius: 1.25rem;
+      padding: clamp(2rem, 4vw, 3.25rem);
+      opacity: 0.5; transform: scale(0.96);
+      transition: opacity 0.6s ease, transform 0.7s cubic-bezier(0.65, 0, 0.2, 1),
+        background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+      will-change: transform, opacity;
+    }
+    .says-slide.is-active {
+      opacity: 1; transform: scale(1);
+      background: var(--painel); border-color: rgba(255, 194, 77, 0.25);
+      box-shadow: 0 34px 70px rgba(10, 14, 23, 0.32);
+    }
+    .says-mark { position: absolute; top: -1.25rem; right: clamp(1.25rem, 3vw, 2.5rem); font-size: 12rem; line-height: 1; color: rgba(254, 92, 23, 0.1); font-weight: 700; }
+    .says-slide.is-active .says-mark { color: rgba(255, 194, 77, 0.16); }
+    .says-num { position: absolute; bottom: clamp(2rem, 4vw, 3.25rem); right: clamp(2rem, 4vw, 3.25rem); font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.14em; color: var(--prata); z-index: 1; }
+    .says-slide.is-active .says-num { color: rgba(255, 194, 77, 0.7); }
+    .stars { display: flex; gap: 0.15rem; color: var(--sol); margin-bottom: 1.5rem; position: relative; z-index: 1; }
+    .stars svg { width: 0.95rem; height: 0.95rem; }
+    .says-slide blockquote {
+      position: relative; z-index: 1; flex: 1;
+      font-size: clamp(1.35rem, 3.1vw, 2.15rem); line-height: 1.5; font-weight: 700;
+      letter-spacing: -0.02em; color: #18181b; max-width: 22ch;
+    }
+    .says-slide.is-active blockquote { color: #fff; }
+    .says-slide figcaption {
+      display: flex; align-items: center; gap: 0.85rem;
+      margin-top: clamp(1.75rem, 4vw, 3rem); padding-top: 1.35rem;
+      border-top: 1px solid var(--fio); position: relative; z-index: 1;
+    }
+    .says-slide.is-active figcaption { border-top-color: rgba(255, 255, 255, 0.14); }
+    .quote-avatar {
+      width: 3rem; height: 3rem; border-radius: 50%; flex-shrink: 0;
+      background: linear-gradient(135deg, var(--sol), var(--sol-pro)); color: #fff;
+      display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem;
+      box-shadow: 0 8px 20px rgba(254, 92, 23, 0.35);
+    }
+    .quote-id { min-width: 0; }
+    .quote-id strong { display: block; font-size: 1rem; color: #111; }
+    .quote-id em { font-style: normal; font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.7rem; letter-spacing: 0.1em; color: var(--sol); }
+    .says-slide.is-active .quote-id strong { color: #fff; }
+    .says-slide.is-active .quote-id em { color: var(--sol-luz); }
+
+    .says-bar { display: flex; align-items: center; gap: 1.25rem; margin-top: clamp(1.75rem, 3vw, 2.5rem); }
+    .says-dots { display: flex; align-items: center; gap: 0.5rem; }
+    .says-dot {
+      position: relative; width: 2rem; height: 4px; border: 0; padding: 0; border-radius: 99px;
+      background: rgba(10, 14, 23, 0.16); cursor: pointer;
+      transition: background-color 0.3s, width 0.3s;
+    }
+    .says-dot::after { content: ''; position: absolute; inset: -10px -6px; }
+    .says-dot.is-on { width: 3.25rem; background: var(--sol); }
+    .says-dot:hover { background: rgba(10, 14, 23, 0.4); }
+    .says-dot.is-on:hover { background: var(--sol); }
+    .says-count { margin-left: auto; font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.14em; color: #71717a; }
+    .says-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%); z-index: 2;
+      width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer;
+      display: none; align-items: center; justify-content: center;
+      background: #fff; border: 1px solid rgba(10, 14, 23, 0.12); color: #18181b;
+      box-shadow: 0 10px 26px rgba(10, 14, 23, 0.16);
+      transition: transform 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .says-arrow-prev { left: 0.75rem; }
+    .says-arrow-next { right: 0.75rem; }
+    @media (min-width: 768px) { .says-arrow { display: flex; } }
+    .says-arrow svg { width: 1.15rem; height: 1.15rem; }
+    .says-arrow:hover { background: var(--sol); border-color: var(--sol); color: #fff; transform: translateY(-50%) scale(1.1); box-shadow: 0 14px 30px rgba(254, 92, 23, 0.35); }
+    .says-arrow:focus-visible, .says-dot:focus-visible { outline: 2px solid var(--sol); outline-offset: 3px; }
+    .says-progress { display: block; margin-top: clamp(1.25rem, 2vw, 1.75rem); height: 2px; overflow: hidden; border-radius: 99px; background: rgba(10, 14, 23, 0.08); }
+    .says-progress::after { content: ''; display: block; height: 100%; width: 100%; background: var(--sol); transform-origin: left; transform: scaleX(0); }
+    .says-progress.is-run::after { animation: saysRun 6s linear forwards; }
+    @keyframes saysRun { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .says-slider:hover .says-progress::after, .says-slider:focus-within .says-progress::after { animation-play-state: paused; }
+
+    /* ============ BLOG ============ */
+    .picks {
+      padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+      background-color: var(--painel);
+      background-image: radial-gradient(48rem 26rem at 88% -6%, rgba(254, 92, 23, 0.2), transparent 70%),
+        radial-gradient(36rem 22rem at 2% 108%, rgba(255, 194, 77, 0.1), transparent 70%);
+      background-repeat: no-repeat, no-repeat;
+      background-position: right top, left bottom;
+    }
+    .picks .head-side .btn { width: fit-content; }
+    @media (min-width: 900px) { .picks .head-side { justify-self: end; } }
+
+    .picks-grid { display: grid; gap: clamp(1.25rem, 2.5vw, 2rem); }
+    @media (min-width: 960px) {
+      .picks-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(1.5rem, 2.6vw, 2.25rem); align-items: start; }
+    }
+
+    .pick-cat { display: block; font-size: 0.62rem; letter-spacing: 0.18em; color: var(--sol); font-weight: 700; margin-bottom: 0.85rem; }
+    .pick-title { display: block; font-size: clamp(1.35rem, 2.6vw, 1.95rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; color: #111; margin-bottom: 0.7rem; }
+    .pick-meta { display: block; font-size: 0.66rem; letter-spacing: 0.12em; color: #a1a1aa; text-transform: uppercase; }
+
+    .pick-lead {
+      display: grid; background: #fff; border-radius: 1.1rem;
+      overflow: hidden; text-decoration: none; color: inherit;
+      box-shadow: 0 24px 55px rgba(0, 0, 0, 0.42);
+      transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.4s;
+    }
+    .pick-lead:hover { transform: translateY(-6px); box-shadow: 0 36px 78px rgba(0, 0, 0, 0.52); }
+    .pick-img { position: relative; display: block; overflow: hidden; background: #141a26; }
+    .pick-img img { width: 100%; height: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; transition: transform 0.8s cubic-bezier(0.2, 0.7, 0.3, 1); }
+    .pick-lead:hover .pick-img img { transform: scale(1.06); }
+    .pick-shade {
+      position: absolute; inset: 0; pointer-events: none;
+      background: linear-gradient(180deg, rgba(10, 14, 23, 0.62) 0%, rgba(10, 14, 23, 0) 42%);
+    }
+    .pick-flag {
+      position: absolute; top: clamp(0.75rem, 1.6vw, 1.1rem); left: clamp(0.75rem, 1.6vw, 1.1rem);
+      font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--painel); background: var(--sol-luz); border-radius: 999px;
+      padding: 0.42rem 0.8rem; box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+    }
+    .pick-arrow {
+      position: absolute; right: clamp(0.75rem, 1.6vw, 1.1rem); bottom: clamp(0.75rem, 1.6vw, 1.1rem);
+      width: clamp(2.75rem, 4vw, 3.25rem); height: clamp(2.75rem, 4vw, 3.25rem);
+      border-radius: 50%; display: grid; place-items: center;
+      background: var(--sol); color: #fff;
+      box-shadow: 0 10px 26px rgba(254, 92, 23, 0.55);
+      transition: background-color 0.3s, color 0.3s, transform 0.35s cubic-bezier(0.2, 0.7, 0.3, 1);
+    }
+    .pick-arrow svg { width: 1.1rem; height: 1.1rem; }
+    .pick-lead:hover .pick-arrow { background: var(--sol-luz); color: var(--painel); transform: translate(3px, -3px); }
+    .pick-lead-body { display: block; padding: clamp(1.35rem, 2.8vw, 2rem); }
+    .pick-desc { display: block; font-size: 0.97rem; line-height: 1.7; color: #6b7280; margin-bottom: clamp(1.1rem, 2vw, 1.5rem); }
+    .pick-foot {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 0.85rem; padding-top: clamp(0.9rem, 1.6vw, 1.2rem); border-top: 1px solid var(--fio);
+    }
+    .pick-cta {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--sol-pro); border-bottom: 2px solid rgba(254, 92, 23, 0.3);
+      padding-bottom: 0.25rem; transition: gap 0.25s, border-color 0.25s;
+    }
+    .pick-cta svg { width: 0.9rem; height: 0.9rem; }
+    .pick-lead:hover .pick-cta { gap: 0.85rem; border-color: var(--sol); }
+
+    .pick-side { display: flex; flex-direction: column; gap: clamp(0.7rem, 1.3vw, 1rem); }
+    .pick-row {
+      position: relative; overflow: hidden;
+      display: grid; grid-template-columns: clamp(72px, 8vw, 88px) minmax(0, 1fr) auto;
+      gap: clamp(0.85rem, 1.6vw, 1.2rem); align-items: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.95rem; padding: clamp(0.7rem, 1.2vw, 0.9rem);
+      text-decoration: none; color: inherit;
+      transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    }
+    .pick-row::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px;
+      background: linear-gradient(180deg, var(--sol), var(--sol-luz));
+      transform: scaleY(0); transform-origin: top;
+      transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+    }
+    .pick-row:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(254, 92, 23, 0.55);
+      transform: translateX(6px);
+    }
+    .pick-row:hover::before { transform: scaleY(1); }
+    .pick-thumb { position: relative; width: 100%; aspect-ratio: 1; border-radius: 0.65rem; overflow: hidden; background: #1b2231; }
+    .pick-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.3, 1); }
+    .pick-row:hover .pick-thumb img { transform: scale(1.08); }
+    .pick-n {
+      position: absolute; right: 0; bottom: 0; font-size: 0.58rem; font-weight: 700;
+      letter-spacing: 0.1em; color: #fff; background: rgba(10, 14, 23, 0.82);
+      padding: 0.16rem 0.38rem; border-top-left-radius: 0.4rem;
+    }
+    .pick-row .pick-cat { color: var(--sol-luz); margin-bottom: 0.4rem; }
+    .pick-row .pick-title { color: #fff; font-size: clamp(0.98rem, 1.3vw, 1.1rem); line-height: 1.3; margin-bottom: 0.45rem; }
+    .pick-row .pick-meta { color: rgba(255, 255, 255, 0.5); }
+    .pick-go {
+      width: clamp(2.1rem, 3vw, 2.5rem); height: clamp(2.1rem, 3vw, 2.5rem);
+      border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.18);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    }
+    .pick-go svg { width: 0.95rem; height: 0.95rem; }
+    .pick-row:hover .pick-go { background: var(--sol); border-color: var(--sol); transform: translateX(3px); }
+
+    /* ============ FAQ ============ */
+    .faq {
+      padding: clamp(3.5rem, 8vw, 6.5rem) 0;
+      background-color: var(--dia-2);
+      background-image: var(--horizonte), radial-gradient(40rem 20rem at 50% -10%, rgba(254, 92, 23, 0.13), transparent 70%);
+      background-size: 100% 2px, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: top left, center top;
+    }
+    .faq-wrap { max-width: 1160px; display: grid; gap: clamp(2rem, 4vw, 4rem); }
+    @media (min-width: 900px) {
+      .faq-wrap { grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); align-items: start; }
+      .faq-side { position: sticky; top: clamp(4rem, 10vh, 7rem); }
+    }
+    .faq-side h2 {
+      font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 700; letter-spacing: -0.035em;
+      line-height: 1.05; margin: 1.1rem 0 1rem; color: #111; text-wrap: balance;
+    }
+    .faq-side p {
+      color: #52525b; font-size: clamp(1rem, 1.3vw, 1.1rem); line-height: 1.75;
+      max-width: 34ch; margin-bottom: clamp(1.5rem, 3vw, 2rem);
+    }
+    .faq-cta { width: fit-content; }
+    .faq-list { display: flex; flex-direction: column; gap: 0.85rem; }
+
+    /* ============ CTA FINAL ============ */
+    .end { position: relative; background: var(--painel); padding: clamp(4rem, 9vw, 7.5rem) 0; overflow: hidden; }
+    .end-bg { position: absolute; inset: 0; }
+    .end-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.35; }
+    .end-bg::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(120deg, rgba(10, 14, 23, 0.96) 25%, rgba(201, 58, 0, 0.55) 100%);
+    }
+    .end-inner { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; }
+    .end-inner h2 { color: #fff; font-size: clamp(2.1rem, 5.5vw, 3.75rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1.05; margin: 1.1rem 0 1.1rem; max-width: 18ch; }
+    .end-inner p { color: rgba(255, 255, 255, 0.72); font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.7; max-width: 38rem; margin-bottom: 2.25rem; }
+    .end-btns { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .end-note { margin-top: 2rem; font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.45); text-align: center; line-height: 1.8; }
+
+    @media (max-width: 640px) {
+      .end-btns .btn { width: 100%; justify-content: center; }
+      .out { grid-template-columns: 1fr; gap: 1.1rem; }
+      .spec { grid-template-columns: 1fr; }
+      .spec > div { border-right: none; border-bottom: 1px solid rgba(168, 176, 189, 0.14); padding: 0.85rem 0; }
+      .spec > div:last-child { border-bottom: none; }
+      .pick-row { grid-template-columns: 66px minmax(0, 1fr); }
+      .pick-go { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .stagger.visible > :global(*) { animation: none; }
+      .flow-tab { transition: none; }
+      .flow-panel:not([hidden]) { animation: none; }
+      .panel-led { animation: none; }
+      .says-track { transition: none; }
+      .says-slide { transition: none; }
+      .says-progress::after { animation: none !important; }
+      * { scroll-behavior: auto; }
+    }
   </style>
 
+  <script>
+    function initSim() {
+      const input = document.getElementById('bill') as HTMLInputElement | null;
+      if (!input || input.dataset.ready === '1') return;
+      input.dataset.ready = '1';
 
+      const out = document.getElementById('billOut');
+      const vAtual = document.getElementById('vAtual');
+      const vNovo = document.getElementById('vNovo');
+      const vMes = document.getElementById('vMes');
+      const vAno = document.getElementById('vAno');
+      const vCo2 = document.getElementById('vCo2');
+      const barAtual = document.getElementById('barAtual');
+      const barNovo = document.getElementById('barNovo');
+
+      const brl = (n: number) => n.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
+      const num = (n: number) => n.toLocaleString('pt-BR', { maximumFractionDigits: 0 });
+
+      const render = () => {
+        const bill = Number(input.value);
+        const share = ((bill - Number(input.min)) / (Number(input.max) - Number(input.min))) * 100;
+        const novo = bill * 0.12;
+        const mes = bill - novo;
+        const kwh = bill / 0.7;
+        const co2 = (kwh * 12 * 38.5) / 1000;
+
+        input.style.setProperty('--pct', share + '%');
+        if (out) out.textContent = brl(bill);
+        if (vAtual) vAtual.textContent = brl(bill);
+        if (vNovo) vNovo.textContent = brl(novo);
+        if (vMes) vMes.textContent = brl(mes);
+        if (vAno) vAno.textContent = brl(mes * 12);
+        if (vCo2) vCo2.textContent = num(co2) + ' kg';
+        if (barAtual) barAtual.style.width = share + '%';
+        if (barNovo) barNovo.style.width = share * 0.12 + '%';
+      };
+
+      input.addEventListener('input', render);
+      render();
+    }
+
+    function initFlow() {
+      document.querySelectorAll<HTMLElement>('[data-flow]').forEach((root) => {
+        if (root.dataset.ready === '1') return;
+        root.dataset.ready = '1';
+
+        const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('.flow-tab'));
+        const panels = Array.from(root.querySelectorAll<HTMLElement>('.flow-panel'));
+        if (!tabs.length) return;
+
+        const select = (idx: number) => {
+          tabs.forEach((t, i) => {
+            const on = i === idx;
+            t.setAttribute('aria-selected', String(on));
+            t.tabIndex = on ? 0 : -1;
+          });
+          panels.forEach((p, i) => { p.hidden = i !== idx; });
+        };
+
+        tabs.forEach((t, i) => t.addEventListener('click', () => select(i)));
+
+        root.addEventListener('keydown', (ev) => {
+          const cur = tabs.indexOf(document.activeElement as HTMLButtonElement);
+          if (cur < 0) return;
+          let next: number;
+          if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') next = (cur + 1) % tabs.length;
+          else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') next = (cur - 1 + tabs.length) % tabs.length;
+          else if (ev.key === 'Home') next = 0;
+          else if (ev.key === 'End') next = tabs.length - 1;
+          else return;
+          ev.preventDefault();
+          select(next);
+          tabs[next].focus();
+        });
+
+        if (window.matchMedia('(min-width: 900px) and (hover: hover)').matches) {
+          root.addEventListener('pointerover', (ev) => {
+            const hit = (ev.target as HTMLElement | null)?.closest?.('.flow-tab');
+            if (hit instanceof HTMLButtonElement) select(tabs.indexOf(hit));
+          });
+        }
+
+        const current = tabs.findIndex((t) => t.getAttribute('aria-selected') === 'true');
+        select(current < 0 ? 0 : current);
+      });
+    }
+
+    function initSays() {
+      document.querySelectorAll<HTMLElement>('[data-slider]').forEach((root) => {
+        if (root.dataset.ready === '1') return;
+        root.dataset.ready = '1';
+
+        const track = root.querySelector<HTMLElement>('.says-track');
+        const slides = Array.from(root.querySelectorAll<HTMLElement>('[data-slide]'));
+        const dots = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-dot]'));
+        const prev = root.querySelector<HTMLButtonElement>('[data-prev]');
+        const next = root.querySelector<HTMLButtonElement>('[data-next]');
+        const count = root.querySelector<HTMLElement>('[data-count]');
+        const bar = root.querySelector<HTMLElement>('[data-progress]');
+        if (!track || slides.length < 2) return;
+
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const total = slides.length;
+        let idx = 0;
+
+        const render = () => {
+          track.style.setProperty('--i', String(idx));
+          slides.forEach((s, i) => {
+            const on = i === idx;
+            s.classList.toggle('is-active', on);
+            s.setAttribute('aria-hidden', String(!on));
+          });
+          dots.forEach((d, i) => {
+            const on = i === idx;
+            d.classList.toggle('is-on', on);
+            d.setAttribute('aria-current', String(on));
+          });
+          if (count) count.textContent = `${String(idx + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+        };
+
+        const runBar = () => {
+          if (!bar || reduce) return;
+          bar.classList.remove('is-run');
+          void bar.offsetWidth;
+          bar.classList.add('is-run');
+        };
+
+        const go = (n: number, manual = false) => {
+          idx = ((n % total) + total) % total;
+          render();
+          if (manual) runBar();
+        };
+
+        bar?.addEventListener('animationend', () => go(idx + 1));
+        prev?.addEventListener('click', () => go(idx - 1, true));
+        next?.addEventListener('click', () => go(idx + 1, true));
+        dots.forEach((d, i) => d.addEventListener('click', () => go(i, true)));
+
+        root.addEventListener('keydown', (ev) => {
+          if (ev.key === 'ArrowLeft') { go(idx - 1, true); }
+          else if (ev.key === 'ArrowRight') { go(idx + 1, true); }
+          else return;
+          ev.preventDefault();
+        });
+
+        const view = root.querySelector<HTMLElement>('.says-viewport');
+        if (view) {
+          let sx = 0;
+          const end = (ev: PointerEvent) => {
+            view.classList.remove('is-drag');
+            const dx = ev.clientX - sx;
+            if (Math.abs(dx) > 45) go(idx + (dx < 0 ? 1 : -1), true);
+          };
+          view.addEventListener('pointerdown', (ev) => {
+            sx = ev.clientX;
+            view.classList.add('is-drag');
+          });
+          view.addEventListener('pointerup', end);
+          view.addEventListener('pointercancel', () => view.classList.remove('is-drag'));
+          view.addEventListener('pointerleave', () => view.classList.remove('is-drag'));
+        }
+
+        render();
+        if (!reduce) runBar();
+      });
+    }
+
+    document.addEventListener('astro:page-load', initSim);
+    document.addEventListener('DOMContentLoaded', initSim);
+    document.addEventListener('astro:page-load', initFlow);
+    document.addEventListener('DOMContentLoaded', initFlow);
+    document.addEventListener('astro:page-load', initSays);
+    document.addEventListener('DOMContentLoaded', initSays);
+  </script>
 </Layout>
