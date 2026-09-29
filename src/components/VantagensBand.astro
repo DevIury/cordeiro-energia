@@ -1,0 +1,104 @@
+---
+interface Benefit {
+  icon?: string;
+  title: string;
+  text: string;
+}
+interface Props {
+  id?: string;
+  tag?: string;
+  titleHtml: string;
+  subtitle?: string;
+  benefits: Benefit[];
+}
+const { id, tag = 'VANTAGENS', titleHtml, subtitle, benefits } = Astro.props;
+---
+
+<section class="vantagens" id={id}>
+  <div class="container">
+    <div class="section-header">
+      <div class="tag">
+        <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        {tag}
+      </div>
+      <h2 set:html={titleHtml}></h2>
+      {subtitle && <p>{subtitle}</p>}
+    </div>
+    <div class="benefits-grid">
+      {benefits.map((b) => (
+        <div class="benefit-card scroll-reveal">
+          {b.icon && <span class="benefit-icon" set:html={b.icon}></span>}
+          <h3>{b.title}</h3>
+          <p>{b.text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .vantagens {
+    position: relative; overflow: hidden;
+    background: #0A0E17;
+    padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+  }
+  .vantagens::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(55% 60% at 10% 0%, rgba(254, 92, 23, 0.18), transparent 65%),
+      radial-gradient(45% 55% at 90% 100%, rgba(255, 194, 77, 0.1), transparent 65%);
+  }
+  .vantagens::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 194, 77, 0.55), transparent);
+  }
+  .vantagens .container { position: relative; z-index: 1; }
+  .vantagens .section-header { margin-bottom: clamp(2.2rem, 4vw, 3rem); }
+  .vantagens .section-header h2 { color: #fff; font-size: clamp(1.85rem, 3.6vw, 2.6rem); letter-spacing: -0.03em; }
+  .vantagens .section-header h2 span { color: #FE5C17; }
+  .vantagens .section-header p { color: #A8B0BD; font-size: clamp(1rem, 1.4vw, 1.1rem); }
+  .vantagens .tag { color: #FE5C17; background: rgba(255, 194, 77, 0.08); border-color: rgba(255, 194, 77, 0.32); }
+
+  .benefits-grid { display: grid; gap: clamp(0.9rem, 1.8vw, 1.35rem); grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .benefits-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .benefits-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .benefit-card {
+    position: relative; overflow: hidden;
+    padding: clamp(1.4rem, 2.4vw, 1.9rem);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 1.15rem;
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1),
+      box-shadow 0.4s ease, border-color 0.4s ease, background-color 0.4s ease;
+  }
+  .benefit-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, #FE5C17, #FFC24D);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .benefit-card:hover {
+    background: rgba(255, 255, 255, 0.065);
+    border-color: rgba(254, 92, 23, 0.5);
+    box-shadow: 0 26px 52px rgba(0, 0, 0, 0.38);
+  }
+  .benefit-card:hover::before { transform: scaleX(1); }
+  .benefit-card .benefit-icon {
+    width: 3rem; height: 3rem; margin: 0 0 1.05rem;
+    background: rgba(254, 92, 23, 0.14); border: 1px solid rgba(255, 194, 77, 0.22);
+    border-radius: 0.85rem;
+    display: flex; align-items: center; justify-content: center;
+    color: #FE5C17; font-size: 1.35rem; line-height: 1;
+    transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1), background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+  }
+  .benefit-card .benefit-icon svg { width: 1.4rem; height: 1.4rem; }
+  .benefit-card:hover .benefit-icon { background: #FE5C17; border-color: #FE5C17; color: #0A0E17; transform: translateY(-3px); }
+  .benefit-card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; color: #fff; }
+  .benefit-card p { margin: 0; font-size: 0.9rem; line-height: 1.7; color: #A8B0BD; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .benefit-card, .benefit-card .benefit-icon { transition: none; }
+    .benefit-card:hover, .benefit-card:hover .benefit-icon { transform: none; }
+  }
+</style>

@@ -4,6 +4,10 @@ import Header from '../components/Header.astro';
 import FloatingWhatsApp from '../components/FloatingWhatsApp.astro';
 import CtaSection from '../components/CtaSection.astro';
 import Footer from '../components/Footer.astro';
+import StatsBand from '../components/StatsBand.astro';
+import VantagensBand from '../components/VantagensBand.astro';
+import ProcessoSection from '../components/ProcessoSection.astro';
+import FaqBand from '../components/FaqBand.astro';
 ---
 
 <Layout
@@ -34,6 +38,49 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
     </section>
+
+    <!-- Stats Widget -->
+    <StatsBand
+      stats={[
+        {
+          icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>',
+          label: 'Clientes atendidos',
+          count: 500,
+          suffix: '+',
+        },
+        {
+          icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>',
+          label: 'Garantia de fábrica',
+          count: 25,
+          suffix: 'anos',
+        },
+        {
+          icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+          label: 'Contratos de longo prazo',
+          count: 20,
+          suffix: '+ anos',
+        },
+        {
+          icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
+          label: 'Potência de projeto',
+          prefix: 'Até',
+          count: 5,
+          suffix: 'MW',
+        },
+      ]}
+    />
+
+    <!-- Vantagens -->
+    <VantagensBand
+      tag="DIFERENCIAIS"
+      titleHtml="Nosso <span>diferencial</span>"
+      benefits={[
+        { title: 'Gestão Completa', text: 'Cuidamos desde a viabilidade técnica até a operação e manutenção da usina.' },
+        { title: 'Monitoramento Avançado', text: 'Sistema de monitoramento em tempo real com alertas de performance e manutenção preditiva.' },
+        { title: 'Equipe Especializada', text: 'Engenheiros e técnicos com experiência em projetos de grande porte em Minas Gerais.' },
+        { title: 'Parceiros de Excelência', text: 'Trabalhamos com os melhores fabricantes: Canadian Solar, Jinko, Huawei, Growatt.' },
+      ]}
+    />
 
     <!-- Modalidades -->
     <section id="modalidades" style="padding:5rem 0;">
@@ -94,36 +141,38 @@ import Footer from '../components/Footer.astro';
       </div>
     </section>
 
-    <!-- Nosso Diferencial -->
-    <section style="padding:5rem 0;background:#f9fafb;">
-      <div class="container">
-        <div class="section-header">
-          <div class="tag">
-            <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-            DIFERENCIAIS
-          </div>
-          <h2>Nosso <span>diferencial</span></h2>
-        </div>
-        <div style="display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));">
-          <div class="card" style="padding:1.5rem;">
-            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Gestão Completa</h3>
-            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Cuidamos desde a viabilidade técnica até a operação e manutenção da usina.</p>
-          </div>
-          <div class="card" style="padding:1.5rem;">
-            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Monitoramento Avançado</h3>
-            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Sistema de monitoramento em tempo real com alertas de performance e manutenção preditiva.</p>
-          </div>
-          <div class="card" style="padding:1.5rem;">
-            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Equipe Especializada</h3>
-            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Engenheiros e técnicos com experiência em projetos de grande porte em Minas Gerais.</p>
-          </div>
-          <div class="card" style="padding:1.5rem;">
-            <h3 style="font-size:1rem;font-weight:700;color:#111;margin-bottom:0.5rem;">Parceiros de Excelência</h3>
-            <p style="color:#6b7280;font-size:0.85rem;line-height:1.6;">Trabalhamos com os melhores fabricantes: Canadian Solar, Jinko, Huawei, Growatt.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Como Funciona -->
+    <ProcessoSection
+      steps={[
+        { text: 'Analisamos o potencial e o consumo para indicar a modalidade ideal de usina.' },
+        { text: 'Projetamos a usina ideal e estruturamos a viabilidade do investimento.' },
+        {},
+        { text: 'Do desenvolvimento à operação, cuidamos de tudo para a usina começar a gerar.' },
+      ]}
+    />
+
+    <!-- FAQ -->
+    <FaqBand
+      ctaHref="https://wa.me/5538997350343?text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20usinas%20solares"
+      items={[
+        {
+          question: 'Qual a diferença entre geração distribuída e centralizada?',
+          answer: 'Geração distribuída (GD): sistemas de até 5MW conectados à rede de distribuição, com compensação de energia e incentivos fiscais. Geração centralizada: grandes usinas conectadas ao sistema de transmissão, com venda para o mercado livre ou leilões.',
+        },
+        {
+          question: 'Como vendo a energia excedente?',
+          answer: 'A energia pode ser vendida no mercado livre ou em leilões, com contratos de longo prazo de 20 anos ou mais.',
+        },
+        {
+          question: 'Vocês cuidam da gestão da usina?',
+          answer: 'Do desenvolvimento à operação, cuidamos de tudo: viabilidade técnica, projeto, instalação, monitoramento em tempo real e manutenção preditiva.',
+        },
+        {
+          question: 'Qual a garantia dos painéis?',
+          answer: 'Os painéis têm garantia de fábrica de 25 anos, protegendo o investimento por todo o contrato.',
+        },
+      ]}
+    />
   </main>
 
   <FloatingWhatsApp />

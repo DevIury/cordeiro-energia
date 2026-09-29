@@ -1,0 +1,130 @@
+---
+interface Stat {
+  icon: string;
+  label: string;
+  count?: number;
+  suffix?: string;
+  prefix?: string;
+  text?: string;
+}
+interface Props {
+  stats: Stat[];
+}
+const { stats } = Astro.props;
+---
+
+<section class="stats-band">
+  <div class="container">
+    <div class="stats-bar">
+      {stats.map((s) => (
+        <div class="stat-item">
+          <span class="stat-ico" set:html={s.icon}></span>
+          <span class="stat-n">
+            {s.prefix && <i class="pre">{s.prefix}</i>}
+            {s.count !== undefined ? <b data-count={s.count}>{s.count}</b> : <b>{s.text}</b>}
+            {s.suffix && <i>{s.suffix}</i>}
+          </span>
+          <span class="stat-l">{s.label}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .stats-band { padding: 0; margin-top: -3.5rem; position: relative; z-index: 3; }
+
+  .stats-band .stats-bar {
+    gap: 0; position: relative; overflow: hidden;
+    background: linear-gradient(165deg, #171E2C 0%, #0A0E17 70%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.3rem;
+    box-shadow: 0 30px 70px rgba(10, 14, 23, 0.4);
+  }
+  .stats-band .stats-bar::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 194, 77, 0.6), transparent);
+    z-index: 1;
+  }
+  .stats-band .stat-item {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    gap: 0.5rem; padding: clamp(1.3rem, 3vw, 1.75rem) 0.9rem;
+    transition: background-color 0.35s ease;
+  }
+  .stats-band .stat-item:hover { background: rgba(255, 255, 255, 0.04); }
+  @media (max-width: 767px) {
+    .stats-band .stats-bar { grid-template-columns: repeat(2, 1fr) !important; }
+    .stats-band .stat-item { border-right: 1px solid rgba(255, 255, 255, 0.08); border-top: 1px solid rgba(255, 255, 255, 0.08); }
+    .stats-band .stat-item:nth-child(2n) { border-right: 0; }
+    .stats-band .stat-item:nth-child(-n+2) { border-top: 0; }
+  }
+  @media (min-width: 768px) {
+    .stats-band .stat-item { border-right: 1px solid rgba(255, 255, 255, 0.08); }
+    .stats-band .stat-item:last-child { border-right: 0; }
+  }
+  .stats-band .stat-ico {
+    width: 2.5rem; height: 2.5rem; border-radius: 0.7rem;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(254, 92, 23, 0.16); border: 1px solid rgba(255, 194, 77, 0.3);
+    color: #FE5C17; font-size: 1.15rem; line-height: 1;
+    transition: transform 0.35s ease, background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+  }
+  .stats-band .stat-ico svg { width: 1.15rem; height: 1.15rem; }
+  .stats-band .stat-item:hover .stat-ico {
+    background: #FE5C17; border-color: #FE5C17; color: #0A0E17; transform: translateY(-3px);
+  }
+  .stats-band .stat-n {
+    display: inline-flex; align-items: baseline; gap: 0.15rem;
+    font-size: clamp(1.75rem, 3.2vw, 2.3rem); font-weight: 800; line-height: 1;
+    letter-spacing: -0.03em; color: #FE5C17; font-variant-numeric: tabular-nums;
+  }
+  .stats-band .stat-n b { font-weight: 800; }
+  .stats-band .stat-n i { font-style: normal; font-size: 0.5em; font-weight: 700; }
+  .stats-band .stat-n .pre { font-size: 0.55em; color: #A8B0BD; margin-right: 0.05rem; }
+  .stats-band .stat-l {
+    font-size: 0.67rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.09em; color: #A8B0BD; line-height: 1.4;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stats-band .stat-item, .stats-band .stat-ico { transition: none; }
+    .stats-band .stat-item:hover .stat-ico { transform: none; }
+  }
+</style>
+
+<script>
+  function initStatsBand() {
+    const band = document.querySelector('.stats-band');
+    if (!(band instanceof HTMLElement) || band.dataset.ready === '1') return;
+    band.dataset.ready = '1';
+
+    const nums = Array.from(band.querySelectorAll('.stat-n b[data-count]'));
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const run = (el) => {
+      const target = Number(el.dataset.count || '0');
+      if (reduce) { el.textContent = String(target); return; }
+      const dur = 1100;
+      const t0 = performance.now();
+      const tick = (t) => {
+        const p = Math.min(1, (t - t0) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = String(Math.round(target * eased));
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = String(target);
+      };
+      requestAnimationFrame(tick);
+    };
+
+    if (!('IntersectionObserver' in window)) { nums.forEach(run); return; }
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting && e.target instanceof HTMLElement) { run(e.target); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.35 });
+    nums.forEach((n) => io.observe(n));
+  }
+
+  document.addEventListener('astro:page-load', initStatsBand);
+  document.addEventListener('DOMContentLoaded', initStatsBand);
+</script>

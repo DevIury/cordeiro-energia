@@ -1,0 +1,68 @@
+---
+import FaqItem from './FaqItem.astro';
+
+interface Item {
+  question: string;
+  answer: string;
+}
+interface Props {
+  titleHtml?: string;
+  text?: string;
+  ctaHref: string;
+  items: Item[];
+}
+const {
+  titleHtml = 'Dúvidas <span>frequentes</span>',
+  text = 'Não encontrou o que procurava? Fale com nosso time e receba uma resposta clara, sem enrolação e sem compromisso.',
+  ctaHref,
+  items,
+} = Astro.props;
+
+const faqSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((it) => ({
+    '@type': 'Question',
+    name: it.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: it.answer,
+    },
+  })),
+});
+---
+
+<section class="faq-band">
+  <script type="application/ld+json" set:html={faqSchema}></script>
+  <div class="container faq-grid">
+    <div class="faq-aside">
+      <div class="tag">
+        <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        PERGUNTAS FREQUENTES
+      </div>
+      <h2 set:html={titleHtml}></h2>
+      <p>{text}</p>
+      <a class="btn btn-orange btn-xl" href={ctaHref} target="_blank" rel="noopener noreferrer">
+        Tirar dúvida no WhatsApp
+        <svg style="width:1rem;height:1rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="faq-list">
+      {items.map((it, i) => (
+        <FaqItem n={String(i + 1).padStart(2, '0')} question={it.question} answer={it.answer} />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-band { padding: clamp(3.5rem, 7vw, 5.5rem) 0; background: #fff; }
+  .faq-grid { display: grid; grid-template-columns: 1fr; gap: clamp(2rem, 4vw, 3.5rem); align-items: start; }
+  @media (min-width: 1024px) { .faq-grid { grid-template-columns: 0.8fr 1.2fr; } }
+  .faq-aside .tag { margin-bottom: 1.15rem; }
+  .faq-aside h2 { margin: 0 0 0.9rem; font-size: clamp(1.85rem, 3.6vw, 2.6rem); font-weight: 700; line-height: 1.08; letter-spacing: -0.03em; color: #111; }
+  .faq-aside h2 span { color: #FE5C17; }
+  .faq-aside p { max-width: 38ch; margin: 0 0 1.6rem; font-size: 1rem; line-height: 1.7; color: #6B7280; }
+  @media (min-width: 1024px) { .faq-aside { position: sticky; top: calc(var(--nav-h, 88px) + 1.5rem); } }
+  .faq-list { display: flex; flex-direction: column; gap: 0.85rem; }
+</style>

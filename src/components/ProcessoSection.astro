@@ -1,0 +1,149 @@
+---
+interface StepOverride {
+  icon?: string;
+  title?: string;
+  text?: string;
+}
+interface Props {
+  titleHtml?: string;
+  subtitle?: string;
+  steps?: StepOverride[];
+}
+const {
+  titleHtml = 'Como <span>funciona</span>',
+  subtitle = 'Do primeiro contato até a economia na sua conta',
+  steps: overrides,
+} = Astro.props;
+
+const defaultSteps = [
+  {
+    icon: '<svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>',
+    title: 'Consulta Grátis',
+    text: 'Analisamos seu consumo e apresentamos a melhor solução para sua residência.',
+  },
+  {
+    icon: '<svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>',
+    title: 'Projeto Personalizado',
+    text: 'Projetamos o sistema ideal para o consumo e as características da sua casa.',
+  },
+  {
+    icon: '<svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
+    title: 'Aprovação e Documentação',
+    text: 'Cuidamos de todo o processo burocrático junto à concessionária.',
+  },
+  {
+    icon: '<svg style="width:1.5rem;height:1.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
+    title: 'Instalação Rápida',
+    text: 'Instalação profissional em até 3 dias. Você começa a economizar imediatamente.',
+  },
+];
+
+const steps = defaultSteps.map((d, i) => {
+  const o = overrides && overrides[i];
+  return o ? { icon: o.icon ?? d.icon, title: o.title ?? d.title, text: o.text ?? d.text } : d;
+});
+const total = String(steps.length).padStart(2, '0');
+---
+
+<section id="como-funciona" class="processo">
+  <div class="container">
+    <div class="section-header">
+      <div class="tag">
+        <svg style="width:0.75rem;height:0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        PROCESSO
+      </div>
+      <h2 set:html={titleHtml}></h2>
+      <p>{subtitle}</p>
+    </div>
+    <div class="steps-grid">
+      {steps.map((s, i) => {
+        const n = i + 1;
+        const pct = Math.round((n / steps.length) * 100);
+        return (
+          <article class="step-card scroll-reveal">
+            <div class="step-head">
+              <span class="step-number">{n}</span>
+              <span class="step-label">Etapa {String(n).padStart(2, '0')} de {total}</span>
+            </div>
+            <div class="step-icon-wrap" set:html={s.icon}></div>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+            <div class="step-track"><span><i style={`width:${pct}%`}></i></span><b>{pct}%</b></div>
+          </article>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
+<style>
+  .processo {
+    position: relative; overflow: hidden;
+    padding: clamp(3.5rem, 7vw, 5.5rem) 0;
+    background: linear-gradient(180deg, #F7F8FA 0%, #FFFFFF 100%);
+  }
+  .processo::before {
+    content: ''; position: absolute; top: -8rem; left: 50%; transform: translateX(-50%);
+    width: min(780px, 92%); height: 26rem;
+    background: radial-gradient(closest-side, rgba(254, 92, 23, 0.1), transparent);
+  }
+  .processo .container { position: relative; z-index: 1; }
+  .steps-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1.1rem, 2vw, 1.5rem); position: relative; }
+  @media (min-width: 640px) { .steps-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1024px) { .steps-grid { grid-template-columns: repeat(4, 1fr); } }
+
+  .step-card {
+    position: relative; display: flex; flex-direction: column; gap: 0.85rem;
+    padding: clamp(1.4rem, 2vw, 1.7rem);
+    background: #fff; border: 1px solid #ECEFF4; border-radius: 1.2rem;
+    transition: opacity 0.5s ease, transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1),
+      box-shadow 0.4s ease, border-color 0.4s ease;
+  }
+  .step-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(254, 92, 23, 0.4);
+    box-shadow: 0 26px 50px rgba(10, 14, 23, 0.1);
+  }
+  @media (min-width: 1024px) {
+    .step-card:not(:last-child)::after {
+      content: '→';
+      position: absolute; top: 50%; right: -1.12rem; transform: translateY(-50%);
+      width: 1.65rem; height: 1.65rem; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: #fff; border: 1px solid rgba(254, 92, 23, 0.3);
+      color: #FE5C17; font-size: 0.8rem; font-weight: 700; line-height: 1;
+      z-index: 2;
+    }
+  }
+  .step-head { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; }
+  .step-card .step-number {
+    width: 2.35rem; height: 2.35rem; border-radius: 50%; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #FF8F00, #FE5C17);
+    color: #fff; font-size: 0.82rem; font-weight: 800; line-height: 1;
+    box-shadow: 0 6px 16px rgba(254, 92, 23, 0.35);
+  }
+  .step-label {
+    font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: #9AA3B0; text-align: right;
+  }
+  .step-card .step-icon-wrap {
+    width: 3.1rem; height: 3.1rem; border-radius: 0.95rem;
+    display: flex; align-items: center; justify-content: center;
+    background: #FFF4EC; color: #FE5C17;
+    border: 1px solid rgba(254, 92, 23, 0.16);
+    transition: background-color 0.35s ease, color 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+  }
+  .step-card:hover .step-icon-wrap { background: #FE5C17; color: #fff; border-color: #FE5C17; transform: translateY(-2px); }
+  .step-card h3 { margin: 0; font-size: 1.06rem; font-weight: 700; letter-spacing: -0.01em; color: #111; }
+  .step-card p { margin: 0; font-size: 0.89rem; line-height: 1.7; color: #6B7280; flex: 1; }
+  .step-track { display: flex; align-items: center; gap: 0.6rem; margin-top: 0.25rem; }
+  .step-track span { flex: 1; height: 5px; border-radius: 99px; background: #EEF1F5; overflow: hidden; }
+  .step-track span i { display: block; height: 100%; border-radius: 99px; background: linear-gradient(90deg, #FF8F00, #FE5C17); }
+  .step-track b { font-size: 0.68rem; font-weight: 700; color: #FE5C17; font-variant-numeric: tabular-nums; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .step-card, .step-card .step-icon-wrap { transition: none; }
+    .step-card:hover, .step-card:hover .step-icon-wrap { transform: none; }
+  }
+</style>
