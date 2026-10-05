@@ -23,3 +23,6 @@ Thumbs.db
 
 # local dev server log
 dev.log
+
+# chaves do reCAPTCHA (copie de config.exemplo.php)
+public/segunda-via/config.php

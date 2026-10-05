@@ -8,13 +8,13 @@ const GA_ID = 'G-XXXXXXXXXX'; // TODO: Replace with actual GA4 measurement ID
 )}
 
 <script define:vars={{ GA_ID }} is:inline>
-  function hasConsent(): boolean {
+  function hasConsent() {
     return document.cookie.split(';').some(c => c.trim().startsWith('cookie-consent=true'));
   }
 
-  function trackEvent(eventName: string, params: Record<string, string | number> = {}) {
-    if (typeof (window as any).gtag === 'function') {
-      (window as any).gtag('event', eventName, params);
+  function trackEvent(eventName, params = {}) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, params);
     }
   }
 
@@ -32,7 +32,7 @@ const GA_ID = 'G-XXXXXXXXXX'; // TODO: Replace with actual GA4 measurement ID
     // WhatsApp click
     document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
       link.addEventListener('click', () => {
-        trackEvent('whatsapp_click', { link_url: (link as HTMLAnchorElement).href });
+        trackEvent('whatsapp_click', { link_url: link.href });
       });
     });
 
@@ -46,14 +46,14 @@ const GA_ID = 'G-XXXXXXXXXX'; // TODO: Replace with actual GA4 measurement ID
     // Phone clicks
     document.querySelectorAll('a[href^="tel:"]').forEach(link => {
       link.addEventListener('click', () => {
-        trackEvent('phone_click', { phone_number: (link as HTMLAnchorElement).href.replace('tel:', '') });
+        trackEvent('phone_click', { phone_number: link.href.replace('tel:', '') });
       });
     });
 
     // Email clicks
     document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
       link.addEventListener('click', () => {
-        trackEvent('email_click', { email: (link as HTMLAnchorElement).href.replace('mailto:', '') });
+        trackEvent('email_click', { email: link.href.replace('mailto:', '') });
       });
     });
 

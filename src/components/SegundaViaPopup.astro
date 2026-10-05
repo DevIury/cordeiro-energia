@@ -1,0 +1,325 @@
+---
+const siteKey = (import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY ?? '').trim();
+---
+
+<div class="svp-overlay" id="svpOverlay"></div>
+
+<div class="svp-popup" id="svpPopup" role="dialog" aria-modal="true" aria-labelledby="svpTitulo">
+  <button type="button" class="svp-fechar" id="svpFechar" aria-label="Fechar pop-up">
+    <svg style="width:1.125rem;height:1.125rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <span class="svp-tag">2ª via do boleto</span>
+  <h2 id="svpTitulo">Gerar segunda via em PDF</h2>
+  <p class="svp-sub">Informe o CPF do titular. O boleto é gerado na hora, com linha digitável, código de barras e PIX.</p>
+
+  <form id="svpForm" method="post" action="/segunda-via/" novalidate>
+    <label for="svpDocumento">CPF ou código do cliente</label>
+    <input
+      type="text"
+      id="svpDocumento"
+      name="documento"
+      placeholder="000.000.000-00"
+      inputmode="numeric"
+      maxlength="20"
+      autocomplete="off"
+      required
+    >
+    <input type="hidden" name="g-recaptcha-response" id="svpToken">
+    <p class="svp-erro" id="svpErro" role="alert" hidden></p>
+    <button type="submit" class="btn btn-orange svp-btn" id="svpBtn">Gerar PDF para download</button>
+  </form>
+
+  <p class="svp-notas">
+    Demonstração técnica: dados fictícios, nada é armazenado.
+    {siteKey !== '' && <>Protegido por <strong>reCAPTCHA v3</strong>.</>}
+  </p>
+</div>
+
+<style>
+  .svp-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 250;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .svp-overlay.ativo { opacity: 1; pointer-events: all; }
+
+  .svp-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -47%) scale(0.97);
+    width: min(92vw, 440px);
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    padding: 1.75rem;
+    z-index: 260;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.28);
+  }
+  .svp-popup.ativo {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .svp-fechar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9fafb;
+    border: 1.5px solid #e5e7eb;
+    color: #6b7280;
+    cursor: pointer;
+    border-radius: 0.625rem;
+    transition: all 0.2s;
+  }
+  .svp-fechar:hover { color: #FE5C17; background: #fff5ed; border-color: #FE5C17; }
+
+  .svp-tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #FE5C17;
+    background: rgba(254, 92, 23, 0.08);
+    border: 1px solid rgba(254, 92, 23, 0.2);
+    padding: 0.3rem 0.7rem;
+    border-radius: 9999px;
+  }
+
+  .svp-popup h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #111;
+    margin: 0.85rem 0 0.35rem;
+    letter-spacing: -0.01em;
+  }
+  .svp-sub {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .svp-popup label {
+    display: block;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  .svp-popup input[type='text'] {
+    width: 100%;
+    background: #f9fafb;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 0.625rem;
+    padding: 0.8rem 0.9rem;
+    font: inherit;
+    font-size: 1rem;
+    color: #111;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  }
+  .svp-popup input[type='text']:focus {
+    outline: none;
+    background: #fff;
+    border-color: #FE5C17;
+    box-shadow: 0 0 0 3px rgba(254, 92, 23, 0.15);
+  }
+
+  .svp-btn {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .svp-btn:disabled { opacity: 0.7; cursor: wait; }
+
+  .svp-erro {
+    margin-top: 0.875rem;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: #b91c1c;
+    border-radius: 0.5rem;
+    padding: 0.7rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .svp-notas {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .svp-notas strong { color: #6b7280; font-weight: 600; }
+
+  :global(body.svp-travado) { overflow: hidden; }
+</style>
+
+<script>
+  declare global {
+    interface Window {
+      grecaptcha?: {
+        ready: (cb: () => void) => void;
+        execute: (siteKey: string, options: { action: string }) => Promise<string>;
+      };
+    }
+  }
+
+  function initSegundaVia() {
+    const popup = document.getElementById('svpPopup');
+    const overlay = document.getElementById('svpOverlay');
+    if (!popup || !overlay || popup.dataset.pronto === '1') return;
+    popup.dataset.pronto = '1';
+
+    const form = document.getElementById('svpForm');
+    const input = document.getElementById('svpDocumento');
+    const token = document.getElementById('svpToken');
+    const botao = document.getElementById('svpBtn');
+    const erro = document.getElementById('svpErro');
+    if (
+      !(form instanceof HTMLFormElement) ||
+      !(input instanceof HTMLInputElement) ||
+      !(token instanceof HTMLInputElement) ||
+      !(botao instanceof HTMLButtonElement) ||
+      !(erro instanceof HTMLParagraphElement)
+    ) {
+      return;
+    }
+
+    const siteKey = (import.meta.env.PUBLIC_RECAPTCHA_SITE_KEY ?? '').trim();
+    let gatilho: HTMLElement | null = null;
+    let enviando = false;
+    let recaptchaCarregado = false;
+
+    function mostrarErro(msg: string) {
+      erro.textContent = msg;
+      erro.hidden = false;
+      botao.disabled = false;
+      botao.textContent = 'Gerar PDF para download';
+      enviando = false;
+    }
+
+    function carregarRecaptcha() {
+      if (recaptchaCarregado) return;
+      recaptchaCarregado = true;
+      const script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js?render=' + encodeURIComponent(siteKey);
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+
+    function abrir(event: Event) {
+      gatilho = event.currentTarget instanceof HTMLElement ? event.currentTarget : null;
+      document.dispatchEvent(new CustomEvent('nav:fechar'));
+      overlay.classList.add('ativo');
+      popup.classList.add('ativo');
+      document.body.classList.add('svp-travado');
+      erro.hidden = true;
+      if (siteKey !== '') carregarRecaptcha();
+      setTimeout(() => input.focus(), 60);
+    }
+
+    function fechar() {
+      overlay.classList.remove('ativo');
+      popup.classList.remove('ativo');
+      document.body.classList.remove('svp-travado');
+      if (gatilho) {
+        gatilho.focus();
+        gatilho = null;
+      }
+    }
+
+    document.querySelectorAll<HTMLElement>('[data-segunda-via]').forEach((el) => {
+      el.addEventListener('click', abrir);
+    });
+    overlay.addEventListener('click', fechar);
+    document.getElementById('svpFechar')?.addEventListener('click', fechar);
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && popup.classList.contains('ativo')) fechar();
+    });
+
+    popup.addEventListener('keydown', (event) => {
+      if (event.key !== 'Tab') return;
+      const focaveis = Array.from(
+        popup.querySelectorAll<HTMLElement>('button, input:not([type="hidden"])')
+      ).filter((el) => !el.hasAttribute('disabled'));
+      if (focaveis.length === 0) return;
+      const primeiro = focaveis[0];
+      const ultimo = focaveis[focaveis.length - 1];
+      if (event.shiftKey && document.activeElement === primeiro) {
+        event.preventDefault();
+        ultimo.focus();
+      } else if (!event.shiftKey && document.activeElement === ultimo) {
+        event.preventDefault();
+        primeiro.focus();
+      }
+    });
+
+    form.addEventListener('submit', (event) => {
+      const digitos = input.value.replace(/\D+/g, '');
+      if (digitos === '' || digitos.length > 14) {
+        event.preventDefault();
+        mostrarErro('Informe um CPF ou código de cliente válido.');
+        input.focus();
+        return;
+      }
+
+      if (siteKey === '') return;
+
+      if (enviando || token.value !== '') return;
+      event.preventDefault();
+
+      if (!window.grecaptcha || typeof window.grecaptcha.ready !== 'function') {
+        mostrarErro('O reCAPTCHA não carregou. Verifique sua conexão e tente novamente.');
+        return;
+      }
+
+      enviando = true;
+      botao.disabled = true;
+      botao.textContent = 'Verificando segurança...';
+      window.grecaptcha.ready(() => {
+        window.grecaptcha!
+          .execute(siteKey, { action: 'segunda_via' })
+          .then((valor: string) => {
+            token.value = valor;
+            botao.textContent = 'Gerando PDF...';
+            setTimeout(fechar, 1200);
+            form.submit();
+          })
+          .catch(() => mostrarErro('Falha ao verificar a segurança. Tente novamente.'));
+      });
+    });
+
+    window.addEventListener('pageshow', () => {
+      token.value = '';
+      enviando = false;
+      botao.disabled = false;
+      botao.textContent = 'Gerar PDF para download';
+    });
+  }
+
+  document.addEventListener('astro:page-load', initSegundaVia);
+  document.addEventListener('DOMContentLoaded', initSegundaVia);
+</script>
